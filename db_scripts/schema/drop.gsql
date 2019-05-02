@@ -1,0 +1,11 @@
+USE GRAPH @graphname@
+
+DROP JOB ALL 
+DROP QUERY ALL
+
+DROP EDGE
+HAS_CONDITION, HAS_ALLERGIES, HAS_CAREPLAN, HAS_ENCOUNTER, HAS_IMMUNIZATION, HAS_OBSERBVATION, HAS_PROCEDURE, FILED_CLAIM
+
+DROP VERTEX Patient, Allergy, Careplan, Claim, Condition, Encounter, Immunization, Medication, Observation, Procedure, Provider
+
+DROP GRAPH @graphname@

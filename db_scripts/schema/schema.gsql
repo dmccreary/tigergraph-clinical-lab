@@ -1,0 +1,54 @@
+CREATE VERTEX Patient (
+    PRIMARY_ID patient_id STRING,
+    BirthDate STRING,
+    DeathDate STRING,
+    SSN STRING STRING,
+    DriverLicenseID STRING, 
+    PassportID STRING, 
+    PrefixName STRING, 
+    GivenName STRING,
+    FamilyName STRING,
+    SuffixName STRING,
+    MaidenName STRING,
+    MaritalStatusCode STRING,
+    RaceCode STRING,
+    EthnicityCode STRING,
+    GenderCode STRING,
+    BirthPlaceFull STRING,
+    AddressFull STRING)
+
+// START,STOP,PATIENT,ENCOUNTER,CODE,DESCRIPTION
+CREATE VERTEX Allergies (
+    PRIMARY_ID allergy_id STRING,
+    startDate STRING,
+    stopDate STRING,
+    description STRING
+)
+
+// ID,START,STOP,PATIENT,ENCOUNTER,CODE,DESCRIPTION,REASONCODE,REASONDESCRIPTION
+CREATE VERTEX Careplan (
+    PRIMARY_ID careplan_id STRING,
+    startDate STRING,
+    endDate STRING,
+    careplanCode STRING,
+    carePlanDescription STRING,
+    reasonCode STRING,
+    reasonCodeDescription STRING
+)
+
+// ID,PATIENT,BILLABLEPERIOD,ORGANIZATION,ENCOUNTER,DIAGNOSIS, TOTAL
+CREATE VERTEX Claim (
+    PRIMARY_ID claim_id STRING,
+    billingDate STRING,
+    diagnosis STRING,
+    totalAmount FLOAT
+    )
+/* TODO
+// CREATE VERTEX Claim ()
+// CREATE VERTEX Condition ()
+// CREATE VERTEX Encounter ()
+// CREATE VERTEX Immunization ()
+// CREATE VERTEX Medication ()
+// CREATE VERTEX Observations ()
+// CREATE VERTEX Procedures ()
+*/
