@@ -5,6 +5,7 @@ This is a repository of tools to teach TigerGraph GSQL using synthetic clinical 
 
 Synthia geerates the following files:
 
+```
      573 allergies.csv
    12126 careplans.csv
    20524 claims.csv
@@ -16,5 +17,6 @@ Synthia geerates the following files:
     1463 patients.csv
    10185 procedures.csv
   171351 total
+  ```
 
 These files are loaded into TigerGraph using the Giraffle framework.
