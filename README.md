@@ -20,3 +20,15 @@ Synthia geerates the following files:
   ```
 
 These files are loaded into TigerGraph using the Giraffle framework.
+
+A few items we are trying to teach in this class:
+
+Naming Conventions
+
+Use Upper Camel Case for Vertex Names
+Vertex names should be singular (Patient, not Patients)
+Use Lower Camel Case for properties
+Use Upper Case for Edge types.
+Use ISO Naming conventions - always end with a Representation Term
+All Codes should use the STRING COMPRESSED format
+
