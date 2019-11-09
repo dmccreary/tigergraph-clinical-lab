@@ -1,0 +1,471 @@
+USE GRAPH @graphname@
+
+CREATE QUERY HaversineDistance(Vertex<Location> origin, Vertex<Location> destination) FOR GRAPH @graphname@ RETURNS (DOUBLE){
+        DOUBLE a;
+        DOUBLE PI = 3.14159; #PI
+        DOUBLE DEG = 180.0;
+        DOUBLE R = 3961.0;  #Radius of the Earth in miles
+        DOUBLE distance;
+
+        a = pow( sin( (origin.Latitude - destination.Latitude) * (PI/DEG) / 2.0), 2)
+          + cos(origin.Latitude * (PI/DEG)) * cos(destination.Latitude * (PI/DEG))
+          * pow( sin( (origin.Longitude - destination.Longitude)*(PI/DEG) / 2 ), 2);
+        distance = R * 2 * atan2(sqrt(a), sqrt(1-a));
+
+        RETURN distance;
+}
+
+CREATE QUERY EuclideanDistance(Vertex<Location> origin, Vertex<Location> destination) FOR GRAPH @graphname@ RETURNS (DOUBLE){ 
+	DOUBLE distance = 0.0;
+	distance = sqrt(  pow( (origin.Latitude - destination.Latitude), 2 ) + pow( origin.Longitude - destination.Longitude, 2) );
+	RETURN distance;
+}
+
+CREATE QUERY ManhattanDistance(Vertex<Location> origin, Vertex<Location> destination) FOR GRAPH @graphname@ RETURNS (DOUBLE){ 
+  	DOUBLE distance = 0.0;
+	
+	distance = abs(origin.Longitude - destination.Longitude) + abs( origin.Latitude - destination.Latitude);
+	
+	RETURN distance;
+}
+
+CREATE QUERY DijkstraExample(STRING origin) FOR GRAPH @graphname@ { 
+	/*Step 1 & 2: Mark everthiying as unvisited and set distance = -1*/
+	MinAccum<INT> @@minDistance;
+	MaxAccum<INT> @@maxDistance;
+  	OrAccum @visited=FALSE, @currentNode=FALSE;
+	SumAccum<INT> @distance = -1;
+	SetAccum<VERTEX> @@visitedSet;
+	SumAccum<STRING> @path;
+	
+	
+	/* Step 2: Select origin node and update accordingly */ 
+  	pickups = {Pickup.*};
+	currentVertex = SELECT p FROM pickups:p-(route:e)->Pickup:t 
+	                  WHERE p.id == origin 
+	                  ACCUM t.@distance = e.Distance, t.@path = p.id + "->", @@maxDistance += e.Distance 
+	                  POST-ACCUM p.@visited = TRUE, p.@distance = 0, p.@currentNode = TRUE, @@visitedSet += p;
+	
+	unvisitedSet = SELECT p FROM pickups:p WHERE p.@visited == FALSE;
+	choiceSet = unvisitedSet;
+
+	WHILE choiceSet.size() > 0 AND currentVertex.size() > 0 DO
+
+	  currentVertex = SELECT v FROM currentVertex:v ACCUM v.@visited = TRUE, v.@path = v.@path + v.id;
+	
+	  /*Step 3: Select unvisited neighbor with the lowest distance*/
+	  unvisitedNeighbors = SELECT n FROM currentVertex:v-(route:e)->Pickup:n
+	                     ACCUM 
+	                       IF n.@visited == FALSE THEN
+	                         IF n.@distance < 0 THEN
+	                           n.@distance = e.Distance + v.@distance,
+	                           n.@path += v.@path + "->"
+	                         ELSE IF e.Distance + v.@distance < n.@distance THEN
+	                            n.@distance = e.Distance + v.@distance,
+	                            n.@path = v.@path + "->"
+	                         END 
+	                       END;
+	
+	   choiceSet = unvisitedNeighbors UNION unvisitedSet;
+	
+	   choiceSet = SELECT n FROM choiceSet:n WHERE n.@visited == FALSE AND n.@distance > 0 ACCUM @@maxDistance += n.@distance;
+	   IF @@maxDistance < 0 THEN
+	      @@minDistance = 0;
+	   ELSE
+	     @@minDistance = @@maxDistance;
+	   END;
+	   choiceSet = SELECT n FROM choiceSet:n WHERE n.@visited == FALSE AND n.@distance > 0 ACCUM @@minDistance += n.@distance;
+	
+	   currentVertex = SELECT n FROM choiceSet:n WHERE n.@distance == @@minDistance AND n.@visited == FALSE LIMIT 1;
+
+	END;
+	
+  	#Give a nice name for the output
+	shortestPathResults = unvisitedSet;
+	PRINT shortestPathResults;
+}
+
+CREATE QUERY ClosenessCentralityExample() FOR GRAPH @graphname@ { 
+	SumAccum<DOUBLE> @ccScore;
+	AvgAccum @avgDistance;
+	AvgAccum @@avgCCScore;
+	MaxAccum<DOUBLE> @@maxScore;
+	MinAccum<DOUBLE> @@minScore;
+	SetAccum<VERTEX<Location>> @@organizationLocations;
+
+  	organizations = {Organization.*};
+	
+	#Score the individual vertices
+	orgLocations = SELECT l FROM organizations-( organizationLocatedAt:e )->Location:l 
+	               ACCUM @@organizationLocations += l
+	               POST-ACCUM 
+	                 FOREACH u IN @@organizationLocations DO
+	                    IF u != l THEN
+	                        l.@avgDistance += HaversineDistance(l, u)
+	                        #l.@avgDistance += EuclideanDistance(l, u)
+	                        #l.@avgDistance += ManhattanDistance(l, u)
+	                    END
+	                 END;
+
+	orgLocations = SELECT l FROM orgLocations:l ACCUM l.@ccScore = 1/l.@avgDistance POST-ACCUM @@maxScore += l.@ccScore, @@minScore += l.@ccScore, @@avgCCScore += l.@ccScore;
+
+	organizations = SELECT o FROM orgLocations:l-(:e)->Organization:o ACCUM o.@avgDistance = l.@avgDistance, o.@ccScore = l.@ccScore;
+	maxScore = SELECT o FROM organizations:o WHERE abs(o.@ccScore - @@maxScore) <= 0.00001;  
+	minScore = SELECT o FROM organizations:o WHERE abs(o.@ccScore - @@minScore) <= 0.00001;
+
+	PRINT organizations;
+	PRINT @@maxScore;
+	PRINT maxScore;
+	PRINT @@minScore;
+	PRINT minScore;
+}
+
+CREATE QUERY DegreeCentralityExample() FOR GRAPH @graphname@ { 
+	SetAccum<INT> @degreeCount;
+  	MapAccum<STRING, INT> @@providerDegreeMap;
+	patients = {Patient.*};
+	providers = {Provider.*};
+	
+	providersWithEdges = SELECT p FROM providers:p-( :e )->Any:v
+	ACCUM p.@degreeCount += p.outdegree(e.type), @@providerDegreeMap += (p.Name -> p.outdegree("providerVisit"));
+	
+	PRINT @@providerDegreeMap;
+}
+
+CREATE QUERY CalculatePatientAge(VERTEX<Patient> p) FOR GRAPH @graphname@ RETURNS (DOUBLE){ 
+	IF p.DateOfDeath == to_datetime("2999-12-31 00:00:00") THEN
+	  RETURN datetime_diff( now(), p.DateOfBirth ) / (60 * 60 * 24 * 365);
+	ELSE
+	  RETURN datetime_diff( p.DateOfDeath, p.DateOfBirth ) / (60 * 60 * 24 * 365);
+	END;
+}
+
+CREATE QUERY CosineSimilarityExample(VERTEX<Allergy> allergen) FOR GRAPH @graphname@ RETURNS (MapAccum<STRING, MapAccum<STRING, DOUBLE>>){
+	SumAccum<DOUBLE> @@normA, @normB, @aDotB;
+	SumAccum<DOUBLE> @age, @gender;
+	SumAccum<INT> @@ageA, @@genderA;
+	SetAccum<VERTEX<Patient>> @@patientSet;
+  	MapAccum<STRING, MapAccum<STRING, DOUBLE>> @@patientSimilarityMap;
+	
+	allergies = {allergen};
+
+	#Get all patients with the same allergies
+	allergyPatients = SELECT p FROM allergies:a-(patientAllergy:e)->Patient:p 
+	          ACCUM @@patientSet += p, 
+	                p.@age += CalculatePatientAge(p),
+	                IF p.Gender == "M" THEN
+	                  p.@gender += 25
+	                ELSE
+	                  p.@gender += -25
+	                END;
+	
+	PRINT allergyPatients;
+	
+
+	FOREACH p1 IN @@patientSet DO
+	
+	  	@@normA = 0.0;
+	  	@@ageA = 0;
+	  	@@genderA = 0.0;
+	  	patientA = SELECT p FROM allergyPatients:p
+	                    WHERE p == p1
+	                    POST-ACCUM 
+	                      @@normA += sqrt(  pow(p.@age, 2) + pow(p.@gender, 2) ),
+	                      @@ageA += p.@age,
+	                      @@genderA += p.@gender;
+	
+		patientBList = SELECT p FROM allergyPatients:p
+	                    WHERE p != p1
+	                    ACCUM 
+	                      p.@normB += sqrt(  pow(p.@age, 2) + pow(p.@gender, 2) ),
+	                      p.@aDotB += p.@age * @@ageA + p.@gender * @@genderA
+	                    POST-ACCUM  
+	                    @@patientSimilarityMap += ( p1.FirstName + " " + p1.LastName + ": Age:" + to_string(@@ageA) + " Sex:" + p1.Gender -> (
+							p.FirstName + " " + p.LastName + ": Age:" + to_string(p.@age) + " Sex:" + p.Gender -> p.@aDotB / ( @@normA * p.@normB ) 
+	                    ));
+	
+
+    		patientList = SELECT p FROM allergyPatients:p
+	                    ACCUM 
+	                      p.@normB = 0.0,
+	                      p.@aDotB = 0.0;
+	                   
+	END;
+	
+	PRINT @@patientSimilarityMap;
+	RETURN @@patientSimilarityMap;
+}
+
+CREATE QUERY JaccardSimilarityExample(STRING SSN) FOR GRAPH @graphname@ { 
+  	MapAccum<STRING, BagAccum<STRING>> @@attributes;
+	SetAccum<STRING> @attributeSet, @intersectSet, @unionSet, @@patientPrimeAttributeSet;
+	MapAccum<STRING, BagAccum<STRING>> @attributes;
+	ListAccum<DOUBLE> @patientAttributeScore, @patientPrimeAttributeScore;
+	SumAccum<DOUBLE> @score = 0;
+	MinAccum<DOUBLE> @@minRange, @@minRangeTop;
+	MaxAccum<DOUBLE> @@maxRange, @@maxRangeTop;
+	
+  	patientList = {Patient.*};
+		
+	#Get all attributes for 
+	similarPatients = SELECT 
+	                    p 
+	                  FROM patientList:p
+	                  ACCUM
+	                    p.@attributes += ("Age" -> to_string(CalculatePatientAge( p )) ),
+	                    p.@attributes += ( "Procedure" ->  p.neighborAttribute("hasProcedure","PatientProcedure","Code") ),
+	                    p.@attributes += ( "Medication" -> p.neighborAttribute("hasMedication","Medication","Code") ),
+	                    p.@attributes += ( "Immunization" -> p.neighborAttribute("hasImmunization","Immunization","Code") ),
+	                    p.@attributes += ( "Allergy" -> p.neighborAttribute("hasAllergy","Allergy","Code") )
+	                  POST-ACCUM	
+	                    FOREACH (key, list) IN p.@attributes DO
+	                      FOREACH item IN list DO
+	
+	                        p.@attributeSet += key + ":" + item,
+	        
+	                        IF p.SSN == SSN THEN
+	                          @@patientPrimeAttributeSet += key + ":" + item
+	                        END
+	
+	                      END
+	                    END;
+
+	
+	similarPatients =  SELECT 
+	         p 
+	       FROM similarPatients:p
+	       ACCUM
+	          p.@intersectSet = p.@attributeSet INTERSECT @@patientPrimeAttributeSet,
+	          p.@unionSet = p.@attributeSet UNION @@patientPrimeAttributeSet
+	       POST-ACCUM
+	          FOREACH item in p.@unionSet DO	
+	                  IF p.@attributeSet.contains(item) THEN
+	                      p.@patientAttributeScore += 1.0
+	                  ELSE
+	                      p.@patientAttributeScore += 0.0
+	                  END,
+	                  IF @@patientPrimeAttributeSet.contains(item) THEN
+	                      p.@patientPrimeAttributeScore += 1.0
+	                  ELSE
+	                      p.@patientPrimeAttributeScore += 0.0
+	                  END
+	          END,
+	          p.@score = (1.0 * p.@intersectSet.size()) / (1.0 * ( p.@attributeSet.size() + @@patientPrimeAttributeSet.size() - p.@intersectSet.size() ));
+	
+
+	#Find patient prime
+	patientPrime = SELECT
+	                  p
+	                FROM patientList:p 
+	                WHERE p.SSN == SSN
+	                POST-ACCUM
+	                  p.@patientAttributeScore.clear(),
+	                  p.@patientPrimeAttributeScore.clear();
+	
+	
+	topPatients =  SELECT 
+	                   p 
+	               FROM similarPatients:p
+	               WHERE p.SSN != SSN
+	               ACCUM
+		       	   @@minRange += p.@score,
+	                   @@maxRange += p.@score
+	               ORDER BY p.@score DESC
+	               LIMIT 10;
+	
+	topPatients =  SELECT 
+	                   p 
+	               FROM topPatients:p
+	               ACCUM
+	                   @@minRangeTop += p.@score,
+	                   @@maxRangeTop += p.@score
+	               POST-ACCUM
+	                   p.@patientAttributeScore.clear(),
+	                   p.@patientPrimeAttributeScore.clear();
+	  
+	PRINT patientPrime;
+	PRINT topPatients, @@minRange, @@maxRange, @@minRangeTop, @@maxRangeTop;
+}
+
+CREATE QUERY LabelPropagationExample(STRING zipsToCheck) FOR GRAPH @graphname@ {
+	INT counter = 0;
+	DOUBLE radiusThreshold = 25.0;
+	SumAccum<INT> @@labels = 1, @label = 0, @labelCount = 0;
+	MapAccum<INT, SumAccum<INT>> @neighborLabels;
+  	OrAccum @marked;
+	MapAccum<VERTEX<Patient>,VERTEX<Location>> @@patientsToCheck;
+	MapAccum<VERTEX<Patient>, SumAccum<INT>> @@patientLabels;
+	
+	zips = {Zip.*};
+	
+	addresses = SELECT a FROM zips:z-(zipHasAddress:e)->Address:a WHERE z.ZipCode LIKE zipsToCheck;
+	allPatients = SELECT p FROM addresses:a-(patientAddress:e)->Patient:p;
+	
+	
+	sourcePatients = SELECT p FROM allPatients:p LIMIT 5;
+	sourcePatients = SELECT 
+	                  p 
+	                FROM sourcePatients:p -(patientLocatedAt:e)->Location:l
+	                ACCUM @@patientsToCheck += (p -> l);
+	
+	/*First Phase Mark patients as sources*/
+	FOREACH (patient, location) IN @@patientsToCheck DO
+	    tmp = SELECT 
+	            p 
+	          FROM sourcePatients:p
+	          WHERE p == patient
+	          ACCUM @@patientLabels += ( p -> @@labels), @@labels += 1, p.@marked += TRUE;
+	END;
+	
+  	/*Second Phase iteratively mark patients within range of labeled patients*/
+	WHILE @@patientsToCheck.size() DO
+	  tmp = SELECT
+	          p
+	        FROM allPatients:p-(patientLocatedAt:e)->Location:l
+	        WHERE p.@marked == FALSE
+	        ACCUM
+	          FOREACH (patient, location) IN @@patientsToCheck DO
+	            IF HaversineDistance(l, location) < radiusThreshold THEN
+	                p.@neighborLabels += (@@patientLabels.get(patient) -> 1)
+	            END
+	          END
+	        POST-ACCUM
+	          FOREACH (label, labelCount) IN p.@neighborLabels DO
+	            IF labelCount >= p.@labelCount THEN
+	              p.@label = label,
+	              p.@labelCount = labelCount,
+	              p.@marked = TRUE
+	            END
+	          END;
+	
+	  @@patientsToCheck.clear();
+	  @@patientLabels.clear();
+	
+	
+	  tmp = SELECT
+	          p
+	        FROM tmp:p-(patientLocatedAt:e)->Location:l
+	        WHERE p.@marked == TRUE
+	        ACCUM @@patientsToCheck += (p -> l), @@patientLabels += (p -> p.@label);
+	
+	  counter = counter + 1;
+	END;
+  
+	PRINT allPatients;
+}
+
+CREATE QUERY OverlapSimilarityExample(STRING SSN) FOR GRAPH @graphname@ { 
+	MapAccum<STRING, BagAccum<STRING>> @@attributes;
+	SetAccum<STRING> @attributeSet, @intersectSet, @unionSet, @@patientPrimeAttributeSet;
+	MapAccum<STRING, BagAccum<STRING>> @attributes;
+	ListAccum<DOUBLE> @patientAttributeScore, @patientPrimeAttributeScore;
+	SumAccum<DOUBLE> @score = 0;
+	MinAccum<DOUBLE> @@minRange, @@minRangeTop;
+	MaxAccum<DOUBLE> @@maxRange, @@maxRangeTop;
+	
+  	patientList = {Patient.*};
+		
+	#Get all attributes for 
+	similarPatients = SELECT 
+	                    p 
+	                  FROM patientList:p
+	                  ACCUM
+	                    p.@attributes += ("Age" -> to_string(CalculatePatientAge( p )) ),
+	                    p.@attributes += ( "Procedure" ->  p.neighborAttribute("hasProcedure","PatientProcedure","Code") ),
+	                    p.@attributes += ( "Medication" -> p.neighborAttribute("hasMedication","Medication","Code") ),
+	                    p.@attributes += ( "Immunization" -> p.neighborAttribute("hasImmunization","Immunization","Code") ),
+	                    p.@attributes += ( "Allergy" -> p.neighborAttribute("hasAllergy","Allergy","Code") )
+	                  POST-ACCUM	
+	                    FOREACH (key, list) IN p.@attributes DO
+	                      FOREACH item IN list DO
+	
+	                        p.@attributeSet += key + ":" + item,
+	        
+	                        IF p.SSN == SSN THEN
+	                          @@patientPrimeAttributeSet += key + ":" + item
+	                        END
+	
+	                      END
+	                    END;
+
+	similarPatients =  SELECT 
+	         p 
+	       FROM similarPatients:p
+	       ACCUM
+	          p.@intersectSet = p.@attributeSet INTERSECT @@patientPrimeAttributeSet,
+	          p.@unionSet = p.@attributeSet UNION @@patientPrimeAttributeSet
+	       POST-ACCUM
+	          FOREACH item in p.@unionSet DO	
+	                  IF p.@attributeSet.contains(item) THEN
+	                    p.@patientAttributeScore += 1.0
+	                  ELSE
+	                    p.@patientAttributeScore += 0.0
+	                  END,
+	                  IF @@patientPrimeAttributeSet.contains(item) THEN
+	                    p.@patientPrimeAttributeScore += 1.0
+	                  ELSE
+	                    p.@patientPrimeAttributeScore += 0.0
+	                  END
+	          END,
+	          IF p.@intersectSet.size() <= @@patientPrimeAttributeSet.size() THEN
+	            p.@score = (1.0 * p.@intersectSet.size()) / ( @@patientPrimeAttributeSet.size() * 1.0)
+	          ELSE
+	            p.@score = (1.0 * p.@intersectSet.size() ) / ( p.@attributeSet.size() * 1.0) 
+            END;
+	
+
+	#Find patient prime
+	patientPrime = SELECT
+	                  p
+	                FROM patientList:p 
+	                WHERE p.SSN == SSN
+	                POST-ACCUM
+	                  p.@patientAttributeScore.clear(),
+	                  p.@patientPrimeAttributeScore.clear();
+	
+	
+	topPatients =  SELECT 
+	                   p 
+	                 FROM similarPatients:p
+	                 WHERE p.SSN != SSN
+	                ACCUM
+		                 @@minRange += p.@score,
+	                   @@maxRange += p.@score
+	                 ORDER BY p.@score DESC
+	                 LIMIT 10;
+	
+	 topPatients =  SELECT 
+	                   p 
+	                 FROM topPatients:p
+	                 ACCUM
+	                 @@minRangeTop += p.@score,
+	                 @@maxRangeTop += p.@score
+	                 POST-ACCUM
+	                    p.@patientAttributeScore.clear(),
+	                    p.@patientPrimeAttributeScore.clear();
+	  
+  	PRINT patientPrime;
+	PRINT topPatients, @@minRange, @@maxRange, @@minRangeTop, @@maxRangeTop;
+}
+
+INSTALL QUERY HaversineDistance
+
+INSTALL QUERY EuclideanDistance
+
+INSTALL QUERY ManhattanDistance
+
+INSTALL QUERY CalculatePatientAge
+
+INSTALL QUERY DijkstraExample
+
+INSTALL QUERY ClosenessCentralityExample
+
+INSTALL QUERY DegreeCentralityExample
+
+INSTALL QUERY CosineSimilarityExample
+
+INSTALL QUERY JaccardSimilarityExample
+
+INSTALL QUERY LabelPropagationExample
+
+INSTALL QUERY OverlapSimilarityExample

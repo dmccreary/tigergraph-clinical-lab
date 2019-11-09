@@ -1,8 +1,9 @@
+
 CREATE VERTEX Patient (
     PRIMARY_ID patient_id STRING,
     BirthDate STRING,
     DeathDate STRING,
-    SSN STRING STRING,
+    SSN STRING,
     DriverLicenseID STRING, 
     PassportID STRING, 
     PrefixName STRING, 
@@ -43,12 +44,27 @@ CREATE VERTEX Claim (
     diagnosis STRING,
     totalAmount FLOAT
     )
-/* TODO
-// CREATE VERTEX Claim ()
-// CREATE VERTEX Condition ()
-// CREATE VERTEX Encounter ()
+
+// START,STOP,PATIENT,ENCOUNTER,CODE,DESCRIPTION
+CREATE VERTEX Condition (
+    PRIMARY_ID condition_id STRING,
+    startDate STRING,
+    endDate STRING,
+    conditionCode STRING COMPRESSED,
+    description STRING
+)
+
+// ID,DATE,PATIENT,CODE,DESCRIPTION,REASONCODE,REASONDESCRIPTION
+CREATE VERTEX Encounter (
+    PRIMARY_ID encounterID,
+    encounterDate STRING,
+    encounterTypeCode STRING COMPRESSED,
+    
+)
 // CREATE VERTEX Immunization ()
 // CREATE VERTEX Medication ()
 // CREATE VERTEX Observations ()
 // CREATE VERTEX Procedures ()
 */
+
+CREATE GRAPH @graphname@ (Patient, Allergies, Careplan, Claim, 

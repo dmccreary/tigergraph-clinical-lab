@@ -1,0 +1,74 @@
+CREATE QUERY MinimumSpanningTreeExample(STRING origin) FOR GRAPH OptumExample {
+INT counter = 0;
+VERTEX targetVertex;
+EDGE minimumEdge;
+OrAccum @visited = FALSE;
+MinAccum<DOUBLE> @@minimumDistance;  
+SetAccum<EDGE> @@selectedEdgeSet;
+MapAccum<EDGE, DOUBLE> @edgeSetMap;
+SetAccum<VERTEX> @@visitedSet, @@unvisitedSet;
+
+pickups =  {Pickup.*};
+
+tmp = SELECT
+       p
+     FROM pickups:p-(:e)->:tgt
+     WHERE p.id == origin
+     ACCUM 
+       @@minimumDistance += e.Distance,
+       p.@edgeSetMap += (e -> e.Distance),
+       @@visitedSet += p
+     POST-ACCUM
+       FOREACH (pe, weight) IN p.@edgeSetMap DO
+         IF weight == @@minimumDistance THEN
+           minimumEdge = pe
+         END
+       END;
+
+@@selectedEdgeSet += minimumEdge;
+
+
+tmp = SELECT
+       p
+     FROM pickups:p-(:e)->:tgt
+     WHERE p NOT IN @@visitedSet
+     ACCUM @@unvisitedSet += p;
+
+WHILE @@unvisitedSet.size() > 0 AND counter < 10 DO
+   
+   @@minimumDistance = 100;
+   tmp = SELECT
+           p
+         FROM pickups:p-(:e)->:tgt
+         ACCUM
+           IF p IN @@visitedSet AND tgt IN @@unvisitedSet THEN
+             @@minimumDistance += e.Distance,
+             p.@edgeSetMap += (e -> e.Distance)
+           END
+         POST-ACCUM   
+         FOREACH (pe, weight) IN p.@edgeSetMap DO
+             IF weight == @@minimumDistance THEN
+               minimumEdge = pe
+             END
+       END;
+
+   tmp =  SELECT
+           p
+         FROM pickups:p-(:e)->:tgt
+         ACCUM
+           IF e == minimumEdge THEN
+               @@visitedSet += tgt,
+               targetVertex = tgt
+           END
+         POST-ACCUM
+           p.@edgeSetMap.clear();
+
+   @@selectedEdgeSet += minimumEdge;
+   @@unvisitedSet.remove(targetVertex);
+
+   counter = counter + 1;
+END;
+
+
+PRINT @@selectedEdgeSet, @@unvisitedSet, @@visitedSet;
+}
