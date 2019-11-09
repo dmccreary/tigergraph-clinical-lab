@@ -1,0 +1,40 @@
+USE GRAPH @graphname@
+
+DROP GRAPH @graphname@
+
+USE GLOBAL
+
+DROP EDGE plannedCare
+DROP EDGE carePlan
+
+DROP EDGE recommendedCarePlan 
+DROP EDGE recommendBy
+
+DROP EDGE carePlanType
+DROP EDGE typeOfCare
+
+DROP EDGE diagnosedWith 
+DROP EDGE diagnosedFor
+
+DROP EDGE diagnosedBy
+DROP EDGE diagnosed
+
+DROP EDGE examined
+DROP EDGE examinationFor
+
+DROP EDGE examiner
+DROP EDGE examinedBy
+
+DROP VERTEX Visit
+
+DROP VERTEX Diagnosis
+
+DROP VERTEX PatientCarePlan
+
+DROP VERTEX CarePlan
+
+DROP VERTEX Provider
+
+DROP VERTEX Organization
+
+DROP VERTEX Patient

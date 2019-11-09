@@ -1,0 +1,27 @@
+CREATE VERTEX Patient (PRIMARY_ID Id STRING, FirstName STRING, LastName STRING, Prefix STRING, Suffix STRING, MaidenName STRING, MaritalStatus STRING, Gender STRING, Race STRING, Ethinicity STRING, DateOfBirth DATETIME, DateOfDeath DATETIME DEFAULT "2999-12-31 00:00:00", SSN STRING, DL STRING, Passport STRING )
+
+CREATE GRAPH @graphname@(Patient)
+
+USE GRAPH @graphname@
+ 
+CREATE LOADING JOB loadPatients FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "Id","BIRTHDATE","DEATHDATE","SSN","DRIVERS","PASSPORT","PREFIX","FIRST","LAST","SUFFIX","MAIDEN","MARITAL","RACE","ETHNICITY","GENDER","BIRTHPLACE","ADDRESS","CITY","STATE","ZIP";
+  LOAD f TO VERTEX Patient VALUES($"Id", $"FIRST", $"LAST", $"PREFIX", $"SUFFIX", $"MAIDEN", $"MARITAL", $"GENDER", $"RACE", $"ETHNICITY", $"BIRTHDATE", $"DEATHDATE", $"SSN", $"DRIVERS", $"PASSPORT") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE QUERY PatientQueryExample(String gender) FOR GRAPH @graphname@ RETURNS (INT){
+  #Begin by initializing the set of all patients
+  patients = {Patient.*};
+  #Print the number of Patient Vertices
+  PRINT patients.size();
+  #Get the number of patients for the given gender
+  paramGenderPatients = SELECT p FROM patients:p WHERE patients.Gender == gender;
+  #Filter the list down to deceased patients of that gender
+  deceasedGenderPatients = SELECT p FROM paramGenderPatients:p WHERE p.DateOfDeath != to_datetime("2999-12-31 00:00:00");
+  PRINT deceasedGenderPatients.LastName + ", " + deceasedGenderPatients.FirstName + datetime_format(deceasedGenderPatients.DateOfDeath, " died on %m/%d/%Y at %H:%M:%S.");
+  #Return the number of deceased patients
+  RETURN deceasedGenderPatients.size();
+}
+
+INSTALL QUERY PatientQueryExample

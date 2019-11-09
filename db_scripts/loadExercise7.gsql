@@ -1,0 +1,436 @@
+CREATE VERTEX Patient (PRIMARY_ID Id STRING, FirstName STRING, LastName STRING, Prefix STRING, Suffix STRING, MaidenName STRING, MaritalStatus STRING, Gender STRING, Race STRING, Ethnicity STRING, DateOfBirth DATETIME, DateOfDeath DATETIME DEFAULT "2999-12-31 00:00:00", SSN STRING, DL STRING, Passport STRING )
+
+CREATE VERTEX Provider (PRIMARY_ID Id STRING, Name STRING, Gender STRING, Speciality STRING, Utilization INT)
+
+CREATE VERTEX Visit (PRIMARY_ID Id STRING, Code STRING, Description STRING, Started DATETIME, Stopped DATETIME, Cost DOUBLE) 
+
+CREATE VERTEX Allergy(PRIMARY_ID Id STRING, Code STRING, Description STRING)
+
+CREATE VERTEX CarePlan(PRIMARY_ID Id STRING, Code STRING, Description STRING, ReasonCode STRING, ReasonDescription STRING, Started DATETIME, Stopped DATETIME DEFAULT "2999-12-31 00:00:00")
+
+CREATE VERTEX Condition(PRIMARY_ID Id STRING, Code STRING, Description STRING)
+
+CREATE VERTEX ImagingStudy(PRIMARY_ID Id STRING, BodySiteCode STRING, BodySiteDesciption STRING, ModalityCode STRING, ModalityDesciption STRING, SOPCode STRING, SOPDescription STRING, ImagingDate DATETIME)
+
+CREATE VERTEX Immunization(PRIMARY_ID Id STRING, Code STRING, Description STRING, Cost DOUBLE)
+
+CREATE VERTEX Medication(PRIMARY_ID Id STRING, Code STRING, Description STRING, Cost DOUBLE, Dispense INT, TotalCost DOUBLE, ReasonCode STRING, ReasonDescription STRING)
+
+CREATE VERTEX Observation(PRIMARY_ID Id STRING, Code STRING, Desciption STRING)
+
+CREATE VERTEX Organization(PRIMARY_ID Id STRING, Name STRING, Utilization INT)
+
+CREATE VERTEX PatientProcedure(PRIMARY_ID Id STRING, Code STRING, Description STRING, Cost DOUBLE, ReasonCode STRING, ReasonDescription STRING)
+
+CREATE VERTEX Zip(PRIMARY_ID Id STRING, ZipCode STRING, Latitude DOUBLE, Longitude DOUBLE)
+
+CREATE VERTEX State(PRIMARY_ID Id STRING, Name STRING)
+
+CREATE VERTEX City(PRIMARY_ID Id STRING, Name STRING)
+
+CREATE VERTEX Address(PRIMARY_ID Id STRING, Name STRING)
+
+CREATE VERTEX Location(PRIMARY_ID Id STRING, Latitude DOUBLE, Longitude DOUBLE)
+
+CREATE DIRECTED EDGE patientVisit (FROM Patient, TO Visit) WITH REVERSE_EDGE = "patientSeen"
+
+CREATE DIRECTED EDGE providerVisit (FROM Provider, TO Visit) WITH REVERSE_EDGE = "providerSeen"
+
+CREATE DIRECTED EDGE hasAllergy (FROM Patient, TO Allergy, Started DATETIME, Stopped DATETIME DEFAULT "2999-12-31 00:00:00") WITH REVERSE_EDGE = "patientAllergy"
+
+CREATE DIRECTED EDGE hasCarePlan (FROM Patient, TO CarePlan) WITH REVERSE_EDGE = "patientCarePlan"
+
+CREATE DIRECTED EDGE hasCondition (FROM Patient, TO Condition, Started DATETIME, Stopped DATETIME DEFAULT "2999-12-31 00:00:00") WITH REVERSE_EDGE = "patientCondition"
+
+CREATE DIRECTED EDGE hasImagingStudy (FROM Patient, TO ImagingStudy, Performed DATETIME) WITH REVERSE_EDGE = "patientImagingStudy"
+
+CREATE DIRECTED EDGE hasImmunization (FROM Patient, TO Immunization, Performed DATETIME) WITH REVERSE_EDGE = "patientImmunization"
+
+CREATE DIRECTED EDGE hasMedication (FROM Patient, TO Medication, Started DATETIME, Stopped DATETIME DEFAULT "2999-12-31 00:00:00") WITH REVERSE_EDGE = "patientMedication"
+
+CREATE DIRECTED EDGE hasObservation (FROM Patient, TO Observation, Performed DATETIME, Measurement STRING, Units STRING, ValueType STRING) WITH REVERSE_EDGE = "patientObservation"
+
+CREATE DIRECTED EDGE hasProcedure (FROM Patient, TO PatientProcedure, Performed DATETIME) WITH REVERSE_EDGE = "patientProcedure"
+
+CREATE DIRECTED EDGE worksAt (FROM Provider, TO Organization) WITH REVERSE_EDGE = "employs"
+
+CREATE DIRECTED EDGE zipInState (FROM Zip, TO State) WITH REVERSE_EDGE = "stateHasZip"
+
+CREATE DIRECTED EDGE zipInCity (FROM Zip, TO City) WITH REVERSE_EDGE = "cityHasZip"
+
+CREATE DIRECTED EDGE cityInState (FROM City, TO State) WITH REVERSE_EDGE = "stateHasCity"
+
+CREATE DIRECTED EDGE addressInZip (FROM Address, TO Zip) WITH REVERSE_EDGE = "zipHasAddress"
+
+CREATE DIRECTED EDGE residesAt (FROM Patient, TO Address) WITH REVERSE_EDGE = "patientAddress"
+
+CREATE DIRECTED EDGE foundAt ( FROM Organization, TO Address) WITH REVERSE_EDGE = "organizationAddress"
+
+CREATE DIRECTED EDGE patientLocatedAt (FROM Patient, TO Location) WITH REVERSE_EDGE = "patientLocation"
+
+CREATE DIRECTED EDGE organizationLocatedAt (FROM Organization, TO Location) WITH REVERSE_EDGE = "organizationLocation"
+
+CREATE GRAPH @graphname@(Patient, Provider, Visit, Allergy, CarePlan, Condition, ImagingStudy, Immunization, Medication, Observation, Organization, PatientProcedure, Zip, State, City, Address, Location, patientVisit, providerVisit, hasAllergy, hasCarePlan, hasCondition, hasImagingStudy, hasImmunization, hasMedication, hasObservation, hasProcedure, worksAt,
+zipInState, zipInCity, cityInState, addressInZip, residesAt, foundAt, patientLocatedAt, organizationLocatedAt)
+
+USE GRAPH @graphname@
+ 
+CREATE LOADING JOB loadPatients FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "Id","BIRTHDATE","DEATHDATE","SSN","DRIVERS","PASSPORT","PREFIX","FIRST","LAST","SUFFIX","MAIDEN","MARITAL","RACE","ETHNICITY","GENDER","BIRTHPLACE","ADDRESS","CITY","STATE","ZIP";
+  LOAD f TO VERTEX Patient VALUES($"Id", $"FIRST", $"LAST", $"PREFIX", $"SUFFIX", $"MAIDEN", $"MARITAL", $"GENDER", $"RACE", $"ETHNICITY", $"BIRTHDATE", $"DEATHDATE", $"SSN", $"DRIVERS", $"PASSPORT") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadProviders FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "Id","ORGANIZATION","NAME","GENDER","SPECIALITY","ADDRESS","CITY","STATE","ZIP","UTILIZATION";
+  LOAD f TO VERTEX Provider VALUES($"Id", $"NAME", $"GENDER", $"SPECIALITY", $"UTILIZATION") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge worksAt VALUES( $"Id", $"ORGANIZATION" ) USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadVisits FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "Id","START","STOP","PATIENT","PROVIDER","ENCOUNTERCLASS","CODE","DESCRIPTION","COST","REASONCODE","REASONDESCRIPTION";
+  LOAD f TO VERTEX Visit VALUES($"Id", $"CODE", $"DESCRIPTION", $"START", $"STOP", $"COST") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge patientVisit VALUES( $"PATIENT", $"Id" ) USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+  LOAD f to Edge providerVisit VALUES( $"PROVIDER", $"Id" ) USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadAllergies FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "START", "STOP", "PATIENT", "ENCOUNTER", "CODE", "DESCRIPTION";
+  LOAD f TO VERTEX Allergy VALUES($"CODE", $"CODE", $"DESCRIPTION") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge hasAllergy VALUES( $"PATIENT", $"CODE", $"START", $"STOP" ) USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadCarePlans FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "Id", "START", "STOP", "PATIENT", "ENCOUNTER", "CODE", "DESCRIPTION", "REASONCODE", "REASONDESCRIPTION";
+  LOAD f TO VERTEX CarePlan VALUES($"Id", $"CODE", $"DESCRIPTION", $"REASONCODE", $"REASONDESCRIPTION", $"START", $"STOP") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge hasCarePlan VALUES( $"PATIENT", $"Id") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadConditions FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "START", "STOP", "PATIENT", "ENCOUNTER", "CODE", "DESCRIPTION";
+  LOAD f TO VERTEX Condition VALUES($"CODE", $"CODE", $"DESCRIPTION") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge hasCondition VALUES( $"PATIENT", $"CODE", $"START", $"STOP" ) USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadImagingStudies FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "Id", "DATE", "PATIENT", "ENCOUNTER", "BODYSITE_CODE", "BODYSITE_DESCRIPTION", "MODALITY_CODE", "MODALITY_DESCRIPTION", "SOP_CODE", "SOP_DESCRIPTION";
+  LOAD f TO VERTEX ImagingStudy VALUES($"Id", $"BODYSITE_CODE", $"BODYSITE_DESCRIPTION", $"MODALITY_CODE", $"MODALITY_DESCRIPTION", $"SOP_CODE", $"SOP_DESCRIPTION", $"DATE") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge hasImagingStudy VALUES( $"PATIENT", $"Id", $"DATE") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadImmunizations FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "DATE", "PATIENT", "ENCOUNTER", "CODE", "DESCRIPTION", "COST";
+  LOAD f TO VERTEX Immunization VALUES($"CODE", $"CODE", $"DESCRIPTION", $"COST") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge hasImmunization VALUES( $"PATIENT", $"CODE", $"DATE") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadMedications FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "START", "STOP", "PATIENT", "ENCOUNTER", "CODE", "DESCRIPTION", "COST", "DISPENSES", "TOTALCOST", "REASONCODE", "REASONDESCRIPTION";
+  LOAD f TO VERTEX Medication VALUES($"CODE", $"CODE", $"DESCRIPTION", $"COST", $"DISPENSES", $"TOTALCOST", $"REASONCODE", $"REASONDESCRIPTION") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge hasMedication VALUES( $"PATIENT", $"CODE", $"START", $"STOP") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadObservations FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "DATE", "PATIENT", "ENCOUNTER", "CODE", "DESCRIPTION", "VALUE", "UNITS", "TYPE";
+  LOAD f TO VERTEX Observation VALUES($"CODE", $"CODE", $"DESCRIPTION") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge hasObservation VALUES( $"PATIENT", $"CODE", $"DATE", $"VALUE", $"UNITS", $"TYPE") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadProcedures FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "DATE", "PATIENT", "ENCOUNTER", "CODE", "DESCRIPTION", "COST", "REASONCODE", "REASONDESCRIPTION";
+  LOAD f TO VERTEX PatientProcedure VALUES($"CODE", $"CODE", $"DESCRIPTION", $"COST", $"REASONCODE", $"REASONDESCRIPTION") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge hasProcedure VALUES( $"PATIENT", $"CODE", $"DATE") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadOrganizations FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "Id", "NAME", "ADDRESS", "CITY", "STATE", "ZIP", "PHONE", "UTILIZATION";
+  LOAD f TO VERTEX Organization VALUES($"Id", $"NAME", $"UTILIZATION") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadGeospatial FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "ZIP", "CITY", "STATE", "STATE_ABBR", "COUNTY", "COUNTRY", "LATITUDE", "LONGITUDE", "ACCURACY";
+  LOAD f TO VERTEX State VALUES($"STATE", $"STATE") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+  LOAD f TO VERTEX City VALUES($"CITY", $"CITY") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+  LOAD f TO VERTEX Zip VALUES($"ZIP", $"ZIP", $"LATITUDE", $"LONGITUDE") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f TO EDGE zipInCity VALUES($"ZIP", $"CITY") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+  LOAD f TO EDGE zipInState VALUES($"ZIP", $"STATE") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+  LOAD f TO EDGE cityInState VALUES($"CITY", $"STATE") USING USER_DEFINED_HEADER="h", SEPARATOR=","; 
+}
+
+CREATE LOADING JOB loadLocations FOR GRAPH @graphname@ {
+  DEFINE FILENAME p;
+  DEFINE FILENAME o;
+  DEFINE HEADER hp = "Id", "PATIENT", "LATITUDE", "LONGITUDE";
+  DEFINE HEADER ho = "Id", "ORGANIZATION", "LATITUDE", "LONGITUDE";
+
+  LOAD p TO VERTEX Location VALUES($"Id", $"LATITUDE", $"LONGITUDE") USING USER_DEFINED_HEADER="hp", SEPARATOR=",";
+  LOAD p TO EDGE patientLocatedAt VALUES($"PATIENT", $"Id") USING USER_DEFINED_HEADER="hp", SEPARATOR=",";
+
+  LOAD o TO VERTEX Location VALUES($"Id", $"LATITUDE", $"LONGITUDE") USING USER_DEFINED_HEADER="ho", SEPARATOR=",";
+  LOAD o TO EDGE organizationLocatedAt VALUES($"ORGANIZATION", $"Id") USING USER_DEFINED_HEADER="ho", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadAddresses FOR GRAPH @graphname@ {
+  DEFINE FILENAME p;
+  DEFINE FILENAME o;
+  DEFINE HEADER hp = "Id", "BIRTHDATE", "DEATHDATE", "SSN", "DRIVERS", "PASSPORT", "PREFIX", "FIRST", "LAST", "SUFFIX", "MAIDEN", "MARITAL", "RACE", "ETHNICITY", "GENDER", "BIRTHPLACE", "ADDRESS", "CITY", "STATE", "ZIP";
+  DEFINE HEADER ho = "Id", "NAME", "ADDRESS", "CITY", "STATE", "ZIP", "PHONE", "UTILIZATION";
+
+  LOAD p TO VERTEX Address VALUES($"ADDRESS", $"ADDRESS") USING USER_DEFINED_HEADER="hp", SEPARATOR=",";
+  LOAD p TO EDGE residesAt VALUES($"Id", $"ADDRESS") USING USER_DEFINED_HEADER="hp", SEPARATOR=",";
+  LOAD p TO EDGE addressInZip VALUES($"ADDRESS", $"ZIP") USING USER_DEFINED_HEADER="hp", SEPARATOR=",";
+
+  LOAD o TO VERTEX Address VALUES($"ADDRESS", $"ADDRESS") USING USER_DEFINED_HEADER="ho", SEPARATOR=",";
+  LOAD o TO EDGE foundAt VALUES($"Id", $"ADDRESS") USING USER_DEFINED_HEADER="ho", SEPARATOR=",";
+  LOAD o TO EDGE addressInZip VALUES($"ADDRESS", "$ZIP") USING USER_DEFINED_HEADER="ho", SEPARATOR=",";
+}
+
+CREATE QUERY PatientQueryExample(String gender) FOR GRAPH @graphname@ RETURNS (INT){
+  #Begin by initializing the set of all patients
+  patients = {Patient.*};
+  #Print the number of Patient Vertices
+  PRINT patients.size();
+  #Get the number of patients for the given gender
+  paramGenderPatients = SELECT p FROM patients:p WHERE patients.Gender == gender;
+  #Filter the list down to deceased patients of that gender
+  deceasedGenderPatients = SELECT p FROM paramGenderPatients:p WHERE p.DateOfDeath != to_datetime("2999-12-31 00:00:00");
+  PRINT deceasedGenderPatients.LastName + ", " + deceasedGenderPatients.FirstName + datetime_format(deceasedGenderPatients.DateOfDeath, " died on %m/%d/%Y at %H:%M:%S.");
+  #Return the number of deceased patients
+  RETURN deceasedGenderPatients.size();
+}
+
+CREATE QUERY PatientsWhoseLastNameBeginsWithL() FOR GRAPH @graphname@{
+  #Begin by initializing the set of all patients
+  patientList = {Patient.*};
+  filteredPatientList = SELECT p FROM patientList:p WHERE upper(p.LastName) LIKE "L%";
+  PRINT filteredPatientList.size();
+}
+
+CREATE QUERY PatientVisitsByDate(DATETIME dateToCheck) FOR GRAPH @graphname@{ 
+	visits = {Visit.*};
+	patients = SELECT 
+	               p 
+	           FROM visits -(patientSeen:e)-> Patient:p 
+	           WHERE year(visits.Started) == year(dateToCheck) 
+	           AND month(visits.Started) == month(dateToCheck) 
+	           AND day(visits.Started) == day(dateToCheck);
+	PRINT "There were " + to_string(patients.size()) + datetime_format(dateToCheck, " visits on %m/%d/%Y.");
+	PRINT patients.FirstName + " " + patients.LastName + datetime_format(dateToCheck, "had a visit on %m/%d/%Y.");
+}
+
+CREATE QUERY PatientVisitsByProvider(STRING providerName) FOR GRAPH @graphname@ {
+  #Define an accumulator
+  SetAccum<VERTEX<Patient>> @@patientList;
+  MapAccum<VERTEX<Patient>, INT> @@patientVisits;
+  #Start with Provider
+  providers = {Provider.*};
+  #Find all visits for that Provider
+  visits = SELECT 
+	      v 
+	   FROM providers:p-(providerVisit:e)->Visit:v
+           WHERE p.Name == providerName;
+  #Display how many total visits that provider had
+  PRINT visits.size();
+  #Accumulate a set of patients, declaring as set will not permit duplicates
+  patients = SELECT 
+	            p 
+	     FROM visits:v-(patientSeen:e)->Patient:p
+	     ACCUM  @@patientList += p, @@patientVisits += ( p -> 1);
+   #Iterate through set printing out relevant information 
+   FOREACH patient in @@patientList DO
+     PRINT patient.FirstName + " " + patient.LastName + " had " + to_string(  @@patientVisits.get(patient) ) + " visits.";
+   END;
+}
+
+CREATE QUERY VertexDegreeExample(INT upperbound) FOR GRAPH @graphname@ { 
+	GroupByAccum<VERTEX<Patient> p, STRING name, SumAccum<INT> visitCount> @@patientVisit;
+	MinAccum<INT> @@fewestVisits;
+	MaxAccum<INT> @@mostVisits;
+	AvgAccum @@avgVisits;
+	
+  patients = {Patient.*};
+  tmp = SELECT
+	        p 
+       FROM patients:p - (patientVisit:e) -> Visit:v
+       ACCUM @@patientVisit += (p, p.FirstName + " " + p.LastName -> p.outdegree()),
+	           @@fewestVisits += p.outdegree(),
+	           @@mostVisits += p.outdegree(),
+	           @@avgVisits += p.outdegree();
+  
+	FOREACH patient IN @@patientVisit DO
+	   PRINT patient.name + " had " + to_string(patient.visitCount) + " visits.";
+	END;
+	
+	FOREACH patient IN @@patientVisit DO
+	   IF patient.visitCount <= upperbound THEN 
+	      PRINT patient.name + " had " + to_string(patient.visitCount) + " visits.";
+	   END;
+	END;
+	
+	PRINT "Most Visits:" + to_string(@@mostVisits) + 
+	      " Fewest Visits:" + to_string(@@fewestVisits) + 
+	      " Avg Visits:" + to_string(@@avgVisits);
+}
+
+CREATE QUERY PatientWithVisitsBetween(INT lowerbound, INT upperbound) FOR GRAPH @graphname@ { 
+  GroupByAccum<VERTEX<Patient> p, STRING name, SumAccum<INT> visitCount> @@patientVisit;
+  INT patientsMatchingCriteria = 0;
+	
+  patients = {Patient.*};
+  tmp = SELECT
+                p
+        FROM patients:p - (patientVisit:e) -> Visit:v
+        ACCUM @@patientVisit += (p, p.FirstName + " " + p.LastName -> p.outdegree());
+
+        FOREACH patient IN @@patientVisit DO
+           IF lowerbound <= patient.visitCount AND patient.visitCount <= upperbound THEN
+              PRINT patient.name + " had " + to_string(patient.visitCount) + " visits.";
+	            patientsMatchingCriteria = patientsMatchingCriteria + 1;
+           END;
+        END;
+	
+	     PRINT "There were " + to_string(patientsMatchingCriteria) + " patients having " + to_string(lowerbound) + " to " + to_string(upperbound) + " visits.";
+}
+
+CREATE QUERY HaversineDistance(Vertex<Location> origin, Vertex<Location> destination) FOR GRAPH OptumExample RETURNS (DOUBLE){ 
+	DOUBLE a;
+	DOUBLE PI = 3.14159; #PI
+	DOUBLE DEG = 180.0; 
+	DOUBLE R = 3961.0;  #Radius of the Earth in miles 
+	DOUBLE distance;
+	
+	a = pow( sin( (origin.Latitude - destination.Latitude) * (PI/DEG) / 2.0), 2) 
+	  + cos(origin.Latitude * (PI/DEG)) * cos(destination.Latitude * (PI/DEG)) 
+	  * pow( sin( (origin.Longitude - destination.Longitude)*(PI/DEG) / 2 ), 2);
+	distance = R * 2 * atan2(sqrt(a), sqrt(1-a));
+ 	
+	RETURN distance;
+}
+
+CREATE QUERY PatientsWithinDistanceOfOrganization(STRING nameOfOrganization, DOUBLE withinDistance) FOR GRAPH @graphname@ {
+        SetAccum<VERTEX<Patient>> @@patientsWithinDistance;
+	SetAccum<VERTEX<Patient>> @@patientKeySet;
+	SetAccum<VERTEX<Provider>> @@providersAtOrg;
+	SetAccum<VERTEX<Location>> @@orgLocations;
+	MapAccum<VERTEX<Patient>, DOUBLE> @@patientDistances;
+	SetAccum<VERTEX<Location>> @@locationList;
+	
+	orgList = {Organization.*};
+	org = SELECT 
+	         o 
+	      FROM orgList:o-(employs:e)->Provider:p 
+	      WHERE orgList.Name == nameOfOrganization
+	      ACCUM @@providersAtOrg += p;
+	PRINT org;
+	
+	orgLocation = SELECT l FROM org:o-(organizationLocatedAt:e)->Location:l ACCUM @@orgLocations += l;
+	FOREACH location IN @@orgLocations DO
+	PRINT location;
+	      providerSet = @@providersAtOrg;
+	      visitList = SELECT v FROM providerSet:p-(providerVisit:e)->Visit:v;
+	      patientList = SELECT pa FROM visitList:v-(patientSeen:e)->Patient:pa;
+	      patientLocationList = SELECT l FROM patientList:pa-(patientLocatedAt:e)->Location:l ACCUM @@patientDistances += (pa -> HaversineDistance( location , l) ), @@patientKeySet += pa, @@locationList += l;
+	END;
+	
+	FOREACH patient IN @@patientKeySet DO
+	     IF @@patientDistances.get(patient) <= withinDistance THEN
+	         @@patientsWithinDistance += patient;
+	     END;
+	END;
+	
+	FOREACH patient IN @@patientsWithinDistance DO
+           PRINT patient.FirstName + " " + patient.LastName + " is located " + to_string(@@patientDistances.get(patient)) + " miles from " + nameOfOrganization;
+	END;
+	PRINT @@patientsWithinDistance;
+}
+
+CREATE QUERY PatientLastNameRMinMaxDistance() FOR GRAPH @graphname@ {
+	SetAccum<VERTEX<Location>> @@orgLocations;
+	SetAccum<VERTEX<Location>> @@patientLocations;
+	MinAccum<DOUBLE> @@minDistance;
+	MaxAccum<DOUBLE> @@maxDistance;
+	
+  orgs = {Organization.*};
+	organizationLocationList = SELECT l FROM orgs:o-(organizationLocatedAt)->Location:l ACCUM @@orgLocations += l;
+	patients = {Patient.*};
+	patientLocationList = SELECT l FROM patients:p-(patientLocatedAt)->Location:l 
+	                      WHERE upper(p.FirstName) LIKE "R%" ACCUM @@patientLocations += l;
+	
+	PRINT patientLocationList;
+	
+	FOREACH orgLocation IN @@orgLocations DO
+     patientList = SELECT l FROM patientLocationList:l 
+	         ACCUM @@minDistance += HaversineDistance(l, orgLocation), 
+	               @@maxDistance += HaversineDistance(l, orgLocation);
+	END;
+	
+	PRINT "Minimum distance between Patient and Organization " + to_string(@@minDistance);
+	PRINT "Maximum distance between Patient and Organization " + to_string(@@maxDistance);
+}
+
+CREATE QUERY Exercise6Query() FOR GRAPH @graphname@ {
+  MapAccum<STRING, VERTEX<Location>> @@patientLocationMap;
+	MapAccum<STRING, VERTEX<Location>> @@organizationLocationMap;
+	
+  patients = {Patient.*};
+	organizations = {Organization.*};
+	
+	patientList = SELECT p FROM patients:p-( patientLocatedAt:e )->Location:l 
+	              WHERE p.FirstName + " " + p.LastName IN ("Leslie90 Ritchie586", "Kendall673 Kuhic920", "Siobhan540 Konopelski743") 
+	              ACCUM @@patientLocationMap +=  ( p.FirstName + " " + p.LastName -> l ) ;
+	PRINT patientList;
+	
+	organizationList =  SELECT l FROM organizations:o-( organizationLocatedAt:e)->Location:l 
+	                    WHERE o.Name == upper("Newton-Wellesley Hospital") 
+	                    ACCUM @@organizationLocationMap += (o.Name -> l);
+	PRINT organizationList;
+	
+	FOREACH (patient, pLocation) IN @@patientLocationMap DO
+	  FOREACH (organization, oLocation) IN @@organizationLocationMap DO
+	      PRINT "Patient " + patient + " is " + to_string(HaversineDistance( @@patientLocationMap.get(patient), @@organizationLocationMap.get(organization) ) ) + " miles away from " + organization + ".";
+	  END;
+	END;
+}
+
+INSTALL QUERY PatientQueryExample
+
+INSTALL QUERY PatientsWhoseLastNameBeginsWithL
+
+INSTALL QUERY PatientVisitsByDate
+
+INSTALL QUERY PatientVisitsByProvider
+
+INSTALL QUERY VertexDegreeExample
+
+INSTALL QUERY PatientWithVisitsBetween
+
+INSTALL QUERY HaversineDistance
+
+INSTALL QUERY PatientsWithinDistanceOfOrganization
+
+INSTALL QUERY PatientLastNameRMinMaxDistance
+
+INSTALL QUERY Exercise6Query

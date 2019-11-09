@@ -1,0 +1,105 @@
+CREATE VERTEX Patient (PRIMARY_ID Id STRING, FirstName STRING, LastName STRING, Prefix STRING, Suffix STRING, MaidenName STRING, MaritalStatus STRING, Gender STRING, Race STRING, Ethnicity STRING, DateOfBirth DATETIME, DateOfDeath DATETIME DEFAULT "2999-12-31 00:00:00", SSN STRING, DL STRING, Passport STRING )
+
+CREATE VERTEX Provider (PRIMARY_ID Id STRING, Name STRING, Gender STRING, Speciality STRING, Utilization INT)
+
+CREATE VERTEX Visit (PRIMARY_ID Id STRING, Code STRING, Description STRING, Started DATETIME, Stopped DATETIME, Cost DOUBLE) 
+
+CREATE DIRECTED EDGE patientVisit (FROM Patient, TO Visit) WITH REVERSE_EDGE = "patientSeen"
+
+CREATE DIRECTED EDGE providerVisit (FROM Provider, TO Visit) WITH REVERSE_EDGE = "providerSeen"
+
+CREATE GRAPH @graphname@(Patient, Provider, Visit, patientVisit, providerVisit)
+
+USE GRAPH @graphname@
+ 
+CREATE LOADING JOB loadPatients FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "Id","BIRTHDATE","DEATHDATE","SSN","DRIVERS","PASSPORT","PREFIX","FIRST","LAST","SUFFIX","MAIDEN","MARITAL","RACE","ETHNICITY","GENDER","BIRTHPLACE","ADDRESS","CITY","STATE","ZIP";
+  LOAD f TO VERTEX Patient VALUES($"Id", $"FIRST", $"LAST", $"PREFIX", $"SUFFIX", $"MAIDEN", $"MARITAL", $"GENDER", $"RACE", $"ETHNICITY", $"BIRTHDATE", $"DEATHDATE", $"SSN", $"DRIVERS", $"PASSPORT") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadProviders FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "Id","ORGANIZATION","NAME","GENDER","SPECIALITY","ADDRESS","CITY","STATE","ZIP","UTILIZATION";
+  LOAD f TO VERTEX Provider VALUES($"Id", $"NAME", $"GENDER", $"SPECIALITY", $"UTILIZATION") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE LOADING JOB loadVisits FOR GRAPH @graphname@ {
+  DEFINE FILENAME f;
+  DEFINE HEADER h = "Id","START","STOP","PATIENT","PROVIDER","ENCOUNTERCLASS","CODE","DESCRIPTION","COST","REASONCODE","REASONDESCRIPTION";
+  LOAD f TO VERTEX Visit VALUES($"Id", $"CODE", $"DESCRIPTION", $"START", $"STOP", $"COST") USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+
+  LOAD f to Edge patientVisit VALUES( $"PATIENT", $"Id" ) USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+  LOAD f to Edge providerVisit VALUES( $"PROVIDER", $"Id" ) USING USER_DEFINED_HEADER="h", SEPARATOR=",";
+}
+
+CREATE QUERY Exercise3Answers() FOR GRAPH @graphname@ { 
+  
+	/* Initialize Set*/ 
+  patients = {Patient.*};
+	
+	/*How many patient vertices are there?*/
+	PRINT patients.size();
+	
+	/*What is the name of the patient with SSN, “999-37-6355”?*/
+	tmp = SELECT p FROM patients:p WHERE p.SSN == "999-37-6355";
+	PRINT "What is the name of the patient with SSN, 999-37-6355'? " + tmp.FirstName + " " + tmp.LastName;
+	
+	/*What is the ethnicity of the patient with passport, “X55997743X”?*/
+	tmp = SELECT p FROM patients:p WHERE p.Passport == "X55997743X";
+	PRINT "What is the ethnicity of the patient with passport, 'X55997743X'?" + tmp.Ethnicity;
+	
+	/*What is the date of birth of the patient with DL, “S99915145”?*/
+	tmp = SELECT p FROM patients:p WHERE p.DL == "S99915145";
+	PRINT "What is the date of birth of the patient with DL, 'S99915145'?" + datetime_format(tmp.DateOfBirth, "%m/%d/%Y");
+}
+
+CREATE QUERY PatientQueryExample(String gender) FOR GRAPH @graphname@ RETURNS (INT){
+  #Begin by initializing the set of all patients
+  patients = {Patient.*};
+  #Print the number of Patient Vertices
+  PRINT patients.size();
+  #Get the number of patients for the given gender
+  paramGenderPatients = SELECT p FROM patients:p WHERE patients.Gender == gender;
+  #Filter the list down to deceased patients of that gender
+  deceasedGenderPatients = SELECT p FROM paramGenderPatients:p WHERE p.DateOfDeath != to_datetime("2999-12-31 00:00:00");
+  PRINT deceasedGenderPatients.LastName + ", " + deceasedGenderPatients.FirstName + datetime_format(deceasedGenderPatients.DateOfDeath, " died on %m/%d/%Y at %H:%M:%S.");
+  #Return the number of deceased patients
+  RETURN deceasedGenderPatients.size();
+}
+
+CREATE QUERY VertexDegreeExample(INT upperbound) FOR GRAPH @graphname@ { 
+	GroupByAccum<VERTEX<Patient> p, STRING name, SumAccum<INT> visitCount> @@patientVisit;
+	MinAccum<INT> @@fewestVisits;
+	MaxAccum<INT> @@mostVisits;
+	AvgAccum @@avgVisits;
+	
+        patients = {Patient.*};
+        tmp = SELECT
+	        p 
+        FROM patients:p - (patientVisit:e) -> Visit:v
+        ACCUM @@patientVisit += (p, p.FirstName + " " + p.LastName -> p.outdegree(e.type)),
+	           @@fewestVisits += p.outdegree(e.type),
+	           @@mostVisits += p.outdegree(e.type),
+	           @@avgVisits += p.outdegree(e.type);
+  
+	FOREACH patient IN @@patientVisit DO
+	   PRINT patient.name + " had " + to_string(patient.visitCount) + " visits.";
+	END;
+	
+	FOREACH patient IN @@patientVisit DO
+	   IF patient.visitCount <= upperbound THEN 
+	      PRINT patient.name + " had " + to_string(patient.visitCount) + " visits.";
+	   END;
+	END;
+	
+	PRINT "Most Visits:" + to_string(@@mostVisits) + 
+	      " Fewest Visits:" + to_string(@@fewestVisits) + 
+	      " Avg Visits:" + to_string(@@avgVisits);
+}
+
+INSTALL QUERY PatientQueryExample
+
+INSTALL QUERY VertexDegreeExample
+
+INSTALL QUERY Exercise3Answers
