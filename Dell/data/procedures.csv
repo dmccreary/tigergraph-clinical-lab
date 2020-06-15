@@ -1,0 +1,1000 @@
+DATE,PATIENT,ENCOUNTER,CODE,DESCRIPTION,BASE_COST,REASONCODE,REASONDESCRIPTION
+2010-10-08T11:16:47Z,7bfa80c7-55f7-4e8f-9be9-304f30ec45a3,0024e570-e690-414f-9966-0464759d095f,430193006,Medication Reconciliation (procedure),815.96,,
+2013-07-01T11:16:47Z,7bfa80c7-55f7-4e8f-9be9-304f30ec45a3,f9c082a9-13bc-4a5c-9ff6-19e76fce288b,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2013-10-25T11:16:47Z,7bfa80c7-55f7-4e8f-9be9-304f30ec45a3,1ff13b0e-a794-4cab-84eb-43ced9e0dfd1,430193006,Medication Reconciliation (procedure),376.43,,
+2014-05-16T11:16:47Z,7bfa80c7-55f7-4e8f-9be9-304f30ec45a3,8ca11eaf-3cfb-4830-8b92-75f74e12bf09,430193006,Medication Reconciliation (procedure),793.37,,
+2014-10-31T11:16:47Z,7bfa80c7-55f7-4e8f-9be9-304f30ec45a3,159ab7c7-2541-47c6-b778-1f05da214836,430193006,Medication Reconciliation (procedure),586.87,,
+2015-11-06T11:16:47Z,7bfa80c7-55f7-4e8f-9be9-304f30ec45a3,e108e71b-35fd-480d-8d93-7d86b1c34bec,430193006,Medication Reconciliation (procedure),932.71,,
+2016-05-10T11:16:47Z,7bfa80c7-55f7-4e8f-9be9-304f30ec45a3,65a06f0f-5f13-4c1f-9a6a-27264a2190db,168594001,Clavicle X-ray,583.40,,
+2016-05-10T11:16:47Z,7bfa80c7-55f7-4e8f-9be9-304f30ec45a3,65a06f0f-5f13-4c1f-9a6a-27264a2190db,305428000,Admission to orthopedic department,583.40,58150001,Fracture of clavicle
+2016-11-11T11:16:47Z,7bfa80c7-55f7-4e8f-9be9-304f30ec45a3,fdedc92a-3978-44fc-87ad-9ec20d9b739e,430193006,Medication Reconciliation (procedure),829.33,,
+2010-06-17T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,a448806f-e3be-4304-893f-2aa19de28cce,76601001,Intramuscular injection,3184.08,,
+2010-09-16T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,16c8a734-82ce-4f22-b7dc-697696cef136,76601001,Intramuscular injection,2662.17,,
+2010-11-25T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,a134f558-b7aa-4275-8f12-361b87a28a8c,430193006,Medication Reconciliation (procedure),744.70,,
+2010-12-16T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,105b8d78-f61f-439c-8e9b-21c3e929d74e,76601001,Intramuscular injection,2935.33,,
+2011-01-02T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,adbc6371-db54-4e96-8991-e1302e5eec4d,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2011-01-20T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,749dec39-2748-47c7-a2f2-84b78d9d804f,430193006,Medication Reconciliation (procedure),697.00,,
+2011-03-17T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,1910e886-ff6d-4862-a110-3dc59afee294,76601001,Intramuscular injection,3870.53,,
+2011-06-16T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,1bd031f7-7ff6-4819-828d-e13254095ada,76601001,Intramuscular injection,3401.40,,
+2011-09-15T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,5c3e583d-853c-475e-b759-6e16de829a9f,76601001,Intramuscular injection,2758.94,,
+2011-12-15T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,731aeac3-1c5d-4462-9f4b-b7c77587a655,76601001,Intramuscular injection,2859.02,,
+2012-03-15T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,53a4e1d2-9d7d-453b-8749-bb852d4d94a9,76601001,Intramuscular injection,3296.55,,
+2012-06-14T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,035036bd-ebb0-4237-9414-415740d4386d,76601001,Intramuscular injection,2147.34,,
+2012-09-13T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,aa46dcc0-1ac6-4a5c-b0be-23558c60219f,76601001,Intramuscular injection,4853.14,,
+2012-12-13T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,9c148fac-377c-423c-bccd-1f11a3a2a45b,76601001,Intramuscular injection,3675.17,,
+2013-03-14T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,065042cf-b512-416d-bb12-390751d42819,76601001,Intramuscular injection,3791.19,,
+2013-06-13T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,2ac1d6bc-0d61-42c6-8612-d28e8f8f3380,76601001,Intramuscular injection,3902.00,,
+2013-09-12T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,1e1e1f3b-d2f7-4cfd-9311-af966749a36f,76601001,Intramuscular injection,2407.62,,
+2013-11-28T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,cca96a23-1cfa-4ade-81c2-c6c731353103,430193006,Medication Reconciliation (procedure),637.84,,
+2013-12-12T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,72d0782b-fef5-4b5f-afac-d913bedd86f3,76601001,Intramuscular injection,1940.04,,
+2014-03-13T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,9a807dcc-5cb7-46ed-b08b-ee195590731e,76601001,Intramuscular injection,4181.94,,
+2014-06-12T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,988ab0d9-5e56-48d5-a1ba-83c8385906f9,76601001,Intramuscular injection,3797.28,,
+2014-09-11T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,f6b925d2-ec9d-4164-a612-654da6de27e7,76601001,Intramuscular injection,3979.37,,
+2014-12-11T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,08e30b21-6cd5-4273-aa08-40d6f32f0b88,76601001,Intramuscular injection,4907.10,,
+2015-03-12T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,c054e941-3085-461d-8f56-79efc06c003d,76601001,Intramuscular injection,3105.96,,
+2015-06-11T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,b658a68e-a47e-4cbf-a5fe-51993154ed68,76601001,Intramuscular injection,3048.80,,
+2015-09-10T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,b2d9e7e1-3589-4f03-9c37-8516cea319f7,76601001,Intramuscular injection,2997.38,,
+2015-12-10T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,1895bfd0-9cbe-4be7-99d3-155fe5e0b2ee,76601001,Intramuscular injection,3804.40,,
+2016-03-10T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,b1e154e6-6662-434c-820c-0d42f38baef2,76601001,Intramuscular injection,3393.84,,
+2016-06-09T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,339b708e-0345-4958-ba54-dd381bf27bc7,76601001,Intramuscular injection,4414.14,,
+2016-09-08T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,9ba1e28e-cc39-4da2-b441-dcbee85a4392,76601001,Intramuscular injection,2780.34,,
+2016-12-08T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6de66974-a763-4fef-9280-d502cdee9bc0,76601001,Intramuscular injection,3193.92,,
+2017-03-09T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,4e784cb1-c16e-45ae-a62e-c832e8339484,76601001,Intramuscular injection,3650.72,,
+2017-06-08T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,eea54d69-f4c1-417b-baff-7e36115747a3,76601001,Intramuscular injection,2375.76,,
+2017-09-07T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,639adb4f-5594-4162-bf5b-d01544357e24,76601001,Intramuscular injection,1946.26,,
+2017-12-07T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,de4e4dae-7d5e-4b11-bdf6-32cc81b4e2da,76601001,Intramuscular injection,3082.81,,
+2018-03-08T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,0dadfd4d-ecc9-4edb-b097-31991c5fc60f,76601001,Intramuscular injection,3019.43,,
+2018-06-07T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,3dd8945d-3438-44f1-be97-57ef26976a9e,76601001,Intramuscular injection,3473.75,,
+2018-08-09T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,496c6019-3772-487a-9da9-3e8cdd88b877,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,252160004,Standard pregnancy test,7681.85,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,169230002,Ultrasound scan for fetal viability,11305.09,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,274804006,Evaluation of uterine fundal height,9696.07,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,225158009,Auscultation of the fetal heart,6065.92,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,44608003,Blood typing  RH typing,2898.13,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,104091002,Hemoglobin / Hematocrit / Platelet count,2729.61,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,47758006,Hepatitis B Surface Antigen Measurement,2396.55,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,31676001,Human immunodeficiency virus antigen test,2709.12,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,310861008,Chlamydia antigen test,3160.46,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,165829005,Gonorrhea infection test,3319.83,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,269828009,Syphilis infection test,3383.42,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,117010004,Urine culture,3640.46,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,90226004,Cytopathology procedure  preparation of smear  genital source,2016.23,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,395123002,Urine screening test for diabetes,2419.00,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,104375008,Hepatitis C antibody test,3190.02,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,169690007,Rubella screening,2648.76,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,104326007,Measurement of Varicella-zoster virus antibody,1349.45,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,28163009,Skin test for tuberculosis,2372.38,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,167271000,Urine protein test,1976.33,72892002,Normal pregnancy
+2018-10-04T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,6abc800f-ae37-4ff1-aeee-6f3abb4bbc96,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2018-11-01T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,13bc3940-517c-4c56-9576-b8d5bb0c1d2d,274804006,Evaluation of uterine fundal height,6144.30,72892002,Normal pregnancy
+2018-11-01T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,13bc3940-517c-4c56-9576-b8d5bb0c1d2d,225158009,Auscultation of the fetal heart,5184.31,72892002,Normal pregnancy
+2013-09-08T09:24:08Z,57772912-d622-4cfa-bb52-00647adfdac6,a711b20a-d7bf-447e-b078-3be72d1bd27c,430193006,Medication Reconciliation (procedure),397.23,,
+2018-11-01T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,13bc3940-517c-4c56-9576-b8d5bb0c1d2d,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,3073.37,72892002,Normal pregnancy
+2018-11-29T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,a2bfd150-da38-4b3a-bded-63a0423bd25c,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2018-11-29T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,a2bfd150-da38-4b3a-bded-63a0423bd25c,275833003,Alpha-fetoprotein test,1968.26,72892002,Normal pregnancy
+2018-11-29T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,a2bfd150-da38-4b3a-bded-63a0423bd25c,274804006,Evaluation of uterine fundal height,7719.90,72892002,Normal pregnancy
+2018-11-29T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,a2bfd150-da38-4b3a-bded-63a0423bd25c,225158009,Auscultation of the fetal heart,9337.77,72892002,Normal pregnancy
+2018-12-27T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,d6301d3b-748e-4975-a8ca-1d9636024597,274804006,Evaluation of uterine fundal height,7230.22,72892002,Normal pregnancy
+2018-12-27T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,d6301d3b-748e-4975-a8ca-1d9636024597,225158009,Auscultation of the fetal heart,10511.37,72892002,Normal pregnancy
+2019-01-24T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,3fa4cf98-8107-49d2-9a64-e7b4e8811e70,274804006,Evaluation of uterine fundal height,5574.35,72892002,Normal pregnancy
+2019-01-24T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,3fa4cf98-8107-49d2-9a64-e7b4e8811e70,225158009,Auscultation of the fetal heart,8260.53,72892002,Normal pregnancy
+2014-10-04T09:24:08Z,57772912-d622-4cfa-bb52-00647adfdac6,2fe77d26-c025-41e1-9bbf-a92537bd49d5,269911007,Sputum examination (procedure),10819.20,10509002,Acute bronchitis (disorder)
+2019-02-21T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,d4846c59-b67f-4654-a748-42a9ca246c2f,104091002,Hemoglobin / Hematocrit / Platelet count,2625.45,72892002,Normal pregnancy
+2019-02-21T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,d4846c59-b67f-4654-a748-42a9ca246c2f,399014008,Vaccination for diphtheria  pertussis  and tetanus,3497.28,72892002,Normal pregnancy
+2019-02-21T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,d4846c59-b67f-4654-a748-42a9ca246c2f,268556000,Urine screening for glucose,1885.12,72892002,Normal pregnancy
+2019-02-21T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,d4846c59-b67f-4654-a748-42a9ca246c2f,274804006,Evaluation of uterine fundal height,3971.23,72892002,Normal pregnancy
+2019-02-21T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,d4846c59-b67f-4654-a748-42a9ca246c2f,225158009,Auscultation of the fetal heart,8240.05,72892002,Normal pregnancy
+2019-03-21T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,2b252375-91b4-484b-b220-e80a00cfc236,274804006,Evaluation of uterine fundal height,8112.26,72892002,Normal pregnancy
+2019-03-21T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,2b252375-91b4-484b-b220-e80a00cfc236,225158009,Auscultation of the fetal heart,5191.36,72892002,Normal pregnancy
+2015-05-24T09:24:08Z,57772912-d622-4cfa-bb52-00647adfdac6,c0be62c0-196d-477a-959c-1767223d238c,288086009,Suture open wound,12499.09,284551006,Laceration of foot
+2019-04-18T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,be5f4561-4906-4f36-b7f8-032d9c716af1,118001005,Streptococcus pneumoniae group B antigen test,2200.42,72892002,Normal pregnancy
+2019-04-18T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,be5f4561-4906-4f36-b7f8-032d9c716af1,274804006,Evaluation of uterine fundal height,6323.20,72892002,Normal pregnancy
+2019-04-18T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,be5f4561-4906-4f36-b7f8-032d9c716af1,225158009,Auscultation of the fetal heart,6156.09,72892002,Normal pregnancy
+2019-05-02T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,88cc4c23-df76-4fcb-98ac-47ea3e394ea8,274804006,Evaluation of uterine fundal height,6597.57,72892002,Normal pregnancy
+2019-05-02T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,88cc4c23-df76-4fcb-98ac-47ea3e394ea8,225158009,Auscultation of the fetal heart,8846.29,72892002,Normal pregnancy
+2019-05-09T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,0cc0b9b9-6bca-4bc7-a5b6-31184410f35a,177157003,Spontaneous breech delivery,9756.13,72892002,Normal pregnancy
+2019-05-09T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,0cc0b9b9-6bca-4bc7-a5b6-31184410f35a,66348005,Childbirth,583.40,72892002,Normal pregnancy
+2019-06-20T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,23a88f65-7893-4952-a78f-1e0d94d7b4ea,5880005,Physical examination following birth,583.40,,
+2019-06-20T23:34:38Z,fd19fd7e-5c6f-4747-a40a-d1a00dc10402,23a88f65-7893-4952-a78f-1e0d94d7b4ea,171207006,Depression screening,583.40,,
+2014-12-12T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,79e0aea0-4d0c-431f-aa1e-b611fb66c5fe,117015009,Throat culture (procedure),1853.05,195662009,Acute viral pharyngitis (disorder)
+2015-05-26T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,7c5b7c17-29e3-4196-aeea-1f825ab324ce,430193006,Medication Reconciliation (procedure),429.80,,
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,252160004,Standard pregnancy test,8768.67,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,169230002,Ultrasound scan for fetal viability,14212.51,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,274804006,Evaluation of uterine fundal height,7831.52,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,225158009,Auscultation of the fetal heart,7097.58,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,44608003,Blood typing  RH typing,4225.61,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,104091002,Hemoglobin / Hematocrit / Platelet count,3872.51,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,47758006,Hepatitis B Surface Antigen Measurement,3196.87,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,31676001,Human immunodeficiency virus antigen test,3098.62,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,310861008,Chlamydia antigen test,1372.45,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,165829005,Gonorrhea infection test,2802.01,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,269828009,Syphilis infection test,2147.52,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,117010004,Urine culture,3724.62,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,90226004,Cytopathology procedure  preparation of smear  genital source,1781.14,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,395123002,Urine screening test for diabetes,3221.52,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,104375008,Hepatitis C antibody test,1927.28,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,169690007,Rubella screening,3888.18,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,104326007,Measurement of Varicella-zoster virus antibody,2923.87,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,28163009,Skin test for tuberculosis,2029.63,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,167271000,Urine protein test,1651.62,72892002,Normal pregnancy
+2015-08-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,00d4ca1e-5972-4745-b87a-ac373fbb0f51,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2015-09-08T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,9cf43beb-bb67-411c-83dd-dc96e083704f,274804006,Evaluation of uterine fundal height,6522.97,72892002,Normal pregnancy
+2015-09-08T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,9cf43beb-bb67-411c-83dd-dc96e083704f,225158009,Auscultation of the fetal heart,6299.11,72892002,Normal pregnancy
+2015-09-08T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,9cf43beb-bb67-411c-83dd-dc96e083704f,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,2096.77,72892002,Normal pregnancy
+2015-10-06T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,dc1382b7-8732-4ee0-8a7a-6825b2137533,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2015-10-06T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,dc1382b7-8732-4ee0-8a7a-6825b2137533,275833003,Alpha-fetoprotein test,2253.01,72892002,Normal pregnancy
+2015-10-06T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,dc1382b7-8732-4ee0-8a7a-6825b2137533,274804006,Evaluation of uterine fundal height,6562.32,72892002,Normal pregnancy
+2015-10-06T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,dc1382b7-8732-4ee0-8a7a-6825b2137533,225158009,Auscultation of the fetal heart,8113.01,72892002,Normal pregnancy
+2015-11-03T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,d3a5cdab-94aa-4a72-96a8-60339c26ae8d,274804006,Evaluation of uterine fundal height,6058.71,72892002,Normal pregnancy
+2015-11-03T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,d3a5cdab-94aa-4a72-96a8-60339c26ae8d,225158009,Auscultation of the fetal heart,6458.04,72892002,Normal pregnancy
+2015-12-01T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,3cfe2086-1af1-4ac0-87d1-baba92afe82f,274804006,Evaluation of uterine fundal height,7946.94,72892002,Normal pregnancy
+2015-12-01T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,3cfe2086-1af1-4ac0-87d1-baba92afe82f,225158009,Auscultation of the fetal heart,6171.76,72892002,Normal pregnancy
+2015-12-29T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,c2b77b2e-94b5-4aff-8554-08328793da6d,104091002,Hemoglobin / Hematocrit / Platelet count,2836.55,72892002,Normal pregnancy
+2015-12-29T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,c2b77b2e-94b5-4aff-8554-08328793da6d,399014008,Vaccination for diphtheria  pertussis  and tetanus,4123.50,72892002,Normal pregnancy
+2015-12-29T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,c2b77b2e-94b5-4aff-8554-08328793da6d,268556000,Urine screening for glucose,1892.35,72892002,Normal pregnancy
+2015-12-29T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,c2b77b2e-94b5-4aff-8554-08328793da6d,274804006,Evaluation of uterine fundal height,8057.90,72892002,Normal pregnancy
+2015-12-29T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,c2b77b2e-94b5-4aff-8554-08328793da6d,225158009,Auscultation of the fetal heart,9326.93,72892002,Normal pregnancy
+2016-01-26T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,a7577439-4d32-4a37-97bd-910ddbf99863,274804006,Evaluation of uterine fundal height,6703.67,72892002,Normal pregnancy
+2016-01-26T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,a7577439-4d32-4a37-97bd-910ddbf99863,225158009,Auscultation of the fetal heart,5261.73,72892002,Normal pregnancy
+2016-02-23T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,415bad9e-469f-4931-aa25-d83a37730965,118001005,Streptococcus pneumoniae group B antigen test,3246.01,72892002,Normal pregnancy
+2016-02-23T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,415bad9e-469f-4931-aa25-d83a37730965,274804006,Evaluation of uterine fundal height,4035.91,72892002,Normal pregnancy
+2016-02-23T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,415bad9e-469f-4931-aa25-d83a37730965,225158009,Auscultation of the fetal heart,7060.73,72892002,Normal pregnancy
+2016-03-08T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,d4920d50-7de0-4b36-8c70-110398f9c2ff,274804006,Evaluation of uterine fundal height,4396.96,72892002,Normal pregnancy
+2016-03-08T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,d4920d50-7de0-4b36-8c70-110398f9c2ff,225158009,Auscultation of the fetal heart,4994.06,72892002,Normal pregnancy
+2016-03-15T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,2b160ba7-a54a-4f0b-b03d-3b8fe9ebed7b,274804006,Evaluation of uterine fundal height,4727.42,72892002,Normal pregnancy
+2016-03-15T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,2b160ba7-a54a-4f0b-b03d-3b8fe9ebed7b,225158009,Auscultation of the fetal heart,8432.99,72892002,Normal pregnancy
+2016-03-22T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,dc0c7ba7-4d91-4c7e-b7de-4fb01ceb4afe,274804006,Evaluation of uterine fundal height,6577.47,72892002,Normal pregnancy
+2016-03-22T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,dc0c7ba7-4d91-4c7e-b7de-4fb01ceb4afe,225158009,Auscultation of the fetal heart,7135.85,72892002,Normal pregnancy
+2016-03-29T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,f7aa87c5-2bd8-4706-b0dc-d844b7786842,274804006,Evaluation of uterine fundal height,8417.55,72892002,Normal pregnancy
+2016-03-29T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,f7aa87c5-2bd8-4706-b0dc-d844b7786842,225158009,Auscultation of the fetal heart,8406.13,72892002,Normal pregnancy
+2016-03-29T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,15dab0b4-6115-4649-a1dd-08cdf2bcc12f,31208007,Medical induction of labor,6063.58,72892002,Normal pregnancy
+2016-03-29T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,15dab0b4-6115-4649-a1dd-08cdf2bcc12f,11466000,Cesarean section,8630.87,72892002,Normal pregnancy
+2016-05-10T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,7e63b027-0d8c-4088-8911-c74f1b60f42c,5880005,Physical examination following birth,583.40,,
+2016-05-10T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,7e63b027-0d8c-4088-8911-c74f1b60f42c,171207006,Depression screening,583.40,,
+2017-03-25T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,460acf51-d13e-4079-89a0-3b66e774e766,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2018-04-30T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,38121b3c-1b3a-407a-a281-44584f5c83a4,169553002,Insertion of subcutaneous contraceptive,17176.39,,
+2020-03-11T08:44:13Z,80e15f22-b3e7-4320-9637-389d41766559,fe20fcde-4eda-49b7-a9e1-f9f69bb71ff2,117015009,Throat culture (procedure),1981.63,195662009,Acute viral pharyngitis (disorder)
+1992-10-07T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,1583f313-098b-41c9-bee1-1fb19e75cdad,180256009,Subcutaneous immunotherapy,9330.43,,
+1992-10-28T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,ae95b1c2-c6e9-4530-8a7b-7bf53f058a02,180256009,Subcutaneous immunotherapy,16699.16,,
+1992-11-18T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,f355e355-64be-4afe-9d9e-e8a9e7197b82,180256009,Subcutaneous immunotherapy,19094.02,,
+1992-12-09T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,d682d1f2-d6a7-4d1f-bb78-3fdf42445c88,180256009,Subcutaneous immunotherapy,12519.81,,
+1992-12-30T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,a4e6f0fe-0f04-4c22-808e-c8c87eb34b01,180256009,Subcutaneous immunotherapy,19548.51,,
+1993-01-13T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,3cf4b97a-a62e-4e2f-8080-47cc4f221521,430193006,Medication Reconciliation (procedure),642.75,,
+1993-01-20T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,789114e8-3c2c-496f-ba91-cf0e04ec7081,180256009,Subcutaneous immunotherapy,25631.19,,
+1993-02-10T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,a2ffafc1-dc69-4cca-aa09-bde0609719c5,180256009,Subcutaneous immunotherapy,17261.20,,
+1993-03-03T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,bdf894f2-6e27-4f1f-90c0-b9abc744eb47,180256009,Subcutaneous immunotherapy,15050.61,,
+1993-03-24T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,5dcbdb73-4d8b-4600-aa7a-c3e0c8b3b6bf,180256009,Subcutaneous immunotherapy,12624.54,,
+1993-04-14T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,6c586fd3-045c-4459-9fa3-898cd1af11ee,180256009,Subcutaneous immunotherapy,14561.61,,
+1993-05-05T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,48dfeccf-7115-434b-b365-7b3493d3e64d,180256009,Subcutaneous immunotherapy,23272.83,,
+1993-05-26T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,ec1d6637-44a2-4747-b921-f3a889b7a077,180256009,Subcutaneous immunotherapy,12812.80,,
+1993-06-16T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,367a8c74-2d5a-473e-aa7b-8652e3575199,180256009,Subcutaneous immunotherapy,20161.43,,
+1993-07-07T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,39a91944-eecc-4649-a341-b6859b66cd13,395142003,Allergy screening test,583.40,,
+1995-01-25T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,0384eb18-a9c3-422f-acb6-d65a63a44085,430193006,Medication Reconciliation (procedure),716.86,,
+1996-01-31T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,2678c536-fa49-4707-89f7-391f12ff171a,14768001,Peripheral blood smear interpretation,583.40,,
+1996-01-31T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,2678c536-fa49-4707-89f7-391f12ff171a,415300000,Review of systems (procedure),583.40,,
+1996-01-31T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,2678c536-fa49-4707-89f7-391f12ff171a,430193006,Medication Reconciliation (procedure),970.12,,
+1996-01-31T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,2678c536-fa49-4707-89f7-391f12ff171a,162676008,Brief general examination (procedure),583.40,,
+1997-02-05T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,d4e49e5a-8e1c-4ccb-945b-6a35c43c1163,430193006,Medication Reconciliation (procedure),805.68,,
+2000-09-24T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,db2ea475-18d8-429d-a0ca-918a1dcd694e,73761001,Colonoscopy,17979.38,,
+2000-10-05T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,f36b6196-0e52-44a5-b9c1-b16fa9a6364b,703423002,Combined chemotherapy and radiation therapy (procedure),12834.93,94260004,Secondary malignant neoplasm of colon
+2000-11-02T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,65bf0afd-3c54-476f-85b1-cb8c2bf8defc,703423002,Combined chemotherapy and radiation therapy (procedure),12913.09,94260004,Secondary malignant neoplasm of colon
+2000-12-02T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,d4081452-69e9-4fff-9501-fbbf3b245994,703423002,Combined chemotherapy and radiation therapy (procedure),13851.98,94260004,Secondary malignant neoplasm of colon
+2001-01-03T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,8eae9c47-e4ed-4897-94d0-fa47549c7fcc,703423002,Combined chemotherapy and radiation therapy (procedure),14489.23,94260004,Secondary malignant neoplasm of colon
+2001-02-04T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,ec7c3fde-8cf4-438b-9970-7ca746961444,703423002,Combined chemotherapy and radiation therapy (procedure),15457.79,94260004,Secondary malignant neoplasm of colon
+2001-03-07T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,a6474f3a-b315-44f4-aecb-3a58a0ab096b,703423002,Combined chemotherapy and radiation therapy (procedure),17526.15,94260004,Secondary malignant neoplasm of colon
+2002-03-06T17:48:10Z,8373a9d0-52cb-467f-9baa-252c56712559,f163e20d-e959-4a3b-b33f-211414e02da8,430193006,Medication Reconciliation (procedure),1046.11,,
+2011-04-19T02:04:12Z,549ebbf4-3de3-4164-aa60-82cd31ac1d8b,42b4aeec-0f8b-4e9d-88d2-21dae9b9782d,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2014-02-22T02:04:12Z,549ebbf4-3de3-4164-aa60-82cd31ac1d8b,18e3e8be-ae2a-440d-ac7b-05879e5f7214,430193006,Medication Reconciliation (procedure),490.86,,
+2018-02-03T02:04:12Z,549ebbf4-3de3-4164-aa60-82cd31ac1d8b,5273588a-ad46-4c7d-99fc-03de0741fdd3,73761001,Colonoscopy,13211.84,,
+2018-02-03T02:04:12Z,549ebbf4-3de3-4164-aa60-82cd31ac1d8b,5273588a-ad46-4c7d-99fc-03de0741fdd3,430193006,Medication Reconciliation (procedure),1133.14,,
+2019-02-09T02:04:12Z,549ebbf4-3de3-4164-aa60-82cd31ac1d8b,99c2b214-d193-48e5-8193-a74f0a8c1e64,430193006,Medication Reconciliation (procedure),613.35,,
+2012-06-27T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,48752805-a266-4e45-8d08-d3f22e53d36b,430193006,Medication Reconciliation (procedure),698.48,,
+2012-11-09T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,0f79a79c-6a8b-483a-acba-d66fb9b3a745,1225002,Upper arm X-ray,583.40,,
+2012-11-09T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,0f79a79c-6a8b-483a-acba-d66fb9b3a745,274474001,Bone immobilization,583.40,65966004,Fracture of forearm
+2013-07-03T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,ce0604a2-8734-4080-b3b6-3ca66c200aaf,430193006,Medication Reconciliation (procedure),589.22,,
+2014-12-30T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,0494bc7a-4788-436c-85df-7f5271037fe8,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2014-12-29T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,3409dff0-03b9-4294-ab8d-0e8bee0caf95,288086009,Suture open wound,7917.02,283385000,Laceration of thigh
+2015-01-07T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,7fd07dbc-0277-4831-b434-95582c7a78b0,430193006,Medication Reconciliation (procedure),769.41,,
+2015-07-15T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,4c23fd3b-753c-4ba0-a2e4-ef340389725c,430193006,Medication Reconciliation (procedure),805.34,,
+2016-07-20T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,98485124-cb34-4791-80a9-0d94a7271f88,430193006,Medication Reconciliation (procedure),610.76,,
+2017-07-26T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,6727aff3-ae08-4e3d-9921-a1f2d10c876f,430193006,Medication Reconciliation (procedure),583.62,,
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,252160004,Standard pregnancy test,6232.41,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,169230002,Ultrasound scan for fetal viability,11350.16,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,274804006,Evaluation of uterine fundal height,9052.79,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,225158009,Auscultation of the fetal heart,11524.61,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,44608003,Blood typing  RH typing,1840.52,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,104091002,Hemoglobin / Hematocrit / Platelet count,3800.82,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,47758006,Hepatitis B Surface Antigen Measurement,2054.01,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,31676001,Human immunodeficiency virus antigen test,4060.61,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,310861008,Chlamydia antigen test,2763.83,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,165829005,Gonorrhea infection test,3122.81,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,269828009,Syphilis infection test,2188.29,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,117010004,Urine culture,2475.64,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,90226004,Cytopathology procedure  preparation of smear  genital source,2021.15,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,395123002,Urine screening test for diabetes,3837.71,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,104375008,Hepatitis C antibody test,2850.37,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,169690007,Rubella screening,3318.13,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,104326007,Measurement of Varicella-zoster virus antibody,1956.24,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,28163009,Skin test for tuberculosis,2386.92,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,167271000,Urine protein test,3259.11,72892002,Normal pregnancy
+2018-07-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,82fcc350-b166-4b1d-a9fd-2725e1c88145,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2018-08-22T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,fe0196cf-5ade-4d8d-8f53-becffcb88219,274804006,Evaluation of uterine fundal height,6420.08,72892002,Normal pregnancy
+2018-08-22T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,fe0196cf-5ade-4d8d-8f53-becffcb88219,225158009,Auscultation of the fetal heart,7898.86,72892002,Normal pregnancy
+2018-08-22T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,fe0196cf-5ade-4d8d-8f53-becffcb88219,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,2780.24,72892002,Normal pregnancy
+2018-09-19T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,cca5fc24-223a-43b3-b1be-bddbb2628113,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2018-09-19T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,cca5fc24-223a-43b3-b1be-bddbb2628113,275833003,Alpha-fetoprotein test,1676.95,72892002,Normal pregnancy
+2018-09-19T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,cca5fc24-223a-43b3-b1be-bddbb2628113,274804006,Evaluation of uterine fundal height,8375.51,72892002,Normal pregnancy
+2018-09-19T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,cca5fc24-223a-43b3-b1be-bddbb2628113,225158009,Auscultation of the fetal heart,8948.28,72892002,Normal pregnancy
+2018-10-17T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,cdd47e61-8515-4629-a434-2136695e6f0d,274804006,Evaluation of uterine fundal height,8285.73,72892002,Normal pregnancy
+2018-10-17T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,cdd47e61-8515-4629-a434-2136695e6f0d,225158009,Auscultation of the fetal heart,7215.85,72892002,Normal pregnancy
+2018-11-14T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,7c7ea38a-11f7-4ce8-bbf0-db87332f7307,274804006,Evaluation of uterine fundal height,7391.83,72892002,Normal pregnancy
+2018-11-14T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,7c7ea38a-11f7-4ce8-bbf0-db87332f7307,225158009,Auscultation of the fetal heart,4915.09,72892002,Normal pregnancy
+2018-12-12T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,3f2efc54-393d-411d-90b9-5252475ef37d,169673001,Antenatal RhD antibody screening,3936.91,72892002,Normal pregnancy
+2018-12-12T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,3f2efc54-393d-411d-90b9-5252475ef37d,51116004,RhD passive immunization,3295.58,72892002,Normal pregnancy
+2018-12-12T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,3f2efc54-393d-411d-90b9-5252475ef37d,104091002,Hemoglobin / Hematocrit / Platelet count,3612.18,72892002,Normal pregnancy
+2018-12-12T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,3f2efc54-393d-411d-90b9-5252475ef37d,399014008,Vaccination for diphtheria  pertussis  and tetanus,3220.14,72892002,Normal pregnancy
+2018-12-12T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,3f2efc54-393d-411d-90b9-5252475ef37d,268556000,Urine screening for glucose,3067.58,72892002,Normal pregnancy
+2018-12-12T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,3f2efc54-393d-411d-90b9-5252475ef37d,274804006,Evaluation of uterine fundal height,11004.70,72892002,Normal pregnancy
+2018-12-12T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,3f2efc54-393d-411d-90b9-5252475ef37d,225158009,Auscultation of the fetal heart,7116.47,72892002,Normal pregnancy
+2019-01-09T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,704a04f8-a0ca-41be-ba1d-606b2f4e03fe,274804006,Evaluation of uterine fundal height,9637.02,72892002,Normal pregnancy
+2019-01-09T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,704a04f8-a0ca-41be-ba1d-606b2f4e03fe,225158009,Auscultation of the fetal heart,8110.65,72892002,Normal pregnancy
+2019-02-06T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,49d0c9e8-406c-4ea8-a79a-849206e37e7d,118001005,Streptococcus pneumoniae group B antigen test,1983.55,72892002,Normal pregnancy
+2019-02-06T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,49d0c9e8-406c-4ea8-a79a-849206e37e7d,274804006,Evaluation of uterine fundal height,7191.85,72892002,Normal pregnancy
+2019-02-06T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,49d0c9e8-406c-4ea8-a79a-849206e37e7d,225158009,Auscultation of the fetal heart,7885.09,72892002,Normal pregnancy
+2019-02-20T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,2be1f54a-7fe9-45a5-9541-90e0877e28f7,18946005,Epidural anesthesia,2123.69,72892002,Normal pregnancy
+2019-02-20T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,2be1f54a-7fe9-45a5-9541-90e0877e28f7,66348005,Childbirth,583.40,72892002,Normal pregnancy
+2019-04-03T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,83b05622-e5dc-4581-b70f-a4be64daa63f,51116004,RhD passive immunization,2695.43,,
+2019-04-03T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,83b05622-e5dc-4581-b70f-a4be64daa63f,5880005,Physical examination following birth,583.40,,
+2019-04-03T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,83b05622-e5dc-4581-b70f-a4be64daa63f,171207006,Depression screening,583.40,,
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,252160004,Standard pregnancy test,5799.48,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,169230002,Ultrasound scan for fetal viability,17384.92,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,274804006,Evaluation of uterine fundal height,5063.82,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,225158009,Auscultation of the fetal heart,5335.02,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,44608003,Blood typing  RH typing,3150.22,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,104091002,Hemoglobin / Hematocrit / Platelet count,2595.00,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,47758006,Hepatitis B Surface Antigen Measurement,3365.25,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,31676001,Human immunodeficiency virus antigen test,2922.07,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,310861008,Chlamydia antigen test,2888.04,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,165829005,Gonorrhea infection test,2036.95,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,269828009,Syphilis infection test,2294.78,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,117010004,Urine culture,3261.36,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,90226004,Cytopathology procedure  preparation of smear  genital source,2927.73,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,395123002,Urine screening test for diabetes,2992.59,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,104375008,Hepatitis C antibody test,1586.29,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,169690007,Rubella screening,4170.98,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,104326007,Measurement of Varicella-zoster virus antibody,2308.05,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,28163009,Skin test for tuberculosis,3188.13,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,167271000,Urine protein test,2182.44,72892002,Normal pregnancy
+2020-01-01T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,c9b07119-2296-4a34-95ff-100cddff452f,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2020-01-29T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,2ceff23f-234e-4dc1-a71c-59ab6ac1da9a,274804006,Evaluation of uterine fundal height,4855.95,72892002,Normal pregnancy
+2020-01-29T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,2ceff23f-234e-4dc1-a71c-59ab6ac1da9a,225158009,Auscultation of the fetal heart,4736.02,72892002,Normal pregnancy
+2020-01-29T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,2ceff23f-234e-4dc1-a71c-59ab6ac1da9a,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,3129.70,72892002,Normal pregnancy
+2020-02-26T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,91b8ec62-0943-422f-9a2b-d25d9deee77b,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2020-02-26T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,91b8ec62-0943-422f-9a2b-d25d9deee77b,275833003,Alpha-fetoprotein test,2176.60,72892002,Normal pregnancy
+2020-02-26T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,91b8ec62-0943-422f-9a2b-d25d9deee77b,274804006,Evaluation of uterine fundal height,9074.48,72892002,Normal pregnancy
+2020-02-26T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,91b8ec62-0943-422f-9a2b-d25d9deee77b,225158009,Auscultation of the fetal heart,7575.66,72892002,Normal pregnancy
+2020-03-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,1a003d03-774c-4976-881c-941c35a012c4,274804006,Evaluation of uterine fundal height,3983.92,72892002,Normal pregnancy
+2020-03-25T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,1a003d03-774c-4976-881c-941c35a012c4,225158009,Auscultation of the fetal heart,11296.01,72892002,Normal pregnancy
+2020-04-22T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,173f28c3-f858-4034-a8a0-b7d522ae44f1,274804006,Evaluation of uterine fundal height,8758.89,72892002,Normal pregnancy
+2020-04-22T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,173f28c3-f858-4034-a8a0-b7d522ae44f1,225158009,Auscultation of the fetal heart,5655.67,72892002,Normal pregnancy
+2020-05-20T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,b0526052-a510-415a-a4c6-a3a5d987db82,169673001,Antenatal RhD antibody screening,2730.92,72892002,Normal pregnancy
+2020-05-20T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,b0526052-a510-415a-a4c6-a3a5d987db82,51116004,RhD passive immunization,3631.84,72892002,Normal pregnancy
+2020-05-20T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,b0526052-a510-415a-a4c6-a3a5d987db82,104091002,Hemoglobin / Hematocrit / Platelet count,2628.98,72892002,Normal pregnancy
+2020-05-20T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,b0526052-a510-415a-a4c6-a3a5d987db82,399014008,Vaccination for diphtheria  pertussis  and tetanus,3667.10,72892002,Normal pregnancy
+2020-05-20T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,b0526052-a510-415a-a4c6-a3a5d987db82,268556000,Urine screening for glucose,1429.61,72892002,Normal pregnancy
+2020-05-20T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,b0526052-a510-415a-a4c6-a3a5d987db82,274804006,Evaluation of uterine fundal height,4552.15,72892002,Normal pregnancy
+2020-05-20T16:57:12Z,4af9ec9f-b1da-4ed5-bbbe-672e3943cf08,b0526052-a510-415a-a4c6-a3a5d987db82,225158009,Auscultation of the fetal heart,5955.95,72892002,Normal pregnancy
+2011-01-04T23:17:56Z,5c97173e-ff8d-4113-98c0-a7b19f9ac540,02fdd3ac-31a8-466f-96e4-42c71856cea9,430193006,Medication Reconciliation (procedure),945.28,,
+2013-01-15T23:17:56Z,5c97173e-ff8d-4113-98c0-a7b19f9ac540,30c02e72-2b4d-49ae-92ef-e73d39477fbc,430193006,Medication Reconciliation (procedure),1085.77,,
+2014-01-21T23:17:56Z,5c97173e-ff8d-4113-98c0-a7b19f9ac540,b1e39674-1778-47ce-b501-e4c9849967fc,430193006,Medication Reconciliation (procedure),675.47,,
+2016-02-02T23:17:56Z,5c97173e-ff8d-4113-98c0-a7b19f9ac540,7fb3c074-cffa-403e-adcd-e1855c7ce37f,430193006,Medication Reconciliation (procedure),849.54,,
+2019-02-19T23:17:56Z,5c97173e-ff8d-4113-98c0-a7b19f9ac540,37a0529a-a1df-411b-85c5-fdef6edfc8b9,430193006,Medication Reconciliation (procedure),396.47,,
+2010-06-15T11:43:47Z,db43e4e8-2122-4e26-b841-5c2d8269d8ff,eabb7d80-2891-4a18-98f6-f526aef13a6d,46706006,Replacement of contraceptive intrauterine device,15811.08,,
+2011-10-02T11:43:47Z,db43e4e8-2122-4e26-b841-5c2d8269d8ff,91a4979b-d817-4b2e-b112-c5e9d7049e48,73761001,Colonoscopy,10544.10,,
+2011-11-01T11:43:47Z,db43e4e8-2122-4e26-b841-5c2d8269d8ff,bad1ff60-32eb-4b71-8d99-9561acd9414b,430193006,Medication Reconciliation (procedure),625.71,,
+2013-11-12T11:43:47Z,db43e4e8-2122-4e26-b841-5c2d8269d8ff,1da15adb-b9fa-45fb-a035-8867b2b5e3ac,430193006,Medication Reconciliation (procedure),418.34,,
+2015-06-16T11:43:47Z,db43e4e8-2122-4e26-b841-5c2d8269d8ff,7f9742f7-9630-495f-a866-d2715cfa148e,46706006,Replacement of contraceptive intrauterine device,18186.75,,
+2016-09-30T11:43:47Z,db43e4e8-2122-4e26-b841-5c2d8269d8ff,c8ff37fb-edb0-4c22-8a43-c57102c74060,73761001,Colonoscopy,16943.02,,
+2017-12-05T11:43:47Z,db43e4e8-2122-4e26-b841-5c2d8269d8ff,04f7b8c2-5aa4-4e5f-a891-c44c317057a7,430193006,Medication Reconciliation (procedure),584.98,,
+2019-06-28T11:43:47Z,db43e4e8-2122-4e26-b841-5c2d8269d8ff,c1efef63-24e6-49f7-9591-11de61f85efc,288086009,Suture open wound,19630.95,283385000,Laceration of thigh
+2019-09-10T11:43:47Z,db43e4e8-2122-4e26-b841-5c2d8269d8ff,c9fed47d-6c46-4094-9230-58639800d356,430193006,Medication Reconciliation (procedure),633.76,,
+2019-12-17T11:43:47Z,db43e4e8-2122-4e26-b841-5c2d8269d8ff,489eee21-6e62-405d-81e3-b1718a0a0b40,430193006,Medication Reconciliation (procedure),697.58,,
+2013-09-18T18:10:56Z,238ada30-079a-44a0-9537-084af923bb60,aac7e2f0-29f1-44cd-abf5-5c8e60d2d73a,117015009,Throat culture (procedure),2792.05,195662009,Acute viral pharyngitis (disorder)
+2014-02-26T18:10:56Z,238ada30-079a-44a0-9537-084af923bb60,7317518b-5456-4af0-8d77-26b118af7362,430193006,Medication Reconciliation (procedure),392.97,,
+2011-02-20T09:18:48Z,763e1a5e-d38f-44d6-9bf3-67fa2326732d,d8c3375e-cf17-4b63-a7a8-b05cd21153de,430193006,Medication Reconciliation (procedure),480.61,,
+2011-04-24T09:18:48Z,763e1a5e-d38f-44d6-9bf3-67fa2326732d,a8c18021-7693-4738-ae76-7cbf736e9d06,430193006,Medication Reconciliation (procedure),499.81,,
+2011-10-23T09:18:48Z,763e1a5e-d38f-44d6-9bf3-67fa2326732d,bb59a276-31db-4cb7-a74a-15a2e2bbe4cc,430193006,Medication Reconciliation (procedure),794.47,,
+2012-01-22T09:18:48Z,763e1a5e-d38f-44d6-9bf3-67fa2326732d,670ecf53-2f4e-4c6e-a09e-fdce8079a720,430193006,Medication Reconciliation (procedure),852.86,,
+2013-04-21T09:18:48Z,763e1a5e-d38f-44d6-9bf3-67fa2326732d,64d0b56a-b66c-4fd0-910e-ef1d3cddb7fc,430193006,Medication Reconciliation (procedure),496.36,,
+2013-10-20T09:18:48Z,763e1a5e-d38f-44d6-9bf3-67fa2326732d,1266cac9-a6a6-4852-8f68-d83a8763fed3,430193006,Medication Reconciliation (procedure),703.11,,
+2017-11-05T09:18:48Z,763e1a5e-d38f-44d6-9bf3-67fa2326732d,52a6a153-fec3-43bb-a7f3-2d2ee7203f6a,430193006,Medication Reconciliation (procedure),662.67,,
+2019-05-03T09:18:48Z,763e1a5e-d38f-44d6-9bf3-67fa2326732d,8fc0548c-86db-471b-8cb1-c08b684a75e0,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2019-11-17T09:18:48Z,763e1a5e-d38f-44d6-9bf3-67fa2326732d,30bdc8de-8f1c-4cb6-a765-6a2ccbe6f166,430193006,Medication Reconciliation (procedure),1092.80,,
+2010-07-07T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,ad59ee19-9c6b-4c4e-9273-aea540867d5b,51116004,RhD passive immunization,5508.05,,
+2010-07-07T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,ad59ee19-9c6b-4c4e-9273-aea540867d5b,5880005,Physical examination following birth,583.40,,
+2010-07-07T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,ad59ee19-9c6b-4c4e-9273-aea540867d5b,171207006,Depression screening,583.40,,
+2011-07-02T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,0ab2d214-7600-4a58-adf7-3cb7541cdea9,169553002,Insertion of subcutaneous contraceptive,8546.58,,
+2012-06-26T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,0fb1895c-49b7-47c2-8c28-30e6a08a2fa7,169553002,Insertion of subcutaneous contraceptive,11009.94,,
+2015-06-09T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,df8c9a9a-d281-4759-9b74-2442ed73db65,74016001,Knee X-ray,583.40,,
+2015-07-15T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,e685c414-4fb0-4b79-9e15-ef66024a481a,301807007,Removal of subcutaneous contraceptive,6737.95,,
+2015-07-15T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,e685c414-4fb0-4b79-9e15-ef66024a481a,169553002,Insertion of subcutaneous contraceptive,14184.36,,
+2017-01-25T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,8104adde-1e98-4c85-be79-14c740f23dd9,117015009,Throat culture (procedure),1981.14,195662009,Acute viral pharyngitis (disorder)
+2017-02-15T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,435c0dad-fa93-4e72-9226-5b08df4a51eb,430193006,Medication Reconciliation (procedure),783.75,,
+2017-05-31T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,14566f95-35fa-4251-a087-e8de0cda1246,169553002,Insertion of subcutaneous contraceptive,16461.94,,
+2018-06-27T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,4ec6fd5c-0ca3-48fc-b973-3c1086e737e2,301807007,Removal of subcutaneous contraceptive,19414.43,,
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,252160004,Standard pregnancy test,5921.05,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,169230002,Ultrasound scan for fetal viability,17192.01,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,274804006,Evaluation of uterine fundal height,9994.24,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,225158009,Auscultation of the fetal heart,6935.36,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,44608003,Blood typing  RH typing,3410.43,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,104091002,Hemoglobin / Hematocrit / Platelet count,2523.44,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,47758006,Hepatitis B Surface Antigen Measurement,2672.87,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,31676001,Human immunodeficiency virus antigen test,3430.26,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,310861008,Chlamydia antigen test,2450.22,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,165829005,Gonorrhea infection test,2680.94,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,269828009,Syphilis infection test,2372.89,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,117010004,Urine culture,2703.46,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,90226004,Cytopathology procedure  preparation of smear  genital source,2450.52,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,395123002,Urine screening test for diabetes,3890.68,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,104375008,Hepatitis C antibody test,2254.69,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,169690007,Rubella screening,2135.42,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,104326007,Measurement of Varicella-zoster virus antibody,2949.01,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,28163009,Skin test for tuberculosis,2717.05,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,167271000,Urine protein test,2184.04,72892002,Normal pregnancy
+2018-08-22T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,750cca76-90ab-46b0-937a-ecbf63f9e3a2,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2018-09-19T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,e21f58d1-ed24-45c3-83a5-1e1a6583d6f2,274804006,Evaluation of uterine fundal height,9763.37,72892002,Normal pregnancy
+2018-09-19T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,e21f58d1-ed24-45c3-83a5-1e1a6583d6f2,225158009,Auscultation of the fetal heart,5707.57,72892002,Normal pregnancy
+2018-09-19T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,e21f58d1-ed24-45c3-83a5-1e1a6583d6f2,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,1779.22,72892002,Normal pregnancy
+2018-10-17T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,49f99e44-16fc-400d-8d3b-5cdb835281e9,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2018-10-17T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,49f99e44-16fc-400d-8d3b-5cdb835281e9,275833003,Alpha-fetoprotein test,2332.94,72892002,Normal pregnancy
+2018-10-17T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,49f99e44-16fc-400d-8d3b-5cdb835281e9,274804006,Evaluation of uterine fundal height,7107.08,72892002,Normal pregnancy
+2018-10-17T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,49f99e44-16fc-400d-8d3b-5cdb835281e9,225158009,Auscultation of the fetal heart,7710.89,72892002,Normal pregnancy
+2018-11-14T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,bb1b1e2b-5e99-4cb0-9009-1517715677e6,274804006,Evaluation of uterine fundal height,6819.98,72892002,Normal pregnancy
+2018-11-14T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,bb1b1e2b-5e99-4cb0-9009-1517715677e6,225158009,Auscultation of the fetal heart,6004.46,72892002,Normal pregnancy
+2018-12-12T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,80163e7f-78dc-4862-b495-2d05042998f5,274804006,Evaluation of uterine fundal height,6635.42,72892002,Normal pregnancy
+2018-12-12T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,80163e7f-78dc-4862-b495-2d05042998f5,225158009,Auscultation of the fetal heart,9376.23,72892002,Normal pregnancy
+2019-01-09T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,a5a1bf69-3652-40f9-979e-17c2d4286897,169673001,Antenatal RhD antibody screening,3962.57,72892002,Normal pregnancy
+2019-01-09T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,a5a1bf69-3652-40f9-979e-17c2d4286897,51116004,RhD passive immunization,4538.74,72892002,Normal pregnancy
+2019-01-09T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,a5a1bf69-3652-40f9-979e-17c2d4286897,104091002,Hemoglobin / Hematocrit / Platelet count,3887.05,72892002,Normal pregnancy
+2019-01-09T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,a5a1bf69-3652-40f9-979e-17c2d4286897,399014008,Vaccination for diphtheria  pertussis  and tetanus,2374.18,72892002,Normal pregnancy
+2019-01-09T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,a5a1bf69-3652-40f9-979e-17c2d4286897,268556000,Urine screening for glucose,1384.77,72892002,Normal pregnancy
+2019-01-09T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,a5a1bf69-3652-40f9-979e-17c2d4286897,274804006,Evaluation of uterine fundal height,8342.49,72892002,Normal pregnancy
+2019-01-09T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,a5a1bf69-3652-40f9-979e-17c2d4286897,225158009,Auscultation of the fetal heart,10040.09,72892002,Normal pregnancy
+2019-02-06T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,e036e1dd-be75-4abb-b181-9739c5a4f84d,274804006,Evaluation of uterine fundal height,6599.47,72892002,Normal pregnancy
+2019-02-06T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,e036e1dd-be75-4abb-b181-9739c5a4f84d,225158009,Auscultation of the fetal heart,6299.81,72892002,Normal pregnancy
+2019-03-06T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,6724640a-fb8e-44ef-acc6-cb1e0fe0472e,118001005,Streptococcus pneumoniae group B antigen test,2706.27,72892002,Normal pregnancy
+2019-03-06T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,6724640a-fb8e-44ef-acc6-cb1e0fe0472e,274804006,Evaluation of uterine fundal height,4545.02,72892002,Normal pregnancy
+2019-03-06T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,6724640a-fb8e-44ef-acc6-cb1e0fe0472e,225158009,Auscultation of the fetal heart,5082.25,72892002,Normal pregnancy
+2019-03-20T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,7abbe4b7-616e-4b4f-8fc3-a08f41d1f8dd,274804006,Evaluation of uterine fundal height,4135.18,72892002,Normal pregnancy
+2019-03-20T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,7abbe4b7-616e-4b4f-8fc3-a08f41d1f8dd,225158009,Auscultation of the fetal heart,7695.01,72892002,Normal pregnancy
+2019-03-27T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,58d9bb25-234d-4993-a45b-57052a368450,274804006,Evaluation of uterine fundal height,4901.56,72892002,Normal pregnancy
+2019-03-27T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,58d9bb25-234d-4993-a45b-57052a368450,225158009,Auscultation of the fetal heart,6375.92,72892002,Normal pregnancy
+2019-04-03T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,9b67c9cf-82d9-4ccb-8de3-bd46e5fc91ac,18946005,Epidural anesthesia,3250.28,72892002,Normal pregnancy
+2019-04-03T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,9b67c9cf-82d9-4ccb-8de3-bd46e5fc91ac,66348005,Childbirth,583.40,72892002,Normal pregnancy
+2019-05-15T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,8901bc38-0743-4260-b783-50d3c7015954,51116004,RhD passive immunization,2875.72,,
+2019-05-15T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,8901bc38-0743-4260-b783-50d3c7015954,5880005,Physical examination following birth,583.40,,
+2019-05-15T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,8901bc38-0743-4260-b783-50d3c7015954,171207006,Depression screening,583.40,,
+2020-03-14T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,3735c8fd-4139-4eea-81ca-038607720bfc,288086009,Suture open wound,6669.39,284549007,Laceration of hand
+2020-03-14T20:24:36Z,a176a5f2-8ae0-459e-bb06-9ab232a3e94f,3735c8fd-4139-4eea-81ca-038607720bfc,384700001,Injection of tetanus antitoxin,2904.77,284549007,Laceration of hand
+2012-03-17T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,bf82e715-1c1e-4899-b895-150eb812887c,183856001,Referral to hypertension clinic,583.40,,
+2013-10-30T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,0a54b078-fe34-4962-9e74-425e1d9b9451,430193006,Medication Reconciliation (procedure),536.77,,
+2015-07-11T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,78b6dc3c-a1fd-49ea-8ea1-3da599dfbe78,76601001,Intramuscular injection,2637.67,,
+2015-10-21T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,e3d83f36-f8a3-4dd8-b456-5f336bd192e3,76601001,Intramuscular injection,4010.77,,
+2016-01-20T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,5603093a-fb7f-4c44-beb0-274acea83332,76601001,Intramuscular injection,2663.47,,
+2016-04-20T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,2a162c41-cea6-435f-a271-b66a003e5080,76601001,Intramuscular injection,4152.29,,
+2016-07-20T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,da798821-a874-48b0-9bd9-ee3e458b701a,76601001,Intramuscular injection,4065.84,,
+2016-10-19T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,bbbcd6d0-4b34-48d5-918f-0f3b45905a70,76601001,Intramuscular injection,3040.27,,
+2017-01-18T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,bbc1bc6b-0183-43f5-930c-415c49abed65,76601001,Intramuscular injection,4588.47,,
+2017-04-19T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,c643b9e3-15dd-42c2-a161-e88e0e97306a,76601001,Intramuscular injection,2708.09,,
+2017-07-19T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,88bdfe2f-0cfb-450c-94ec-ff34744ef83a,76601001,Intramuscular injection,3643.30,,
+2017-10-18T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,35229662-e28e-49b0-813f-713df28feb76,76601001,Intramuscular injection,2523.63,,
+2018-01-17T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,cf70e8e1-8325-4846-9667-2fe71f1aee41,76601001,Intramuscular injection,3875.65,,
+2018-04-18T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,1d5511ab-7350-41d1-8f2f-51efbe313aa9,76601001,Intramuscular injection,1838.24,,
+2018-07-18T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,ef583025-bc61-4e5c-a570-6300339b3031,76601001,Intramuscular injection,3137.08,,
+2018-10-17T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,6e173d6e-eda3-4410-96c9-7877d84bee13,76601001,Intramuscular injection,2537.56,,
+2018-11-28T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,58bff821-d53d-4f07-b33c-2ecce925ddde,430193006,Medication Reconciliation (procedure),651.87,,
+2019-01-16T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,985453a6-600e-416e-8e9a-6d24c742c699,76601001,Intramuscular injection,2559.63,,
+2019-04-17T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,f29276fd-e2db-4197-ad95-ac4821af9f3f,76601001,Intramuscular injection,3355.89,,
+2019-07-17T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,93ad7120-4977-4c07-b626-afc321e7cb73,76601001,Intramuscular injection,2429.01,,
+2019-10-16T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,4b45087e-2eae-4a95-b363-50237048f4c9,76601001,Intramuscular injection,4403.64,,
+2020-01-15T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,b7507cae-d72a-4319-9562-f64e3b381d7b,76601001,Intramuscular injection,3520.78,,
+2020-04-15T06:40:01Z,0edf1bfa-f7fa-4efe-abb5-41c1417bfe8c,9a2427a6-9acd-4a9f-a127-108d2b7c670e,76601001,Intramuscular injection,3566.50,,
+2011-04-27T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,436e2895-df4f-451a-af86-fe47bfc5daee,430193006,Medication Reconciliation (procedure),673.70,,
+2013-05-08T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,287adb42-c186-4064-9e41-50e3d480127d,430193006,Medication Reconciliation (procedure),595.67,,
+2015-05-20T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,a3ab8a31-8aed-48f4-8ef7-c89e6dc4abf3,430193006,Medication Reconciliation (procedure),966.35,,
+2015-09-30T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,80eb590a-d8bf-4f0e-8326-302f3781c46a,73761001,Colonoscopy,12410.76,,
+2015-09-30T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,80eb590a-d8bf-4f0e-8326-302f3781c46a,104435004,Screening for occult blood in feces (procedure),8662.74,68496003,Polyp of colon
+2015-09-30T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,80eb590a-d8bf-4f0e-8326-302f3781c46a,274031008,Rectal polypectomy,16192.52,68496003,Polyp of colon
+2017-02-21T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,f786f526-cffa-4414-b3d2-4c4f75b9e3f5,73761001,Colonoscopy,7834.13,,
+2017-02-21T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,f786f526-cffa-4414-b3d2-4c4f75b9e3f5,274031008,Rectal polypectomy,13088.42,713197008,Recurrent rectal polyp
+2010-09-22T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,2186e138-32ec-45ea-8d9a-97609ead47f1,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2017-02-26T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,12457b0c-0523-41c2-8b17-28fdc926dfba,14768001,Peripheral blood smear interpretation,583.40,,
+2017-02-26T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,12457b0c-0523-41c2-8b17-28fdc926dfba,415300000,Review of systems (procedure),583.40,,
+2017-02-26T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,12457b0c-0523-41c2-8b17-28fdc926dfba,430193006,Medication Reconciliation (procedure),464.44,,
+2011-03-07T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,50ed401c-8c85-407d-87c9-40270fc35e4c,410006001,Digital examination of rectum,583.40,,
+2017-02-26T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,12457b0c-0523-41c2-8b17-28fdc926dfba,162676008,Brief general examination (procedure),583.40,,
+2011-03-07T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,51b89dd9-fc21-41ec-ab43-b94ab2aee45a,65575008,Biopsy of prostate,583.40,,
+2017-03-05T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,e4d31cb2-b7e4-49bb-8e8e-4f5539171da5,43075005,Partial resection of colon,17709.74,363406005,Malignant tumor of colon
+2017-03-24T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,1d8757aa-12c2-4599-83d4-847d2d329e0c,703423002,Combined chemotherapy and radiation therapy (procedure),18634.95,363406005,Malignant tumor of colon
+2011-03-07T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,b0e0cdd7-058f-491c-a244-5bd13b9448ca,90470006,Prostatectomy,583.40,126906006,Neoplasm of prostate
+2011-03-07T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,b0e0cdd7-058f-491c-a244-5bd13b9448ca,430193006,Medication Reconciliation (procedure),677.21,,
+2017-04-22T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,21b11aba-5511-40e0-bda1-07e9ddff5c7c,703423002,Combined chemotherapy and radiation therapy (procedure),12383.86,363406005,Malignant tumor of colon
+2017-05-25T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,a89a03c0-7138-46d6-8253-1a5e4f956901,703423002,Combined chemotherapy and radiation therapy (procedure),11495.69,363406005,Malignant tumor of colon
+2017-05-31T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,a89a03c0-7138-46d6-8253-1a5e4f956901,430193006,Medication Reconciliation (procedure),998.18,,
+2013-03-18T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,23774297-add7-473c-a1b3-4949eb4bc681,430193006,Medication Reconciliation (procedure),608.39,,
+2017-06-22T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,bc1021c7-a441-41ac-8288-7d0e24c59202,703423002,Combined chemotherapy and radiation therapy (procedure),21777.13,363406005,Malignant tumor of colon
+2015-03-30T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,c362e1a8-b692-4487-b450-88ee5b734ab6,180325003,Electrical cardioversion,33821.33,49436004,Atrial Fibrillation
+2017-07-26T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,b95efc08-88ab-4027-bacf-1e727715ea96,703423002,Combined chemotherapy and radiation therapy (procedure),15225.06,363406005,Malignant tumor of colon
+2017-08-27T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,698d6eb3-4c2d-4ad9-a30a-d3c91a8d845a,703423002,Combined chemotherapy and radiation therapy (procedure),10467.75,363406005,Malignant tumor of colon
+2016-04-04T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,a5de156e-708b-4f47-a020-411fb1c43e53,18286008,Catheter ablation of tissue of heart,19888.97,49436004,Atrial Fibrillation
+2016-04-04T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,a5de156e-708b-4f47-a020-411fb1c43e53,430193006,Medication Reconciliation (procedure),422.07,,
+2018-06-06T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,d8c82296-286b-4129-8eaa-e6549a76ff1c,430193006,Medication Reconciliation (procedure),390.09,,
+2019-06-12T17:48:10Z,fb75e4b7-a53b-4ede-95da-563685cdd132,979f5593-0de8-4006-8a96-753a290309ba,430193006,Medication Reconciliation (procedure),384.72,,
+2017-04-10T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,8de49b12-8649-4a35-a9e6-5e1fb048cdbd,18286008,Catheter ablation of tissue of heart,18537.59,49436004,Atrial Fibrillation
+2017-04-10T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,8de49b12-8649-4a35-a9e6-5e1fb048cdbd,430193006,Medication Reconciliation (procedure),604.66,,
+2018-04-16T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,479d011b-858d-4e4e-9d62-f62e63743814,180325003,Electrical cardioversion,31105.49,49436004,Atrial Fibrillation
+2019-04-22T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,0f8c6efa-76fb-4bfc-bcee-596533ef4dc4,18286008,Catheter ablation of tissue of heart,16471.22,49436004,Atrial Fibrillation
+2020-04-27T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,ccd42c03-a3ae-4535-9407-08cba9e85876,180325003,Electrical cardioversion,37412.05,49436004,Atrial Fibrillation
+2020-04-27T06:03:43Z,4a2311ce-7a7d-4043-8b8a-4545c4222d14,ccd42c03-a3ae-4535-9407-08cba9e85876,430193006,Medication Reconciliation (procedure),728.22,,
+2011-01-06T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,bfc75869-7a1f-4257-8483-94aa99e7c134,24623002,Screening mammography (procedure),583.40,,
+2011-01-06T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,bfc75869-7a1f-4257-8483-94aa99e7c134,1571000087109,Ultrasonography of bilateral breasts (procedure),583.40,,
+2011-01-06T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,bfc75869-7a1f-4257-8483-94aa99e7c134,122548005,Biopsy of breast (procedure),583.40,,
+2011-01-06T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,bfc75869-7a1f-4257-8483-94aa99e7c134,434363004,Human epidermal growth factor receptor 2 gene detection by fluorescence in situ hybridization (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-06T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,bfc75869-7a1f-4257-8483-94aa99e7c134,433114000,Human epidermal growth factor receptor 2 gene detection by immunohistochemistry (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-12T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,86b17094-e3c6-416c-9302-d1715423b3d5,392021009,Lumpectomy of breast (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-20T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,023df761-9518-4072-b900-883dd6527003,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-21T13:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,3f6fcc16-adaa-45e2-876c-e8a15da44fa1,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-22T19:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,2eec2f83-6f85-414d-94c7-310289e302ee,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-23T21:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,d0f33768-2027-4091-87b2-97f49f04c5bb,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-24T22:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,a82b9c3c-3b61-45ae-80bb-32637753c775,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-26T06:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,e0d419ab-71d3-4a62-8cd2-85b79af497ce,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-27T12:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,16a37d47-e591-40f5-8767-f2767e5dc4e8,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-28T20:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,72125b03-2d85-4d1d-9be5-ed0d3b1ad3a4,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-30T03:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,d21f9fb2-d07f-4bf1-a94d-7959d6ff5ace,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-01-31T14:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,c444aac8-8587-4ef4-a42e-5e7b63caaf48,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-01T20:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,58157f71-8e5a-41ff-93f4-b43d101ec0f8,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-03T05:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,901c371b-5dcd-4d5b-845d-604257be284d,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-04T12:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,b15d274c-4e5f-4e1d-98d0-9f6a14781e5d,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-05T22:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,9ae9bed5-bdde-46f3-8312-8a290c850f02,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-07T01:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,4f5818b6-ba67-4784-93df-e1071caf2132,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-08T10:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,d171b7a3-61ec-45b4-8132-936916ddea40,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-09T12:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,8e07ebd9-6afd-4e66-a824-46dcf7d3054c,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-10T19:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,d9580d1c-cb2f-4b26-96b8-8836d1840ede,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-12T00:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,d4ba596e-dd58-49c0-97b0-be82b67ac551,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-13T01:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,5b49a286-c2d3-497d-9b4d-0054e635c00e,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-14T05:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,cc59f2a2-a119-4506-a586-8d3311d99161,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-15T09:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,0bb16293-ddca-4d68-9c04-3f354a89b1c2,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-16T13:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,f10e450e-979a-484d-bfc3-b73f15274242,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-17T19:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,8eaaac5c-23a8-4a90-a42d-8ad733561694,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-19T06:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,ea8babfe-2aae-4af1-8b5c-5df0ba052633,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-20T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,f782281f-e226-4670-ba19-73315905e9ab,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-21T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,a3ce3c89-7256-45d6-a247-db713fab91b2,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-22T15:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,b2b2aa58-4218-47c4-a669-9fb3e2d6ca36,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-24T02:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,e32f5efe-2180-4cb9-a7f1-d8bd04f622c9,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-25T03:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,02ca8130-8c36-485e-af82-7f10ada5c389,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-26T05:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,89fc16dd-ad58-4d92-97e9-2f302bb2c4a2,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-27T14:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,672198ba-7977-4f39-8154-16f5e2d6213a,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-02-28T21:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,587abb4c-afa3-4da5-ad9e-d5eecda97599,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2011-03-01T22:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,2f43c4d6-f41c-4ae7-a400-09ccdf595ce3,33195004,Teleradiotherapy procedure (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2012-01-26T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,de8c341f-69bc-4188-96e0-f2a2adbbf4bb,71651007,Mammography (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2012-01-26T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,787b960f-5f1f-4385-95bd-330e531ca2b9,312681000,Bone density scan (procedure),17278.42,254837009,Malignant neoplasm of breast (disorder)
+2012-11-29T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,b7d2f871-b5d7-4ccf-888f-0481e93af5c1,71651007,Mammography (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2012-11-29T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,eb2eaae8-7f27-485e-81ca-80b74faf5729,312681000,Bone density scan (procedure),10110.58,254837009,Malignant neoplasm of breast (disorder)
+2013-01-24T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,494f9bba-09a1-438d-85fa-c1014cb852b1,430193006,Medication Reconciliation (procedure),624.22,,
+2013-10-17T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,aacfb0f6-c6a3-4c8b-aeb1-bdd534678b77,71651007,Mammography (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2013-10-17T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,74886fb8-cd16-4a98-a157-512e7afa9fec,312681000,Bone density scan (procedure),12599.80,254837009,Malignant neoplasm of breast (disorder)
+2014-01-30T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,8e0f154a-83ec-45f6-9ba1-7d1b4f681df0,430193006,Medication Reconciliation (procedure),935.56,,
+2014-07-03T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,e5f37eb5-f24e-4826-a028-b28d1470d7f2,46706006,Replacement of contraceptive intrauterine device,8103.90,,
+2014-08-28T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,17cca80a-3a10-4485-bddf-4ec5a8f12e60,71651007,Mammography (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2014-08-28T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,27d73133-49d2-4191-8053-1c6f6ec88a3b,312681000,Bone density scan (procedure),12487.24,254837009,Malignant neoplasm of breast (disorder)
+2015-07-09T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,af8a98e8-c662-4ddb-9246-f90c28bd3be6,71651007,Mammography (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2015-07-09T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,ea0bd624-71fb-4b2d-9651-0a98465f81bc,312681000,Bone density scan (procedure),11266.34,254837009,Malignant neoplasm of breast (disorder)
+2016-02-11T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,69dbb79c-55a2-4c3f-8b4d-adf66449b94a,430193006,Medication Reconciliation (procedure),755.68,,
+2016-06-03T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,2fb8579e-3227-422d-9fbb-7473c9244391,71651007,Mammography (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2016-06-03T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,45e456b6-d733-4f6c-bf8f-95c6bb11fdd7,312681000,Bone density scan (procedure),14714.58,254837009,Malignant neoplasm of breast (disorder)
+2016-11-14T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,dfe75b59-cc7c-43de-bd2e-346c3236b712,269911007,Sputum examination (procedure),8150.71,10509002,Acute bronchitis (disorder)
+2017-05-29T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,e42732d1-4188-433c-8ee8-444269735910,71651007,Mammography (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2017-05-29T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,a160a0db-0301-4290-8cdc-e2c12626f323,312681000,Bone density scan (procedure),12349.73,254837009,Malignant neoplasm of breast (disorder)
+2018-05-24T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,29e0ca23-f2ed-4c67-847d-c1a24a716618,71651007,Mammography (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2018-05-24T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,c5103a5e-152d-4557-9f95-2825cc372c28,312681000,Bone density scan (procedure),8319.43,254837009,Malignant neoplasm of breast (disorder)
+2018-09-27T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,7017019a-a01e-4bf3-9f68-ae5002c6bc16,430193006,Medication Reconciliation (procedure),841.43,,
+2019-04-19T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,d8ba3fcd-6faa-473c-9c2c-c0310114b1c8,71651007,Mammography (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2019-04-19T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,035c899f-4b60-4f54-88c5-eb52a0a5fa9a,312681000,Bone density scan (procedure),19006.30,254837009,Malignant neoplasm of breast (disorder)
+2019-07-04T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,617254a4-b97f-44db-8a34-7e1b593ed768,46706006,Replacement of contraceptive intrauterine device,11398.07,,
+2020-03-05T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,847599ea-22d9-4064-a7b7-a147fc018701,430193006,Medication Reconciliation (procedure),928.73,,
+2020-03-14T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,dcd26284-59a7-4a22-a119-df88ff12b187,71651007,Mammography (procedure),583.40,254837009,Malignant neoplasm of breast (disorder)
+2020-03-14T11:09:19Z,662fcf35-0742-456e-8cf7-6bea68f0763a,8c5768c8-1073-4eb2-888f-a561d0eb4658,312681000,Bone density scan (procedure),9445.48,254837009,Malignant neoplasm of breast (disorder)
+2010-06-24T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,92cde8ce-c67d-42a8-bd41-a56327949228,180256009,Subcutaneous immunotherapy,12370.48,,
+2010-07-15T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,45b9a270-dcd1-44d4-b883-e20c4ce50c96,180256009,Subcutaneous immunotherapy,14595.83,,
+2010-08-05T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,16033e92-ec14-4fb7-a961-062b3f2ee927,180256009,Subcutaneous immunotherapy,18345.41,,
+2010-08-26T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,94b64733-7949-42a5-aa65-edd1239f8dec,180256009,Subcutaneous immunotherapy,18115.61,,
+2010-09-16T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,d2aad4ee-066b-4a26-a103-45654080f6e4,180256009,Subcutaneous immunotherapy,14103.49,,
+2010-10-07T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,4c6ed750-606a-4c84-8e40-bb412cc7d3f0,180256009,Subcutaneous immunotherapy,20939.14,,
+2010-10-28T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,7a6035b1-cb6e-42ee-bb4a-452638f00e17,180256009,Subcutaneous immunotherapy,16657.12,,
+2010-11-18T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,73e34791-cf3f-4c04-81cc-36df12f90e10,180256009,Subcutaneous immunotherapy,16698.00,,
+2010-12-09T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,8c9caa98-2754-43dd-9c8e-83486f0431f6,180256009,Subcutaneous immunotherapy,14898.45,,
+2010-12-30T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,819ab2a4-ac4d-45a6-be27-5a0917dfff91,180256009,Subcutaneous immunotherapy,14220.31,,
+2011-01-20T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,51d07610-8499-4825-ab51-e15168d17375,180256009,Subcutaneous immunotherapy,10653.59,,
+2011-02-10T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,26b29bec-04c2-4b0d-86f5-f5cf817ce477,180256009,Subcutaneous immunotherapy,16939.79,,
+2011-03-03T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,22027d8e-998f-4b69-ae04-24d9bd62e932,180256009,Subcutaneous immunotherapy,12901.80,,
+2011-03-24T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,d5b50172-2083-484e-93f8-a9fe924ada15,180256009,Subcutaneous immunotherapy,18254.59,,
+2011-04-14T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,998e44df-0a4c-494d-853f-483d27b47c56,180256009,Subcutaneous immunotherapy,14560.03,,
+2011-05-05T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,ff26a546-3cc1-4b4f-a8a8-08e940602adc,180256009,Subcutaneous immunotherapy,20179.60,,
+2011-05-26T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,35751dbe-ac58-4f2b-8471-5ccb6963587c,180256009,Subcutaneous immunotherapy,21864.61,,
+2011-06-16T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,57e4fe75-e858-4d05-9a61-b19097244cd7,180256009,Subcutaneous immunotherapy,22025.45,,
+2011-07-07T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,830e84bd-58dc-4bc8-88b2-e13b9c82cb64,180256009,Subcutaneous immunotherapy,10822.47,,
+2011-07-28T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,111e208f-79e6-4b6f-bd35-c9261aabe750,180256009,Subcutaneous immunotherapy,14398.43,,
+2011-08-18T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,775832e7-8912-4367-8cbe-3476ae47f3e7,180256009,Subcutaneous immunotherapy,20821.40,,
+2011-09-08T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,d6aba694-8bfb-4ed2-9b95-9f25a5a402aa,180256009,Subcutaneous immunotherapy,15376.39,,
+2011-09-29T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,7f5b9033-a315-4e92-8e5d-fc9fb55d4e90,395142003,Allergy screening test,583.40,,
+2013-05-16T03:53:55Z,688ddc20-5c43-4cae-82f3-499b70f0f8e8,3c6c368e-0f42-4040-ac94-fdb1f55b6bc3,430193006,Medication Reconciliation (procedure),478.08,,
+2011-01-29T07:10:34Z,3632c71c-d551-44bd-b972-19103003c0e0,6451c0df-b7d6-4ed5-b432-4b1a314bd82e,430193006,Medication Reconciliation (procedure),561.24,,
+2018-03-10T07:10:34Z,3632c71c-d551-44bd-b972-19103003c0e0,4e9b22aa-c0f7-4800-b0ab-8965fb9cb5dd,430193006,Medication Reconciliation (procedure),721.05,,
+2019-03-16T07:10:34Z,3632c71c-d551-44bd-b972-19103003c0e0,48733cc8-c543-4c8d-a929-424dad7218f9,430193006,Medication Reconciliation (procedure),478.21,,
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,252160004,Standard pregnancy test,8296.86,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,169230002,Ultrasound scan for fetal viability,14191.05,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,274804006,Evaluation of uterine fundal height,5603.77,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,225158009,Auscultation of the fetal heart,6116.28,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,44608003,Blood typing  RH typing,3267.13,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,104091002,Hemoglobin / Hematocrit / Platelet count,2216.90,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,47758006,Hepatitis B Surface Antigen Measurement,2396.36,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,31676001,Human immunodeficiency virus antigen test,3248.57,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,310861008,Chlamydia antigen test,1932.85,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,165829005,Gonorrhea infection test,2480.95,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,269828009,Syphilis infection test,3555.44,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,117010004,Urine culture,3623.86,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,90226004,Cytopathology procedure  preparation of smear  genital source,3135.98,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,395123002,Urine screening test for diabetes,2356.21,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,104375008,Hepatitis C antibody test,3160.08,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,169690007,Rubella screening,3424.78,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,104326007,Measurement of Varicella-zoster virus antibody,1809.82,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,28163009,Skin test for tuberculosis,2329.64,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,167271000,Urine protein test,2802.04,72892002,Normal pregnancy
+2010-08-25T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,48573697-36bb-495f-8e09-8706e5d6a58b,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2010-09-22T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,72f7653d-216d-42ab-8945-c75de6193c13,274804006,Evaluation of uterine fundal height,5229.29,72892002,Normal pregnancy
+2010-09-22T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,72f7653d-216d-42ab-8945-c75de6193c13,225158009,Auscultation of the fetal heart,6232.80,72892002,Normal pregnancy
+2010-09-22T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,72f7653d-216d-42ab-8945-c75de6193c13,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,2808.03,72892002,Normal pregnancy
+2010-10-20T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,2ea69c5e-e2f9-4884-ac73-fdb7e9392098,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2010-10-20T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,2ea69c5e-e2f9-4884-ac73-fdb7e9392098,275833003,Alpha-fetoprotein test,1814.53,72892002,Normal pregnancy
+2010-10-20T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,2ea69c5e-e2f9-4884-ac73-fdb7e9392098,274804006,Evaluation of uterine fundal height,10672.06,72892002,Normal pregnancy
+2010-10-20T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,2ea69c5e-e2f9-4884-ac73-fdb7e9392098,225158009,Auscultation of the fetal heart,6145.68,72892002,Normal pregnancy
+2010-11-17T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,1cc60afb-532f-4d56-9350-2e160f121d42,274804006,Evaluation of uterine fundal height,4766.03,72892002,Normal pregnancy
+2010-11-17T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,1cc60afb-532f-4d56-9350-2e160f121d42,225158009,Auscultation of the fetal heart,4441.00,72892002,Normal pregnancy
+2010-12-15T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,2f5aebf0-2049-4cfc-a38a-650dddf8b1af,274804006,Evaluation of uterine fundal height,7222.63,72892002,Normal pregnancy
+2010-12-15T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,2f5aebf0-2049-4cfc-a38a-650dddf8b1af,225158009,Auscultation of the fetal heart,6580.00,72892002,Normal pregnancy
+2011-01-12T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,cfd1e4f2-2306-4860-9796-299992f3eb51,104091002,Hemoglobin / Hematocrit / Platelet count,2642.74,72892002,Normal pregnancy
+2011-01-12T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,cfd1e4f2-2306-4860-9796-299992f3eb51,399014008,Vaccination for diphtheria  pertussis  and tetanus,4557.14,72892002,Normal pregnancy
+2011-01-12T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,cfd1e4f2-2306-4860-9796-299992f3eb51,268556000,Urine screening for glucose,3290.87,72892002,Normal pregnancy
+2011-01-12T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,cfd1e4f2-2306-4860-9796-299992f3eb51,274804006,Evaluation of uterine fundal height,6188.90,72892002,Normal pregnancy
+2011-01-12T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,cfd1e4f2-2306-4860-9796-299992f3eb51,225158009,Auscultation of the fetal heart,12039.52,72892002,Normal pregnancy
+2011-02-09T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,4e54bf57-004a-4aa3-841f-2d26186fd592,274804006,Evaluation of uterine fundal height,7120.03,72892002,Normal pregnancy
+2011-02-09T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,4e54bf57-004a-4aa3-841f-2d26186fd592,225158009,Auscultation of the fetal heart,6891.43,72892002,Normal pregnancy
+2011-03-09T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,b9591a1a-ae3a-4446-87e3-ad2984986eec,118001005,Streptococcus pneumoniae group B antigen test,1510.01,72892002,Normal pregnancy
+2011-03-09T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,b9591a1a-ae3a-4446-87e3-ad2984986eec,274804006,Evaluation of uterine fundal height,9451.98,72892002,Normal pregnancy
+2011-03-09T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,b9591a1a-ae3a-4446-87e3-ad2984986eec,225158009,Auscultation of the fetal heart,5391.09,72892002,Normal pregnancy
+2011-03-23T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,e01f9645-a561-4449-84a3-6f0018a1d513,31208007,Medical induction of labor,3418.15,72892002,Normal pregnancy
+2011-03-23T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,e01f9645-a561-4449-84a3-6f0018a1d513,66348005,Childbirth,583.40,72892002,Normal pregnancy
+2011-05-04T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,37e22351-2c8a-42ef-839a-826333123d4a,5880005,Physical examination following birth,583.40,,
+2011-05-04T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,37e22351-2c8a-42ef-839a-826333123d4a,171207006,Depression screening,583.40,,
+2012-04-28T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,b7bb0885-7689-4809-9a00-b21708016393,169553002,Insertion of subcutaneous contraceptive,16626.93,,
+2016-05-11T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,66e9d805-5368-434a-9ecd-c6db49733f5b,301807007,Removal of subcutaneous contraceptive,15539.78,,
+2016-05-11T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,66e9d805-5368-434a-9ecd-c6db49733f5b,169553002,Insertion of subcutaneous contraceptive,5869.83,,
+2017-05-31T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,a84a70f2-f61d-4788-b881-ad2a89e13baa,301807007,Removal of subcutaneous contraceptive,10806.47,,
+2017-07-26T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,9fcbf7f6-1e81-4887-a8e8-4b3262e78088,252160004,Standard pregnancy test,10061.10,72892002,Normal pregnancy
+2017-07-26T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,9fcbf7f6-1e81-4887-a8e8-4b3262e78088,169230002,Ultrasound scan for fetal viability,14595.36,72892002,Normal pregnancy
+2017-08-02T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,04e6c533-dfff-4a94-b3fb-932bb07b8dd3,10383002,Counseling for termination of pregnancy,583.40,72892002,Normal pregnancy
+2017-08-02T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,04e6c533-dfff-4a94-b3fb-932bb07b8dd3,714812005,Induced termination of pregnancy,20533.57,72892002,Normal pregnancy
+2017-08-09T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,8a449a81-9237-40d9-8662-2a069d233fe3,386394001,Pregnancy termination care,583.40,72892002,Normal pregnancy
+2017-08-09T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,8a449a81-9237-40d9-8662-2a069d233fe3,5880005,Physical exam following abortion,583.40,72892002,Normal pregnancy
+2017-08-09T08:30:20Z,05224392-9285-41a0-b77c-a9b3648595ba,8a449a81-9237-40d9-8662-2a069d233fe3,171207006,Depression screening,583.40,72892002,Normal pregnancy
+2010-10-22T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,22e00fed-d575-4a63-9604-4c0fdc681747,73761001,Colonoscopy,19083.62,,
+2010-10-22T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,22e00fed-d575-4a63-9604-4c0fdc681747,104435004,Screening for occult blood in feces (procedure),5896.13,68496003,Polyp of colon
+2010-10-22T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,22e00fed-d575-4a63-9604-4c0fdc681747,274031008,Rectal polypectomy,12786.63,68496003,Polyp of colon
+2010-10-22T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,22e00fed-d575-4a63-9604-4c0fdc681747,430193006,Medication Reconciliation (procedure),652.15,,
+2011-10-28T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,1b98aaa6-29fe-4ad9-a3a2-06a9600fa890,14768001,Peripheral blood smear interpretation,583.40,,
+2011-10-28T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,1b98aaa6-29fe-4ad9-a3a2-06a9600fa890,415300000,Review of systems (procedure),583.40,,
+2011-10-28T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,1b98aaa6-29fe-4ad9-a3a2-06a9600fa890,430193006,Medication Reconciliation (procedure),551.67,,
+2011-10-28T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,1b98aaa6-29fe-4ad9-a3a2-06a9600fa890,162676008,Brief general examination (procedure),583.40,,
+2011-11-16T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,6b5ff1ea-645a-4684-8fef-03fdc39d4cd9,73761001,Colonoscopy,21180.51,,
+2013-11-08T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,77865727-8194-45e0-b1c1-0ea974345b65,430193006,Medication Reconciliation (procedure),649.68,,
+2014-09-17T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,3238fd0a-1e21-476d-8a6e-ace22963eb3a,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2014-11-14T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,70c86fb6-da4a-44fe-a854-53a69241c5c8,430193006,Medication Reconciliation (procedure),966.88,,
+2015-11-20T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,c3fb37d3-bc8a-4398-8a89-deb76194dae3,430193006,Medication Reconciliation (procedure),543.03,,
+2016-11-14T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,33c89eee-8eba-4e82-b8bc-cc2466526122,73761001,Colonoscopy,14314.17,,
+2016-11-25T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,215b39d2-41c1-4ed0-b088-db295dab01ce,430193006,Medication Reconciliation (procedure),816.48,,
+2017-12-01T09:27:27Z,a4fe4b96-de85-40a9-94af-c9410400e27b,1aea99c3-369f-4414-abc6-853bfc2b1812,430193006,Medication Reconciliation (procedure),461.29,,
+2011-01-27T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,b1632248-58a2-47d2-a81d-9e651522d211,180325003,Electrical cardioversion,32722.00,49436004,Atrial Fibrillation
+2011-01-27T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,b1632248-58a2-47d2-a81d-9e651522d211,430193006,Medication Reconciliation (procedure),604.14,,
+2012-02-02T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,a5a4e3ba-91f8-4dd6-a4b0-2d53d32d22ac,180325003,Electrical cardioversion,35737.00,49436004,Atrial Fibrillation
+2013-02-07T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,f5b6fd0d-015a-47e3-aaa2-e589a94ba9b6,18286008,Catheter ablation of tissue of heart,11568.43,49436004,Atrial Fibrillation
+2014-02-13T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,f1639cea-2bc7-4978-9f2b-cce72f558886,180325003,Electrical cardioversion,35975.68,49436004,Atrial Fibrillation
+2014-02-13T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,f1639cea-2bc7-4978-9f2b-cce72f558886,430193006,Medication Reconciliation (procedure),561.01,,
+2015-02-19T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,bc24c79a-3ac2-4c78-aa5d-86995db0d182,180325003,Electrical cardioversion,38250.69,49436004,Atrial Fibrillation
+2015-02-19T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,bc24c79a-3ac2-4c78-aa5d-86995db0d182,430193006,Medication Reconciliation (procedure),886.90,,
+2016-02-25T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,bbe639f5-0215-47e3-b92d-7bc9cb72f58d,180325003,Electrical cardioversion,40286.22,49436004,Atrial Fibrillation
+2016-02-25T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,bbe639f5-0215-47e3-b92d-7bc9cb72f58d,430193006,Medication Reconciliation (procedure),456.89,,
+2017-03-02T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,993d623e-6c49-474f-842b-98d2dd5fb67d,180325003,Electrical cardioversion,47973.99,49436004,Atrial Fibrillation
+2017-03-02T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,f50e961b-e99d-44ec-8c53-cbed76cbca3a,430193006,Medication Reconciliation (procedure),1127.77,,
+2018-03-08T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,74437059-4fae-4d44-a48b-53a118b7193e,180325003,Electrical cardioversion,17563.88,49436004,Atrial Fibrillation
+2018-03-08T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,74437059-4fae-4d44-a48b-53a118b7193e,430193006,Medication Reconciliation (procedure),681.73,,
+2019-03-14T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,9d689c08-f055-4746-8b89-bd523fa83879,18286008,Catheter ablation of tissue of heart,11463.78,49436004,Atrial Fibrillation
+2020-03-19T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,fc203e69-9bcf-4742-a9e3-14212c486834,18286008,Catheter ablation of tissue of heart,13288.91,49436004,Atrial Fibrillation
+2020-03-19T09:38:19Z,c47a6292-eaaa-4716-a12a-1be49a6ffad2,fc203e69-9bcf-4742-a9e3-14212c486834,430193006,Medication Reconciliation (procedure),501.38,,
+2012-05-19T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,e78543e9-c9b1-4f98-86ac-73758f14a571,430193006,Medication Reconciliation (procedure),688.86,,
+2012-10-05T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,e466312f-6e1a-4d83-9c71-77cdaf1fdcfc,73761001,Colonoscopy,15539.35,,
+2013-05-25T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,08ad93f8-6fde-403b-8866-8fa4d5104b83,430193006,Medication Reconciliation (procedure),600.71,,
+2017-10-04T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,9350af11-7be7-4890-ac21-5cd1fdd02a40,73761001,Colonoscopy,24310.89,,
+2017-10-04T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,9350af11-7be7-4890-ac21-5cd1fdd02a40,104435004,Screening for occult blood in feces (procedure),7702.17,68496003,Polyp of colon
+2017-10-04T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,9350af11-7be7-4890-ac21-5cd1fdd02a40,274031008,Rectal polypectomy,11409.85,68496003,Polyp of colon
+2018-05-12T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,fa3cfa50-cbe3-4bf3-a100-f8a5af5753a6,430193006,Medication Reconciliation (procedure),784.42,,
+2018-10-03T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,4455c485-22ff-4db4-b663-1a96ef97135f,19490002,Ankle X-ray,583.40,,
+2018-10-03T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,4455c485-22ff-4db4-b663-1a96ef97135f,274474001,Bone immobilization,583.40,16114001,Fracture of ankle
+2018-10-03T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,4455c485-22ff-4db4-b663-1a96ef97135f,312681000,Bone density scan (procedure),12948.46,16114001,Fracture of ankle
+2018-11-28T03:16:49Z,582e8ecf-cddc-4434-b168-847637e29edb,42ae9e57-3dfc-465d-9ebc-6ae086d3e6dc,73761001,Colonoscopy,11989.76,,
+2017-04-09T04:20:59Z,abb72b06-48d1-4818-80ed-e451784800c2,6de4bf21-5726-4153-b48f-07f58510da94,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2019-01-06T04:20:59Z,abb72b06-48d1-4818-80ed-e451784800c2,8088816f-b00f-4235-b419-678506d3e496,430193006,Medication Reconciliation (procedure),669.49,,
+2011-07-29T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,ae08f245-4185-4301-87d1-7dcd9d74e28b,112790001,Nasal sinus endoscopy (procedure),8768.31,,
+2013-03-30T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,fbb129c0-646c-43e2-bf96-373e1df41bae,252160004,Standard pregnancy test,7987.45,72892002,Normal pregnancy
+2013-03-30T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,fbb129c0-646c-43e2-bf96-373e1df41bae,169230002,Ultrasound scan for fetal viability,15735.78,72892002,Normal pregnancy
+2013-04-06T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,fdf162ef-c48b-4b9d-b1b2-79e5cac0c762,10383002,Counseling for termination of pregnancy,583.40,72892002,Normal pregnancy
+2013-04-06T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,fdf162ef-c48b-4b9d-b1b2-79e5cac0c762,714812005,Induced termination of pregnancy,7887.16,72892002,Normal pregnancy
+2013-04-13T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,cf3a9b21-b441-444d-8a54-8be36c8db0c6,386394001,Pregnancy termination care,583.40,72892002,Normal pregnancy
+2013-04-13T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,cf3a9b21-b441-444d-8a54-8be36c8db0c6,5880005,Physical exam following abortion,583.40,72892002,Normal pregnancy
+2013-04-13T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,cf3a9b21-b441-444d-8a54-8be36c8db0c6,171207006,Depression screening,583.40,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,252160004,Standard pregnancy test,8758.73,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,169230002,Ultrasound scan for fetal viability,13852.40,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,274804006,Evaluation of uterine fundal height,6943.67,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,225158009,Auscultation of the fetal heart,6225.62,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,44608003,Blood typing  RH typing,1492.26,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,104091002,Hemoglobin / Hematocrit / Platelet count,4091.91,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,47758006,Hepatitis B Surface Antigen Measurement,2957.00,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,31676001,Human immunodeficiency virus antigen test,3666.96,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,310861008,Chlamydia antigen test,2424.63,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,165829005,Gonorrhea infection test,1668.59,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,269828009,Syphilis infection test,1854.58,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,117010004,Urine culture,2181.89,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,90226004,Cytopathology procedure  preparation of smear  genital source,3774.67,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,395123002,Urine screening test for diabetes,2403.81,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,104375008,Hepatitis C antibody test,2163.71,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,169690007,Rubella screening,2191.11,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,104326007,Measurement of Varicella-zoster virus antibody,3777.10,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,28163009,Skin test for tuberculosis,2157.34,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,167271000,Urine protein test,2560.07,72892002,Normal pregnancy
+2013-08-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,97006a59-e3aa-477c-9283-827b9a433b71,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2013-09-14T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,107727b8-71aa-45de-b08f-5640f6350a11,274804006,Evaluation of uterine fundal height,6331.90,72892002,Normal pregnancy
+2013-09-14T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,107727b8-71aa-45de-b08f-5640f6350a11,225158009,Auscultation of the fetal heart,9346.22,72892002,Normal pregnancy
+2013-09-14T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,107727b8-71aa-45de-b08f-5640f6350a11,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,2833.94,72892002,Normal pregnancy
+2013-10-12T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,0b86b360-a4f1-475c-832f-bd43a28e47e7,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2013-10-12T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,0b86b360-a4f1-475c-832f-bd43a28e47e7,275833003,Alpha-fetoprotein test,4382.47,72892002,Normal pregnancy
+2013-10-12T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,0b86b360-a4f1-475c-832f-bd43a28e47e7,274804006,Evaluation of uterine fundal height,6579.93,72892002,Normal pregnancy
+2013-10-12T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,0b86b360-a4f1-475c-832f-bd43a28e47e7,225158009,Auscultation of the fetal heart,4339.66,72892002,Normal pregnancy
+2013-11-09T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,e5d77222-7259-4c35-a52d-de4c3b11f1f6,274804006,Evaluation of uterine fundal height,8860.06,72892002,Normal pregnancy
+2013-11-09T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,e5d77222-7259-4c35-a52d-de4c3b11f1f6,225158009,Auscultation of the fetal heart,4641.23,72892002,Normal pregnancy
+2013-12-07T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,936d7498-1c6e-4d7f-803b-1623d5b381fd,274804006,Evaluation of uterine fundal height,5297.85,72892002,Normal pregnancy
+2013-12-07T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,936d7498-1c6e-4d7f-803b-1623d5b381fd,225158009,Auscultation of the fetal heart,6162.79,72892002,Normal pregnancy
+2014-01-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,76d08849-57cb-468a-8ecd-3f91bf270547,104091002,Hemoglobin / Hematocrit / Platelet count,1920.49,72892002,Normal pregnancy
+2014-01-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,76d08849-57cb-468a-8ecd-3f91bf270547,399014008,Vaccination for diphtheria  pertussis  and tetanus,4933.13,72892002,Normal pregnancy
+2014-01-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,76d08849-57cb-468a-8ecd-3f91bf270547,268556000,Urine screening for glucose,2003.20,72892002,Normal pregnancy
+2014-01-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,76d08849-57cb-468a-8ecd-3f91bf270547,274804006,Evaluation of uterine fundal height,10002.60,72892002,Normal pregnancy
+2014-01-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,76d08849-57cb-468a-8ecd-3f91bf270547,225158009,Auscultation of the fetal heart,3568.09,72892002,Normal pregnancy
+2014-02-01T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,834dd818-f471-49be-bcd1-9a0fee62fe9d,274804006,Evaluation of uterine fundal height,6078.53,72892002,Normal pregnancy
+2014-02-01T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,834dd818-f471-49be-bcd1-9a0fee62fe9d,225158009,Auscultation of the fetal heart,8628.42,72892002,Normal pregnancy
+2014-03-01T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b0212cae-83e7-47d8-809e-46aaf3df81c3,118001005,Streptococcus pneumoniae group B antigen test,3213.01,72892002,Normal pregnancy
+2014-03-01T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b0212cae-83e7-47d8-809e-46aaf3df81c3,274804006,Evaluation of uterine fundal height,6352.43,72892002,Normal pregnancy
+2014-03-01T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b0212cae-83e7-47d8-809e-46aaf3df81c3,225158009,Auscultation of the fetal heart,6652.17,72892002,Normal pregnancy
+2014-03-15T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,c2f04896-9a36-408b-951b-6dc65ba6c58b,274804006,Evaluation of uterine fundal height,6771.05,72892002,Normal pregnancy
+2014-03-15T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,c2f04896-9a36-408b-951b-6dc65ba6c58b,225158009,Auscultation of the fetal heart,7408.32,72892002,Normal pregnancy
+2014-03-22T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,741c16d8-fbd4-4edc-8f00-100aceed9766,85548006,Episiotomy,4920.87,72892002,Normal pregnancy
+2014-03-22T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,741c16d8-fbd4-4edc-8f00-100aceed9766,66348005,Childbirth,583.40,72892002,Normal pregnancy
+2014-05-03T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,c75ae99a-2202-4158-9113-3f22df45ab66,5880005,Physical examination following birth,583.40,,
+2014-05-03T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,c75ae99a-2202-4158-9113-3f22df45ab66,171207006,Depression screening,583.40,,
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,252160004,Standard pregnancy test,7147.28,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,169230002,Ultrasound scan for fetal viability,17945.52,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,274804006,Evaluation of uterine fundal height,3513.32,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,225158009,Auscultation of the fetal heart,8144.64,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,44608003,Blood typing  RH typing,3892.94,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,104091002,Hemoglobin / Hematocrit / Platelet count,3209.37,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,47758006,Hepatitis B Surface Antigen Measurement,2581.37,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,31676001,Human immunodeficiency virus antigen test,2906.99,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,310861008,Chlamydia antigen test,3303.82,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,165829005,Gonorrhea infection test,4332.70,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,269828009,Syphilis infection test,3774.06,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,117010004,Urine culture,2287.72,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,90226004,Cytopathology procedure  preparation of smear  genital source,1881.44,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,395123002,Urine screening test for diabetes,2173.38,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,104375008,Hepatitis C antibody test,2029.54,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,169690007,Rubella screening,4131.15,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,104326007,Measurement of Varicella-zoster virus antibody,2164.15,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,28163009,Skin test for tuberculosis,3518.88,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,167271000,Urine protein test,3954.66,72892002,Normal pregnancy
+2015-04-25T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,968746ef-3200-4ade-a9ca-050ab0678437,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2015-05-23T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,7f3ab27c-b2ad-4b7f-b041-8eb68d5c8f0c,274804006,Evaluation of uterine fundal height,8403.77,72892002,Normal pregnancy
+2015-05-23T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,7f3ab27c-b2ad-4b7f-b041-8eb68d5c8f0c,225158009,Auscultation of the fetal heart,5695.41,72892002,Normal pregnancy
+2015-05-23T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,7f3ab27c-b2ad-4b7f-b041-8eb68d5c8f0c,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,2549.14,72892002,Normal pregnancy
+2015-06-20T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b468faf4-7ad8-4abd-9371-d1b58c46d8ba,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2015-06-20T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b468faf4-7ad8-4abd-9371-d1b58c46d8ba,275833003,Alpha-fetoprotein test,2387.21,72892002,Normal pregnancy
+2015-06-20T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b468faf4-7ad8-4abd-9371-d1b58c46d8ba,274804006,Evaluation of uterine fundal height,8215.18,72892002,Normal pregnancy
+2015-06-20T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b468faf4-7ad8-4abd-9371-d1b58c46d8ba,225158009,Auscultation of the fetal heart,6024.12,72892002,Normal pregnancy
+2015-07-18T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,7eb22043-d0cc-4b37-b469-db2872a96c11,274804006,Evaluation of uterine fundal height,5247.04,72892002,Normal pregnancy
+2015-07-18T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,7eb22043-d0cc-4b37-b469-db2872a96c11,225158009,Auscultation of the fetal heart,9415.75,72892002,Normal pregnancy
+2015-08-15T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,358a5dda-dca7-4af6-a4cd-04a4de9d3909,274804006,Evaluation of uterine fundal height,7477.51,72892002,Normal pregnancy
+2015-08-15T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,358a5dda-dca7-4af6-a4cd-04a4de9d3909,225158009,Auscultation of the fetal heart,5479.16,72892002,Normal pregnancy
+2015-09-12T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d3fd20ce-88dd-4cc7-9623-ba34a6159506,104091002,Hemoglobin / Hematocrit / Platelet count,1326.76,72892002,Normal pregnancy
+2015-09-12T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d3fd20ce-88dd-4cc7-9623-ba34a6159506,399014008,Vaccination for diphtheria  pertussis  and tetanus,2662.34,72892002,Normal pregnancy
+2015-09-12T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d3fd20ce-88dd-4cc7-9623-ba34a6159506,268556000,Urine screening for glucose,2409.73,72892002,Normal pregnancy
+2015-09-12T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d3fd20ce-88dd-4cc7-9623-ba34a6159506,274804006,Evaluation of uterine fundal height,10022.17,72892002,Normal pregnancy
+2015-09-12T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d3fd20ce-88dd-4cc7-9623-ba34a6159506,225158009,Auscultation of the fetal heart,6789.08,72892002,Normal pregnancy
+2015-10-10T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,e7f4e2ea-d1d6-4b6a-9a21-b32b50c98080,274804006,Evaluation of uterine fundal height,6901.68,72892002,Normal pregnancy
+2015-10-10T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,e7f4e2ea-d1d6-4b6a-9a21-b32b50c98080,225158009,Auscultation of the fetal heart,5231.59,72892002,Normal pregnancy
+2015-11-07T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,9ff974ad-b566-40ac-a06c-fb25a9951931,118001005,Streptococcus pneumoniae group B antigen test,2747.12,72892002,Normal pregnancy
+2015-11-07T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,9ff974ad-b566-40ac-a06c-fb25a9951931,274804006,Evaluation of uterine fundal height,6418.33,72892002,Normal pregnancy
+2015-11-07T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,9ff974ad-b566-40ac-a06c-fb25a9951931,225158009,Auscultation of the fetal heart,10057.81,72892002,Normal pregnancy
+2015-11-21T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,c3ce9684-bd8b-4841-aeb2-94be09abbf16,274804006,Evaluation of uterine fundal height,7840.34,72892002,Normal pregnancy
+2015-11-21T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,c3ce9684-bd8b-4841-aeb2-94be09abbf16,225158009,Auscultation of the fetal heart,6364.64,72892002,Normal pregnancy
+2015-11-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,fa85a8bc-82b6-426a-818c-223f14c02e4b,31208007,Medical induction of labor,6246.95,72892002,Normal pregnancy
+2015-11-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,fa85a8bc-82b6-426a-818c-223f14c02e4b,66348005,Childbirth,583.40,72892002,Normal pregnancy
+2016-01-09T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,1aefb68b-350a-45b2-ae5b-e985510a9d16,5880005,Physical examination following birth,583.40,,
+2016-01-09T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,1aefb68b-350a-45b2-ae5b-e985510a9d16,171207006,Depression screening,583.40,,
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,252160004,Standard pregnancy test,5747.79,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,169230002,Ultrasound scan for fetal viability,10942.34,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,274804006,Evaluation of uterine fundal height,10608.11,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,225158009,Auscultation of the fetal heart,8641.96,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,44608003,Blood typing  RH typing,2966.49,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,104091002,Hemoglobin / Hematocrit / Platelet count,2753.76,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,47758006,Hepatitis B Surface Antigen Measurement,3464.64,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,31676001,Human immunodeficiency virus antigen test,2684.12,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,310861008,Chlamydia antigen test,2328.20,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,165829005,Gonorrhea infection test,1991.47,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,269828009,Syphilis infection test,2862.58,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,117010004,Urine culture,2245.82,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,90226004,Cytopathology procedure  preparation of smear  genital source,2037.74,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,395123002,Urine screening test for diabetes,2708.00,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,104375008,Hepatitis C antibody test,2284.93,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,169690007,Rubella screening,2073.25,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,104326007,Measurement of Varicella-zoster virus antibody,2916.76,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,28163009,Skin test for tuberculosis,2365.48,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,167271000,Urine protein test,2048.18,72892002,Normal pregnancy
+2016-06-04T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,d98be470-a59b-40ae-ab69-cbb38473b0c9,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2016-07-02T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,e5a0cff4-729d-4734-a1b3-088e8efeb5ab,274804006,Evaluation of uterine fundal height,7752.11,72892002,Normal pregnancy
+2016-07-02T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,e5a0cff4-729d-4734-a1b3-088e8efeb5ab,225158009,Auscultation of the fetal heart,5154.81,72892002,Normal pregnancy
+2016-07-02T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,e5a0cff4-729d-4734-a1b3-088e8efeb5ab,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,1527.61,72892002,Normal pregnancy
+2016-07-30T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,62158a7d-ae47-4f8f-b675-539968dcf7df,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2016-07-30T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,62158a7d-ae47-4f8f-b675-539968dcf7df,275833003,Alpha-fetoprotein test,1841.80,72892002,Normal pregnancy
+2016-07-30T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,62158a7d-ae47-4f8f-b675-539968dcf7df,274804006,Evaluation of uterine fundal height,6084.51,72892002,Normal pregnancy
+2016-07-30T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,62158a7d-ae47-4f8f-b675-539968dcf7df,225158009,Auscultation of the fetal heart,5808.15,72892002,Normal pregnancy
+2016-08-27T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b22ebfd7-ba0a-4327-aea2-7903ed24923b,274804006,Evaluation of uterine fundal height,6036.88,72892002,Normal pregnancy
+2016-08-27T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b22ebfd7-ba0a-4327-aea2-7903ed24923b,225158009,Auscultation of the fetal heart,7418.64,72892002,Normal pregnancy
+2016-09-24T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,21d1d579-731c-4b90-88a5-d5ec305f403b,274804006,Evaluation of uterine fundal height,5338.78,72892002,Normal pregnancy
+2016-09-24T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,21d1d579-731c-4b90-88a5-d5ec305f403b,225158009,Auscultation of the fetal heart,10828.73,72892002,Normal pregnancy
+2016-10-22T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,7ace8d68-1d39-465a-ad17-6863eb76527b,104091002,Hemoglobin / Hematocrit / Platelet count,1665.74,72892002,Normal pregnancy
+2016-10-22T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,7ace8d68-1d39-465a-ad17-6863eb76527b,399014008,Vaccination for diphtheria  pertussis  and tetanus,2753.14,72892002,Normal pregnancy
+2016-10-22T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,7ace8d68-1d39-465a-ad17-6863eb76527b,268556000,Urine screening for glucose,3056.40,72892002,Normal pregnancy
+2016-10-22T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,7ace8d68-1d39-465a-ad17-6863eb76527b,274804006,Evaluation of uterine fundal height,9707.49,72892002,Normal pregnancy
+2016-10-22T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,7ace8d68-1d39-465a-ad17-6863eb76527b,225158009,Auscultation of the fetal heart,7546.16,72892002,Normal pregnancy
+2016-11-19T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,6ee89acc-ba8d-4cf0-9ab7-089923085691,274804006,Evaluation of uterine fundal height,10123.82,72892002,Normal pregnancy
+2016-11-19T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,6ee89acc-ba8d-4cf0-9ab7-089923085691,225158009,Auscultation of the fetal heart,5198.66,72892002,Normal pregnancy
+2016-12-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,033da6d9-ef6e-4a33-97ba-0919b1c24434,118001005,Streptococcus pneumoniae group B antigen test,2066.95,72892002,Normal pregnancy
+2016-12-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,033da6d9-ef6e-4a33-97ba-0919b1c24434,274804006,Evaluation of uterine fundal height,5367.43,72892002,Normal pregnancy
+2016-12-17T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,033da6d9-ef6e-4a33-97ba-0919b1c24434,225158009,Auscultation of the fetal heart,8638.10,72892002,Normal pregnancy
+2016-12-31T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,be2aa73d-7e53-4d96-a425-17730c80ac24,85548006,Episiotomy,6717.12,72892002,Normal pregnancy
+2016-12-31T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,be2aa73d-7e53-4d96-a425-17730c80ac24,66348005,Childbirth,583.40,72892002,Normal pregnancy
+2017-02-11T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,1ffe0e7e-d81c-492f-a171-ae90884e1ae3,5880005,Physical examination following birth,583.40,,
+2017-02-11T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,1ffe0e7e-d81c-492f-a171-ae90884e1ae3,171207006,Depression screening,583.40,,
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,252160004,Standard pregnancy test,10668.07,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,169230002,Ultrasound scan for fetal viability,11417.56,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,274804006,Evaluation of uterine fundal height,9436.62,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,225158009,Auscultation of the fetal heart,6106.07,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,44608003,Blood typing  RH typing,3828.54,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,104091002,Hemoglobin / Hematocrit / Platelet count,1811.16,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,47758006,Hepatitis B Surface Antigen Measurement,1979.72,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,31676001,Human immunodeficiency virus antigen test,2194.36,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,310861008,Chlamydia antigen test,2662.02,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,165829005,Gonorrhea infection test,3271.61,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,269828009,Syphilis infection test,3008.14,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,117010004,Urine culture,2765.62,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,90226004,Cytopathology procedure  preparation of smear  genital source,2952.74,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,395123002,Urine screening test for diabetes,2923.25,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,104375008,Hepatitis C antibody test,2304.27,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,169690007,Rubella screening,1915.12,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,104326007,Measurement of Varicella-zoster virus antibody,2997.25,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,28163009,Skin test for tuberculosis,2212.46,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,167271000,Urine protein test,4188.81,72892002,Normal pregnancy
+2018-04-28T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,a1914c57-be0c-43ab-b6a3-837d89f3df56,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2018-05-26T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,81b5a0dc-2d94-4da3-bd49-7f0e64df0ae1,274804006,Evaluation of uterine fundal height,4068.37,72892002,Normal pregnancy
+2018-05-26T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,81b5a0dc-2d94-4da3-bd49-7f0e64df0ae1,225158009,Auscultation of the fetal heart,4513.98,72892002,Normal pregnancy
+2018-05-26T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,81b5a0dc-2d94-4da3-bd49-7f0e64df0ae1,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,1817.43,72892002,Normal pregnancy
+2018-06-23T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,92257ed9-0e2d-4576-99f9-f7c2283b18c0,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2018-06-23T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,92257ed9-0e2d-4576-99f9-f7c2283b18c0,275833003,Alpha-fetoprotein test,3978.82,72892002,Normal pregnancy
+2018-06-23T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,92257ed9-0e2d-4576-99f9-f7c2283b18c0,274804006,Evaluation of uterine fundal height,4799.68,72892002,Normal pregnancy
+2018-06-23T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,92257ed9-0e2d-4576-99f9-f7c2283b18c0,225158009,Auscultation of the fetal heart,5978.24,72892002,Normal pregnancy
+2018-07-21T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,99193c2e-36ca-4da0-bbd9-5c7ac2933c98,274804006,Evaluation of uterine fundal height,3477.29,72892002,Normal pregnancy
+2018-07-21T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,99193c2e-36ca-4da0-bbd9-5c7ac2933c98,225158009,Auscultation of the fetal heart,5547.95,72892002,Normal pregnancy
+2018-08-18T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,44db520b-5aaf-4fd7-a940-715c2d11d54c,274804006,Evaluation of uterine fundal height,10435.96,72892002,Normal pregnancy
+2018-08-18T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,44db520b-5aaf-4fd7-a940-715c2d11d54c,225158009,Auscultation of the fetal heart,7909.58,72892002,Normal pregnancy
+2018-09-15T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,3808dab3-1cdf-438d-b7c7-68838ce1af11,104091002,Hemoglobin / Hematocrit / Platelet count,2586.85,72892002,Normal pregnancy
+2018-09-15T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,3808dab3-1cdf-438d-b7c7-68838ce1af11,399014008,Vaccination for diphtheria  pertussis  and tetanus,2078.86,72892002,Normal pregnancy
+2018-09-15T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,3808dab3-1cdf-438d-b7c7-68838ce1af11,268556000,Urine screening for glucose,3007.19,72892002,Normal pregnancy
+2018-09-15T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,3808dab3-1cdf-438d-b7c7-68838ce1af11,274804006,Evaluation of uterine fundal height,5903.36,72892002,Normal pregnancy
+2018-09-15T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,3808dab3-1cdf-438d-b7c7-68838ce1af11,225158009,Auscultation of the fetal heart,9724.94,72892002,Normal pregnancy
+2018-10-13T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,9360545d-5c00-4ed2-a070-d602cf73e80d,274804006,Evaluation of uterine fundal height,4925.58,72892002,Normal pregnancy
+2018-10-13T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,9360545d-5c00-4ed2-a070-d602cf73e80d,225158009,Auscultation of the fetal heart,6583.62,72892002,Normal pregnancy
+2018-11-10T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,66e4590e-3550-4510-bec5-51ce25f68fa5,118001005,Streptococcus pneumoniae group B antigen test,2464.17,72892002,Normal pregnancy
+2018-11-10T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,66e4590e-3550-4510-bec5-51ce25f68fa5,274804006,Evaluation of uterine fundal height,5960.55,72892002,Normal pregnancy
+2018-11-10T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,66e4590e-3550-4510-bec5-51ce25f68fa5,225158009,Auscultation of the fetal heart,4462.57,72892002,Normal pregnancy
+2018-11-24T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b00052ac-5f1e-44db-85f5-4e82f8a1629f,237001001,Augmentation of labor,7978.57,72892002,Normal pregnancy
+2018-11-24T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b00052ac-5f1e-44db-85f5-4e82f8a1629f,66348005,Childbirth,583.40,72892002,Normal pregnancy
+2019-01-05T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b8dee949-1463-40e5-bd53-6f8066555598,5880005,Physical examination following birth,583.40,,
+2019-01-05T17:40:46Z,bd9f99eb-44c6-4556-b79a-145aeb7fa1d6,b8dee949-1463-40e5-bd53-6f8066555598,171207006,Depression screening,583.40,,
+2010-08-24T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,6d9fe6b8-8803-4bac-b1f2-bafc81f261f5,76601001,Intramuscular injection,2455.71,,
+2010-12-14T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,e9286e82-d75c-44d5-92e8-6d2cc9e1672f,252160004,Standard pregnancy test,9136.64,72892002,Normal pregnancy
+2010-12-14T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,e9286e82-d75c-44d5-92e8-6d2cc9e1672f,169230002,Ultrasound scan for fetal viability,16135.45,72892002,Normal pregnancy
+2010-12-28T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,12227895-72ae-4f5a-8379-1389b88c724e,5880005,Physical examination,583.40,72892002,Normal pregnancy
+2010-12-28T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,12227895-72ae-4f5a-8379-1389b88c724e,171207006,Depression screening,583.40,72892002,Normal pregnancy
+2011-02-09T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,9c7da816-bc4c-48f8-9c14-a803b5d00729,76601001,Intramuscular injection,2313.81,,
+2011-05-24T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,cde45f6e-249f-40b7-a22c-ff99e6c64f44,76601001,Intramuscular injection,3502.58,,
+2011-08-23T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,3d263411-3cb4-49c3-91cf-8a2c60a62136,76601001,Intramuscular injection,3017.84,,
+2011-11-22T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,9cdc0557-a3a5-4f54-b010-b5baaf1413b2,76601001,Intramuscular injection,5295.39,,
+2012-02-21T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,87c5981b-0fe0-48bc-927e-9991328f1216,76601001,Intramuscular injection,4211.22,,
+2012-05-22T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,e973d46f-adfd-4bec-92ef-8a8114c04e8c,76601001,Intramuscular injection,4881.67,,
+2012-08-21T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,7c2dce9d-2682-4221-9015-f2ded19e8d26,76601001,Intramuscular injection,3155.49,,
+2012-11-20T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,68e58e74-6a5e-40ae-b073-4f4ceea38f79,76601001,Intramuscular injection,3281.46,,
+2012-11-20T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,20c07c36-81cf-4d70-9c4f-d6f02abe3ba3,399208008,Plain chest X-ray (procedure),14323.09,10509002,Acute bronchitis (disorder)
+2013-02-19T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,550ca7c8-03d2-4b0e-a064-e06af68d951f,76601001,Intramuscular injection,3914.90,,
+2013-04-22T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,a16b6ab8-4a88-4c13-b173-1f938ceeb01d,117015009,Throat culture (procedure),2756.93,43878008,Streptococcal sore throat (disorder)
+2013-05-21T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,633dfb83-4e3c-4e2d-ad03-ae6ee9f10441,76601001,Intramuscular injection,4270.93,,
+2013-08-20T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,ac15acfe-1b00-43a1-a6ba-8fb9bffcd480,76601001,Intramuscular injection,4081.13,,
+2013-11-19T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,ef2e1152-d02a-43fa-95ca-687801bbac7a,76601001,Intramuscular injection,3897.57,,
+2014-02-18T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,9d575747-91cf-46d5-bda5-03eacb4ba1af,76601001,Intramuscular injection,2770.56,,
+2014-05-20T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,f544ee43-9820-431b-b0b3-0eab0f672545,76601001,Intramuscular injection,2991.57,,
+2014-08-19T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,cd0fc363-4143-4c08-b34a-c323b5a59265,76601001,Intramuscular injection,2918.51,,
+2014-11-18T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,f665cde4-9b19-4d8a-bfe3-501bebab4e40,76601001,Intramuscular injection,3616.36,,
+2015-02-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,66d1e105-2199-4a14-8418-f19f7e8bc9c6,76601001,Intramuscular injection,3847.48,,
+2015-05-19T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,c1cc2e19-5421-4c16-8e8b-28d4c7a7e7e7,76601001,Intramuscular injection,2890.27,,
+2015-08-18T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,823ac661-ccf3-4414-ab30-6ba75d3cbf03,76601001,Intramuscular injection,3114.54,,
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,252160004,Standard pregnancy test,5868.19,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,169230002,Ultrasound scan for fetal viability,9805.19,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,274804006,Evaluation of uterine fundal height,6339.35,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,225158009,Auscultation of the fetal heart,7803.61,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,44608003,Blood typing  RH typing,2602.90,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,104091002,Hemoglobin / Hematocrit / Platelet count,2359.87,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,47758006,Hepatitis B Surface Antigen Measurement,2468.75,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,31676001,Human immunodeficiency virus antigen test,1367.09,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,310861008,Chlamydia antigen test,3702.85,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,165829005,Gonorrhea infection test,3841.78,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,269828009,Syphilis infection test,1981.55,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,117010004,Urine culture,2282.66,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,90226004,Cytopathology procedure  preparation of smear  genital source,2146.62,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,395123002,Urine screening test for diabetes,3710.04,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,104375008,Hepatitis C antibody test,2268.41,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,169690007,Rubella screening,2240.53,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,104326007,Measurement of Varicella-zoster virus antibody,2377.00,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,28163009,Skin test for tuberculosis,1893.54,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,167271000,Urine protein test,2153.52,72892002,Normal pregnancy
+2015-11-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,893d8193-58ae-4c54-a40c-ee79afeeb204,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2015-11-24T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,fb1b2fe4-d88f-474a-95e6-38b299153705,430193006,Medication Reconciliation (procedure),657.08,,
+2015-12-15T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,58e891b8-ee01-41b4-9bb3-121702995d1d,274804006,Evaluation of uterine fundal height,4786.15,72892002,Normal pregnancy
+2015-12-15T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,58e891b8-ee01-41b4-9bb3-121702995d1d,225158009,Auscultation of the fetal heart,4916.04,72892002,Normal pregnancy
+2015-12-15T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,58e891b8-ee01-41b4-9bb3-121702995d1d,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,3104.10,72892002,Normal pregnancy
+2016-01-19T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,fa39b949-3072-49dc-954e-e7349e0bfb9b,5880005,Physical examination,583.40,72892002,Normal pregnancy
+2016-01-19T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,fa39b949-3072-49dc-954e-e7349e0bfb9b,171207006,Depression screening,583.40,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,252160004,Standard pregnancy test,4431.56,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,169230002,Ultrasound scan for fetal viability,13565.18,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,274804006,Evaluation of uterine fundal height,6144.00,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,225158009,Auscultation of the fetal heart,7105.46,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,44608003,Blood typing  RH typing,1975.22,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,104091002,Hemoglobin / Hematocrit / Platelet count,2102.66,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,47758006,Hepatitis B Surface Antigen Measurement,3130.67,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,31676001,Human immunodeficiency virus antigen test,1475.37,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,310861008,Chlamydia antigen test,2769.07,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,165829005,Gonorrhea infection test,3656.90,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,269828009,Syphilis infection test,3468.46,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,117010004,Urine culture,3567.76,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,90226004,Cytopathology procedure  preparation of smear  genital source,2644.35,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,395123002,Urine screening test for diabetes,2146.33,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,104375008,Hepatitis C antibody test,3415.67,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,169690007,Rubella screening,2116.64,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,104326007,Measurement of Varicella-zoster virus antibody,3285.14,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,28163009,Skin test for tuberculosis,1731.75,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,167271000,Urine protein test,2724.21,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,0572df24-b2c6-4911-a971-82e77c278a50,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,39950fdd-55b9-4200-953c-c98a691678c1,14768001,Peripheral blood smear interpretation,583.40,,
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,39950fdd-55b9-4200-953c-c98a691678c1,415300000,Review of systems (procedure),583.40,,
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,39950fdd-55b9-4200-953c-c98a691678c1,430193006,Medication Reconciliation (procedure),716.49,,
+2017-05-16T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,39950fdd-55b9-4200-953c-c98a691678c1,162676008,Brief general examination (procedure),583.40,,
+2017-05-16T03:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,52973eac-d331-461b-88ab-02db7748f01e,180207008,Intravenous blood transfusion of packed cells (procedure),583.40,,
+2017-06-20T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,1dda7276-c1ed-41fd-960d-120ed5c4b561,274804006,Evaluation of uterine fundal height,5015.55,72892002,Normal pregnancy
+2017-06-20T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,1dda7276-c1ed-41fd-960d-120ed5c4b561,225158009,Auscultation of the fetal heart,4121.68,72892002,Normal pregnancy
+2017-06-20T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,1dda7276-c1ed-41fd-960d-120ed5c4b561,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,2199.16,72892002,Normal pregnancy
+2017-07-18T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,ec31570e-818b-42b3-a8a2-206c9b7eadc1,271442007,Fetal anatomy study,583.40,72892002,Normal pregnancy
+2017-07-18T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,ec31570e-818b-42b3-a8a2-206c9b7eadc1,275833003,Alpha-fetoprotein test,2687.39,72892002,Normal pregnancy
+2017-07-18T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,ec31570e-818b-42b3-a8a2-206c9b7eadc1,274804006,Evaluation of uterine fundal height,6543.50,72892002,Normal pregnancy
+2017-07-18T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,ec31570e-818b-42b3-a8a2-206c9b7eadc1,225158009,Auscultation of the fetal heart,8354.36,72892002,Normal pregnancy
+2017-08-15T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,509b59e5-ff99-42c7-b294-e29ce17d9cc9,274804006,Evaluation of uterine fundal height,10156.11,72892002,Normal pregnancy
+2017-08-15T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,509b59e5-ff99-42c7-b294-e29ce17d9cc9,225158009,Auscultation of the fetal heart,8834.93,72892002,Normal pregnancy
+2017-09-12T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,a9c10d1b-c0cf-4ee7-9fb7-434614b4cf47,274804006,Evaluation of uterine fundal height,4640.50,72892002,Normal pregnancy
+2017-09-12T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,a9c10d1b-c0cf-4ee7-9fb7-434614b4cf47,225158009,Auscultation of the fetal heart,8462.88,72892002,Normal pregnancy
+2017-10-10T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,8544c3ed-a649-4242-a375-f4d61a55d91b,104091002,Hemoglobin / Hematocrit / Platelet count,4409.76,72892002,Normal pregnancy
+2017-10-10T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,8544c3ed-a649-4242-a375-f4d61a55d91b,399014008,Vaccination for diphtheria  pertussis  and tetanus,3554.43,72892002,Normal pregnancy
+2017-10-10T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,8544c3ed-a649-4242-a375-f4d61a55d91b,268556000,Urine screening for glucose,2243.67,72892002,Normal pregnancy
+2017-10-10T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,8544c3ed-a649-4242-a375-f4d61a55d91b,274804006,Evaluation of uterine fundal height,6113.43,72892002,Normal pregnancy
+2017-10-10T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,8544c3ed-a649-4242-a375-f4d61a55d91b,225158009,Auscultation of the fetal heart,7518.48,72892002,Normal pregnancy
+2017-11-07T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,4dd02976-8245-4eaa-acdb-6e2c5daa0e4e,274804006,Evaluation of uterine fundal height,10209.56,72892002,Normal pregnancy
+2017-11-07T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,4dd02976-8245-4eaa-acdb-6e2c5daa0e4e,225158009,Auscultation of the fetal heart,5334.14,72892002,Normal pregnancy
+2017-12-05T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,caa7819e-be67-4f3a-bfce-be997e006825,118001005,Streptococcus pneumoniae group B antigen test,3071.74,72892002,Normal pregnancy
+2017-12-05T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,caa7819e-be67-4f3a-bfce-be997e006825,274804006,Evaluation of uterine fundal height,11085.32,72892002,Normal pregnancy
+2017-12-05T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,caa7819e-be67-4f3a-bfce-be997e006825,225158009,Auscultation of the fetal heart,5683.72,72892002,Normal pregnancy
+2017-12-19T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,975dd503-1c5f-45cc-b8a3-2b09882ca307,274804006,Evaluation of uterine fundal height,6120.59,72892002,Normal pregnancy
+2017-12-19T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,975dd503-1c5f-45cc-b8a3-2b09882ca307,225158009,Auscultation of the fetal heart,6802.50,72892002,Normal pregnancy
+2017-12-26T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,8227841d-c193-4b95-a365-f6646ac66c55,274804006,Evaluation of uterine fundal height,6861.13,72892002,Normal pregnancy
+2017-12-26T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,8227841d-c193-4b95-a365-f6646ac66c55,225158009,Auscultation of the fetal heart,4041.98,72892002,Normal pregnancy
+2018-01-02T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,41bd448c-f529-4e9e-a269-dd37c8446966,274804006,Evaluation of uterine fundal height,8691.44,72892002,Normal pregnancy
+2018-01-02T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,41bd448c-f529-4e9e-a269-dd37c8446966,225158009,Auscultation of the fetal heart,8047.12,72892002,Normal pregnancy
+2018-01-09T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,c40b4fab-59fe-4e54-94ff-836b2f11089a,236974004,Instrumental delivery,10631.44,72892002,Normal pregnancy
+2018-01-09T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,c40b4fab-59fe-4e54-94ff-836b2f11089a,66348005,Childbirth,583.40,72892002,Normal pregnancy
+2018-02-20T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,de9fcaf2-f350-413b-ac30-445b0fa00bb8,5880005,Physical examination following birth,583.40,,
+2018-02-20T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,de9fcaf2-f350-413b-ac30-445b0fa00bb8,171207006,Depression screening,583.40,,
+2018-02-20T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,29c06b50-3257-4530-9e9e-1eda2133fbc4,169553002,Insertion of subcutaneous contraceptive,5550.92,,
+2018-06-12T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,ac07e007-ef58-4537-b7d9-68405063614b,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2020-02-17T02:50:58Z,30b12c08-a1c4-47cd-bc02-943985ee917e,2b0da9cb-eea0-457f-bd7f-bfbf4872ef5e,287664005,Bilateral tubal ligation,12683.48,,
+2012-06-21T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,daa561a4-9d06-43e7-a8b7-b34796415719,430193006,Medication Reconciliation (procedure),619.78,,
+2013-06-27T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,022bb131-f491-405d-86eb-4e40fb04a14a,430193006,Medication Reconciliation (procedure),724.09,,
+2014-07-03T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,d6923560-20d9-44a3-9459-7ee5ec832021,430193006,Medication Reconciliation (procedure),621.43,,
+2015-07-09T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,98ee578e-59d0-4425-bc6b-75b8644238b1,430193006,Medication Reconciliation (procedure),414.63,,
+2016-07-14T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,eba65174-d943-41d7-9e37-143b3ef884c7,430193006,Medication Reconciliation (procedure),655.96,,
+2018-07-26T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,27fafb48-9321-4192-bf92-9a642ef7477a,430193006,Medication Reconciliation (procedure),975.96,,
+2019-05-28T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,9b028531-3ddb-4acf-a3e3-c51ae883f049,54550000,Seizure Count Cerebral Cortex Electroencephalogram (EEG),10595.34,,
+2019-07-18T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,2d459e3c-738e-4957-b35b-377fc26e847a,252160004,Standard pregnancy test,7396.39,72892002,Normal pregnancy
+2019-07-18T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,2d459e3c-738e-4957-b35b-377fc26e847a,169230002,Ultrasound scan for fetal viability,11385.87,72892002,Normal pregnancy
+2019-07-25T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,faa8d864-0322-45e9-9983-1915e7887b66,10383002,Counseling for termination of pregnancy,583.40,72892002,Normal pregnancy
+2019-07-25T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,faa8d864-0322-45e9-9983-1915e7887b66,714812005,Induced termination of pregnancy,13116.63,72892002,Normal pregnancy
+2019-08-08T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,0beb4fcd-052d-4a9e-8d62-162b70152aaa,386394001,Pregnancy termination care,583.40,72892002,Normal pregnancy
+2019-08-08T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,0beb4fcd-052d-4a9e-8d62-162b70152aaa,5880005,Physical exam following abortion,583.40,72892002,Normal pregnancy
+2019-08-08T06:53:19Z,3adbbb93-d3ba-4686-9043-a2a64061b284,0beb4fcd-052d-4a9e-8d62-162b70152aaa,171207006,Depression screening,583.40,72892002,Normal pregnancy
+2012-05-28T06:21:50Z,64e97f92-adab-41af-9ab3-1e6cf0337d85,7a3d9168-ee08-42f4-904f-ae2f31ed0e62,430193006,Medication Reconciliation (procedure),672.01,,
+2015-08-13T06:21:50Z,64e97f92-adab-41af-9ab3-1e6cf0337d85,806a0b45-72ad-4b71-9164-2a272b8d6e32,168594001,Clavicle X-ray,583.40,,
+2015-08-13T06:21:50Z,64e97f92-adab-41af-9ab3-1e6cf0337d85,806a0b45-72ad-4b71-9164-2a272b8d6e32,305428000,Admission to orthopedic department,583.40,58150001,Fracture of clavicle
+2016-06-20T06:21:50Z,64e97f92-adab-41af-9ab3-1e6cf0337d85,b1de7591-385a-4ee5-a1f2-be14dd3cf58b,430193006,Medication Reconciliation (procedure),488.85,,
+2017-06-26T06:21:50Z,64e97f92-adab-41af-9ab3-1e6cf0337d85,330b3822-f720-4f82-b89d-528a8c3fda2e,430193006,Medication Reconciliation (procedure),851.85,,
+2017-10-01T06:21:50Z,64e97f92-adab-41af-9ab3-1e6cf0337d85,fb61ee19-e3f7-4db2-b16a-64c0dd616401,288086009,Suture open wound,11421.17,283371005,Laceration of forearm
+2019-07-08T06:21:50Z,64e97f92-adab-41af-9ab3-1e6cf0337d85,bef237da-9933-4ee2-b5ff-4cbb95095c67,430193006,Medication Reconciliation (procedure),721.29,,
+2012-03-14T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,7ab1d6e7-5c2d-4597-bc29-1e48a9f217ce,430193006,Medication Reconciliation (procedure),459.77,,
+2012-10-21T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,70933b8c-9d99-4d5e-9d6c-8dc7f625d416,117015009,Throat culture (procedure),2711.87,195662009,Acute viral pharyngitis (disorder)
+2012-12-23T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,fe6ad9f8-28e6-4542-bbae-fadbe1052ff1,23426006,Measurement of respiratory function (procedure),583.40,10509002,Acute bronchitis (disorder)
+2013-03-20T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,adc0c9fa-4caf-474c-8f94-3c574b0122c5,430193006,Medication Reconciliation (procedure),447.67,,
+2013-10-18T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,59d05e41-89bc-43c1-b6d0-ec6e9c1d4a3d,269911007,Sputum examination (procedure),12344.80,10509002,Acute bronchitis (disorder)
+2013-10-23T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,59d05e41-89bc-43c1-b6d0-ec6e9c1d4a3d,430193006,Medication Reconciliation (procedure),507.10,,
+2014-03-26T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,27bd3357-f100-41de-ba97-cd494cd486a4,430193006,Medication Reconciliation (procedure),598.28,,
+2015-01-19T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,ac52ff9c-a3b5-4b66-9703-fd6b4a6c766b,117015009,Throat culture (procedure),1984.00,195662009,Acute viral pharyngitis (disorder)
+2016-04-06T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,4b1fed05-d4c2-4513-bc10-6b79b9c70863,430193006,Medication Reconciliation (procedure),349.43,,
+2017-04-12T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,6033e0a2-8ce7-4020-a739-0c13c1c18129,430193006,Medication Reconciliation (procedure),855.32,,
+2020-04-29T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,0dae2046-0335-4b99-a362-f9dbeceeca9c,14768001,Peripheral blood smear interpretation,583.40,,
+2020-04-29T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,0dae2046-0335-4b99-a362-f9dbeceeca9c,415300000,Review of systems (procedure),583.40,,
+2020-04-29T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,0dae2046-0335-4b99-a362-f9dbeceeca9c,430193006,Medication Reconciliation (procedure),642.76,,
+2020-04-29T14:10:53Z,e273cca7-6b9c-4b1e-a9a3-b9d8cd75e11b,0dae2046-0335-4b99-a362-f9dbeceeca9c,162676008,Brief general examination (procedure),583.40,,
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,252160004,Standard pregnancy test,7057.03,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,169230002,Ultrasound scan for fetal viability,11778.42,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,274804006,Evaluation of uterine fundal height,9679.61,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,225158009,Auscultation of the fetal heart,6017.35,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,44608003,Blood typing  RH typing,2533.57,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,104091002,Hemoglobin / Hematocrit / Platelet count,1881.71,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,47758006,Hepatitis B Surface Antigen Measurement,3633.68,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,31676001,Human immunodeficiency virus antigen test,2156.90,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,310861008,Chlamydia antigen test,1300.71,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,165829005,Gonorrhea infection test,2015.53,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,269828009,Syphilis infection test,2780.73,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,117010004,Urine culture,3137.65,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,90226004,Cytopathology procedure  preparation of smear  genital source,2612.33,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,395123002,Urine screening test for diabetes,3405.70,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,104375008,Hepatitis C antibody test,3523.39,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,169690007,Rubella screening,2313.05,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,104326007,Measurement of Varicella-zoster virus antibody,2054.54,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,28163009,Skin test for tuberculosis,3110.47,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,167271000,Urine protein test,1723.21,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,1aa8e74b-5e4d-43a7-967d-d8644ec530cc,5880005,Physical examination of mother,583.40,72892002,Normal pregnancy
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,0bf20359-33f2-4320-88e2-9fb85ae88030,14768001,Peripheral blood smear interpretation,583.40,,
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,0bf20359-33f2-4320-88e2-9fb85ae88030,415300000,Review of systems (procedure),583.40,,
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,0bf20359-33f2-4320-88e2-9fb85ae88030,430193006,Medication Reconciliation (procedure),545.47,,
+2012-03-10T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,0bf20359-33f2-4320-88e2-9fb85ae88030,162676008,Brief general examination (procedure),583.40,,
+2012-04-07T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,39b28e39-61ab-466c-bf5e-8cbc356a0368,274804006,Evaluation of uterine fundal height,5309.84,72892002,Normal pregnancy
+2012-04-07T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,39b28e39-61ab-466c-bf5e-8cbc356a0368,225158009,Auscultation of the fetal heart,9454.20,72892002,Normal pregnancy
+2012-04-07T02:10:18Z,8d2b2611-c13c-4c7f-99b6-ecb6b605c7b9,39b28e39-61ab-466c-bf5e-8cbc356a0368,443529005,Screening for chromosomal aneuploidy in prenatal amniotic fluid,3069.66,72892002,Normal pregnancy
