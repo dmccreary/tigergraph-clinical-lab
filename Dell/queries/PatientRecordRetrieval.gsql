@@ -1,0 +1,25 @@
+CREATE QUERY PatientRecordRetrieval(vertex<Patient> inputPatient, datetime startTime, datetime endTime) FOR GRAPH synthea { 
+	/*************************************************************
+	 * Query will show a patient's records.                      *
+	 * Input a patient, and a timespan, and it will retreive     *
+	 * all records within the given time range.                  *
+	 *                                                           *
+	 * Sample input :                                            *
+	 *   patient : 5a0a1372-dc71-4371-bcf2-2fcab7151d58          *
+	 *   start : 1970-01-01                                      *
+   *   end : 2020-01-01                                        *
+	 *************************************************************/
+  
+	SetAccum<string> @@itemTypes;
+	
+	start = {inputPatient};
+	print start;
+	
+	records = select t from start-()-:t 
+	          where t.Started >= startTime and t.Started <= endTime
+	          accum @@itemTypes += t.type;
+	
+	print records;
+	
+	print @@itemTypes;
+}

@@ -1,0 +1,37 @@
+CREATE DISTRIBUTED QUERY similarPatient_organic(vertex<Patient> inputPatient, int k, set<string> additionalEdgeType) FOR GRAPH synthea { 
+	/********************************************************************
+	 * This query shows the top k similar patients to one input patient *
+	 * Input a patient, a set of conditions that you want to check for  *
+	 *   that there other patients are similar to, and a the max num of *
+	 *   results you want to see                                        *       
+	 *                                                                  *
+	 * Sample input:                                                    *
+	 *   patient : 5a0a1372-dc71-4371-bcf2-2fcab7151d58                 *
+	 *   k : 100                                                        *
+	 *   prereq : hasMedication                                         *
+	 ********************************************************************/
+  
+	      SumAccum<FLOAT> @numerator, @@norm1, @norm2, @similarity;
+        MapAccum<VERTEX, FLOAT> @@topK_result;
+	      SetAccum<STRING> @@edgeTypes;
+
+        start = {inputPatient};
+        attr      = SELECT t
+                    FROM start:s -((hasAllergy|hasObservation|hasMedication|useDevice|hasCondition|hasImmunization|hasImagingStudy|hasProcedure):e)-> :t
+                    ACCUM t.@numerator = 1,
+                          @@norm1 += pow(1, 2);
+	
+	      patients   = SELECT t
+                     FROM attr:s -((hasAllergy|hasObservation|hasMedication|useDevice|hasCondition|hasImmunization|hasImagingStudy|hasProcedure):e)-> :t
+                     ACCUM t.@numerator += s.@numerator;
+
+        neighbours = SELECT s
+                     FROM patients:s -((hasAllergy|hasObservation|hasMedication|useDevice|hasCondition|hasImmunization|hasImagingStudy|hasProcedure):e)-> :t
+                     ACCUM s.@norm2 += 1
+        	           POST-ACCUM s.@similarity = s.@numerator/sqrt(@@norm1 * s.@norm2),
+																	s.@similarity += 0.1
+                     ORDER BY s.@similarity DESC
+                     LIMIT k;
+
+        PRINT neighbours;
+}

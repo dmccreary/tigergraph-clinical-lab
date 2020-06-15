@@ -1,0 +1,121 @@
+#CREATE LOADING JOB dLoadEverything FOR GRAPH synthea {
+#      DEFINE HEADER h = "Id", "BIRTHDATE", "DEATHDATE", "SSN", "DRIVERS", "PASSPORT", "PREFIX", "FIRST", "LAST", "SUFFIX", "MAIDEN", "MARITAL", "RACE", "ETHNICITY", "GENDER", "BIRTHPLACE", "ADDRESS", "CITY", "STATE", "ZIP";
+#      DEFINE FILENAME f;
+#      LOAD f TO VERTEX Patient VALUES($"Id", $"FIRST", $"LAST", $"PREFIX", $"SUFFIX", $"MAIDEN", $"MARITAL", $"GENDER", $"RACE", $"ETHNICITY", $"BIRTHDATE", $"DEATHDATE", $"SSN", $"DRIVERS", $"PASSPORT") USING USER_DEFINED_HEADER="h", SEPARATOR=",", HEADER="false", EOL="\n";
+    
+use graph synthea
+drop job dLoadEverything
+
+CREATE LOADING JOB dLoadEverything FOR GRAPH synthea {
+      DEFINE FILENAME allergyFile = "m8:/nvme1/synthea/output/Final/allergies.csv";
+      DEFINE FILENAME careplanFile = "m8:/nvme1/synthea/output/Final/careplans.csv";
+      DEFINE FILENAME conditionFile = "m8:/nvme1/synthea/output/Final/conditions.csv";
+      DEFINE FILENAME deviceFile = "m8:/nvme1/synthea/output/Final/devices.csv";
+      DEFINE FILENAME encountersFile = "m8:/nvme1/synthea/output/Final/encounters.csv";
+      DEFINE FILENAME imagingFile = "m8:/nvme1/synthea/output/Final/imaging_studies.csv";
+      DEFINE FILENAME immunizationFile = "m8:/nvme1/synthea/output/Final/immunizations.csv";
+      DEFINE FILENAME medicationFile = "m8:/nvme1/synthea/output/Final/medications.csv";
+      DEFINE FILENAME observationFile = "m8:/nvme1/synthea/output/Final/observations.csv";
+      DEFINE FILENAME organizationsFile = "m8:/nvme1/synthea/output/Final/organizations.csv";
+      DEFINE FILENAME patientFile = "m8:/nvme1/synthea/output/Final/patients.csv";
+      DEFINE FILENAME transitionsFile = "m8:/nvme1/synthea/output/Final/payer_transitions.csv";
+      DEFINE FILENAME payersFile = "m8:/nvme1/synthea/output/Final/payers.csv";
+      DEFINE FILENAME proceduresFile = "m8:/nvme1/synthea/output/Final/procedures.csv";
+      DEFINE FILENAME providersFile = "m8:/nvme1/synthea/output/Final/providers.csv";
+
+# allergies
+      LOAD allergyFile TO VERTEX Allergy VALUES($4, $4, $5, $0, $1),
+                       TO EDGE hasAllergy VALUES($2, $4, $0, $1) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+#careplans
+      LOAD careplanFile TO VERTEX CarePlan VALUES($0, $5, $6, $7, $8, $1, $2), 
+      			TO EDGE hasCarePlan VALUES($3, $0) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+#conditions
+      LOAD conditionFile TO VERTEX Condition VALUES($4, $4, $5, $0, $1),
+      			 TO EDGE hasCondition VALUES($2, $4, $0, $1) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+#devices
+      LOAD deviceFile TO VERTEX Device VALUES($4, $4, $5, $6, $0, $1),
+      		      TO EDGE useDevice VALUES($2, $4, $0, $1) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+#encounters
+      LOAD encountersFile TO VERTEX Visit VALUES($0, $8, $9, $1, $2, $10, $7, $11, $12, $13, $14),
+      			  TO EDGE providerVisit VALUES($5, $0),
+      			  TO EDGE patientVisit VALUES($3, $0) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+#imaging_studies
+      LOAD imagingFile TO VERTEX ImagingStudy VALUES($0, $4, $5, $6, $7, $8, $9, $1, _, _),
+      		       TO EDGE hasImagingStudy VALUES($2, $0, $1) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+#immunizations
+      LOAD immunizationFile TO EDGE hasImmunization VALUES($1, $3, $0) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+#medications
+      LOAD medicationFile TO VERTEX Medication VALUES($5, $5, $6, $7, $9, $10, $11, $12, $0, $1),
+      			  TO EDGE hasMedication VALUES($2, $5, $0, $1) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+#observations
+      LOAD observationFile TO VERTEX Observation VALUES($3, $3, $4, _, _),
+      			   TO EDGE hasObservation VALUES($1, $3, $0, $5, $6, $7) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+#organizations
+      LOAD organizationsFile TO VERTEX Organization VALUES($0, $1, $10, $8, $9),
+      			     TO EDGE foundAt VALUES($0, $2),
+      			     TO EDGE addressInZip VALUES($2, $5),
+      			     TO EDGE zipInCity VALUES($5, $2),
+      			     TO EDGE cityInState VALUES($3, $4),
+      			     TO EDGE zipInState VALUES($5, $4) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+#patients
+      LOAD patientFile TO VERTEX Patient VALUES($0, $7, $8, $6, $9, $10, $11, $14, $12, $13, $1, $2, $3, $4, $5),
+      	               TO EDGE residesAt VALUES($0, $16),
+      		       TO EDGE addressInZip VALUES($16, $20),
+      		       TO EDGE zipInState VALUES($20, $18),
+      		       TO EDGE cityInState VALUES($17, $18),
+      		       TO EDGE zipInCity VALUES($20, $17) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+
+#payer_transitions
+      LOAD transitionsFile TO EDGE patientPayer VALUES($0, $3, $1, $2, $4) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+
+#payers
+      LOAD payersFile TO VERTEX Payer VALUES($0, $4, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20),
+      		      TO EDGE payerAddress VALUES($0, $2),
+      		      TO EDGE zipInState VALUES($5, $4),
+      		      TO EDGE cityInState VALUES($3, $4),
+      		      TO EDGE zipInCity VALUES($5, $3) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+
+#procedures
+      LOAD proceduresFile TO VERTEX PatientProcedure VALUES($3, $3, $4, $5, $6, $7, _, _),
+      			  TO EDGE hasProcedure VALUES($1, $3, $0),
+      			  TO EDGE visitProcedure VALUES($2, $3) USING SEPARATOR=",", HEADER="true", EOL="\n";
+
+
+#providers 
+      LOAD providersFile TO VERTEX Provider VALUES($0, $2, $3, $4, $11),
+      			 TO VERTEX Address VALUES($0, $5),
+			 TO EDGE worksAt VALUES($0, $1),
+      			 TO EDGE addressInZip VALUES($5, $8),
+      			 TO EDGE zipInCity VALUES($8, $6),
+      			 TO EDGE zipInState VALUES($8, $7),
+      			 TO EDGE cityInState VALUES($7, $7) USING SEPARATOR=",", HEADER="true", EOL="\n";
+}
+
+run loading job dLoadEverything
+
+#  - CREATE LOADING JOB load_gep FOR GRAPH synthea {
+#load_gep
+#      DEFINE HEADER org_header = "Id", "NAME", "ADDRESS", "CITY", "STATE", "ZIP", "LAT", "LON", "PHONE", "REVENUE", "UTILIZATION";
+#      DEFINE FILENAME org;
+#      LOAD org TO EDGE organizationLocatedAt VALUES($"Id", getGridId($"LAT",$"LON"), $"LAT", $"LON") USING USER_DEFINED_HEADER="org_header", SEPARATOR=",", HEADER="true", EOL="\n";
+#    }
+
+
+#  - CREATE LOADING JOB load_pro FOR GRAPH synthea {
+#      DEFINE HEADER pro_header = "Id", "ORGANIZATION", "NAME", "GENDER", "SPECIALITY", "ADDRESS", "CITY", "STATE", "ZIP", "LAT", "LON", "UTILIZATION";
+#      DEFINE FILENAME pro;
+#      LOAD pro TO EDGE providerLocatedAt VALUES($"Id", getGridId($"LAT",$"LON"), $"LAT", $"LON") USING USER_DEFINED_HEADER="pro_header", SEPARATOR=",", HEADER="true", EOL="\n";
+#    }
