@@ -1,0 +1,40 @@
+CREATE QUERY FindProvider(float lat, float lon, float distKm, vertex<PatientProcedure> procedure, int k) FOR GRAPH synthea { 
+	/****************************************************************************************
+	 * This query will find a provider for a specific procedure within a given distance     *
+	 * Input a latitude and longitude point, along with a distance around that point,       *
+	 *   procedure, and the number of results you would want to see.                        * 
+	 *                                                                                      *
+	 * sample input:                                                                        *
+	 *    lat : 37                                                                          *
+	 *		long : -122                                                                       *
+	 *		dist : 25000                                                                      *
+	 *		procedure : 19490002                                                              *
+	 *		k : 100                                                                           *
+	 ****************************************************************************************/
+  
+	      SetAccum<string> @@vSet;
+	      SetAccum<EDGE> @@edges;
+	      MinAccum<float> @dist;
+	      SumAccum<float> @latitude, @longitude;
+	      MapAccum<int, SumAccum<int>> @@groupByDist;
+	      MapAccum<string, SumAccum<int>> @@groupByFactFDR;
+	      SumAccum<int> @cnt;
+	      SumAccum<float> @percentage;
+	
+	      @@vSet += getNearbyGridId(distKm, lat, lon);
+        grids = to_vertex_set(@@vSet, "GeoGrid");
+	
+	      provider = select t from grids:s-(providerLocatedAt:e)-:t
+	                 where geoDistance(lat, lon, e.Latitude, e.Longitude) <= distKm
+                   accum t.@dist += geoDistance(lat, lon, e.Latitude, e.Longitude),
+	                       t.@latitude = e.Latitude, t.@longitude = e.Longitude;
+	
+	      provider = select s from provider:s-(providerProcedure:e)-:t
+	                 where t == procedure
+	                 accum s.@cnt += e.cnt
+	                 post-accum s.@percentage = s.@cnt/s.outdegree("providerVisit")
+	                 order by s.@dist asc, s.@percentage desc, s.@cnt desc
+	                 limit k;
+	
+	      print provider;
+}

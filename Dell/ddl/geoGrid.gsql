@@ -1,0 +1,18 @@
+use graph synthea
+drop job orgGeo
+drop job provGeo
+
+   CREATE LOADING JOB orgGeo FOR GRAPH synthea { 
+      DEFINE HEADER org_header = "Id", "NAME", "ADDRESS", "CITY", "STATE", "ZIP", "LAT", "LON", "PHONE", "REVENUE", "UTILIZATION";
+      DEFINE FILENAME org = "m8:/nvme1/synthea/output/Final/organizations.csv";
+      LOAD org TO EDGE organizationLocatedAt VALUES($"Id", getGridId($"LAT",$"LON"), $"LAT", $"LON") USING USER_DEFINED_HEADER="org_header", SEPARATOR=",", HEADER="true", EOL="\n";
+   }
+
+   CREATE LOADING JOB provGeo FOR GRAPH synthea {
+      DEFINE HEADER pro_header = "Id", "ORGANIZATION", "NAME", "GENDER", "SPECIALITY", "ADDRESS", "CITY", "STATE", "ZIP", "LAT", "LON", "UTILIZATION";
+      DEFINE FILENAME pro = "m8:/nvme1/synthea/output/Final/providers.csv";
+      LOAD pro TO EDGE providerLocatedAt VALUES($"Id", getGridId($"LAT",$"LON"), $"LAT", $"LON") USING USER_DEFINED_HEADER="pro_header", SEPARATOR=",", HEADER="true", EOL="\n";
+    }
+
+run loading job orgGeo
+run loading job provGeo

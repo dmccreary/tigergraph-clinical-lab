@@ -1,0 +1,39 @@
+CREATE QUERY SimilarPatient(vertex<Patient> inputPatient, int k, set<string>  prerequisite, set<string> additionalEdgeType) FOR GRAPH synthea { 
+  
+	      SumAccum<FLOAT> @numerator, @@norm1, @norm2, @similarity;
+        MapAccum<VERTEX, FLOAT> @@topK_result;
+	      SetAccum<STRING> @@edgeTypes; 
+	
+	      @@edgeTypes += ("hasAllergy","hasObservation","hasMedication","useDevice","hasCondition","hasImmunization","hasImagingStudy","hasProcedure");	  
+	      @@edgeTypes = @@edgeTypes union additionalEdgeType;
+	      @@edgeTypes = @@edgeTypes minus prerequisite;
+
+        start = {inputPatient};
+        prereq_obj = SELECT t
+                    FROM start:s -(prerequisite:e)-> :t
+                    ACCUM t.@numerator = 1,
+                          @@norm1 += pow(1, 2);
+	
+        neighbours = SELECT t
+                     FROM prereq_obj:s -(prerequisite:e)-> :t
+                     WHERE t != inputPatient
+                     ACCUM t.@numerator += s.@numerator;
+	
+	      tmp        = SELECT s
+                     FROM neighbours:s -(@@edgeTypes:e)-> :t
+                     ACCUM s.@numerator += t.@numerator;
+
+        neighbours = SELECT s
+                     FROM neighbours:s -(@@edgeTypes:e)-> :t
+                     ACCUM s.@norm2 += 1
+        	           POST-ACCUM s.@similarity = s.@numerator/sqrt(@@norm1 * s.@norm2),
+	                              case when s.Gender == inputPatient.Gender then
+	                                s.@similarity += 0.1
+	                              when abs(datetime_diff(s.DateOfBirth, inputPatient.DateOfBirth)) < 31556952*3 then
+																	s.@similarity += 0.1
+																end
+                     ORDER BY s.@similarity DESC
+                     LIMIT k;
+
+        PRINT neighbours;
+}
