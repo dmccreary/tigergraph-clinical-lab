@@ -32,3 +32,23 @@ Use Upper Case for Edge types.
 Use ISO Naming conventions - always end with a Representation Term
 All Codes should use the STRING COMPRESSED format
 
+### Setup Instructions
+**In your project folder:**
+`$ git clone https://github.com/dmccreary/tigergraph-clinical-lab.git`
+`$ cd tigergraph-clinical-lab/`
+`$ vi gradle.properties`
+
+**Add to gradle.properties:**
+```
+gsqlGraphname=clinical-training
+gsqlHost=https://yourURL/
+gsqlUsername=yourGSQLusername
+gsqlPassword=yourGSQLpassword
+gsqlAdminUsername=yourUNIXname
+gsqlAdminPassword=yourUNIXpassword
+```
+**Test Build**
+`$ gradle tasks`
+
+#MORE TO ADD
+
